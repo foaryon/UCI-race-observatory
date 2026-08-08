@@ -1,0 +1,41 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,76230,,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Antonio Tiberi,Team Bahrain Victorious,ITA,,20,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Luke Plapp,Team Jayco–AlUla,AUS,,74,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Harold Tejada,XDS Astana Team,COL,,85,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Felix Gall,Decathlon CMA CGM,AUT,,94,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Lennert Van Eetvelt,Lotto–Intermarché,BEL,,104,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Derek Gee-West,Lidl–Trek,CAN,,107,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Jørgen Nordhagen,Visma–Lease a Bike,NOR,,115,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Tobias Halland Johannessen,Uno-X Mobility,NOR,,128,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,145,
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Jonathan Milan,Lidl–Trek,ITA,,,70
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Isaac del Toro,UAE Team Emirates XRG,MEX,,,56
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Antonio Tiberi,Team Bahrain Victorious,ITA,,,41
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Silvan Dillier,Alpecin–Premier Tech,SUI,,,40
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Matteo Malucelli,XDS Astana Team,ITA,,,33
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Ethan Vernon,NSN Cycling Team,GBR,,,32
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Erlend Blikra,Uno-X Mobility,NOR,,,32
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Luke Plapp,Team Jayco–AlUla,AUS,,,23
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,,20
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Felix Gall,Decathlon CMA CGM,AUT,,,19
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,UAE Team Emirates XRG,,229256,,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Visma–Lease a Bike,,,22,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Uno-X Mobility,,,325,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,EF Education–EasyPost,,,333,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Movistar Team,,,516,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Team Jayco–AlUla,,,520,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,XDS Astana Team,,,561,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Pinarello–Q36.5 Pro Cycling Team,,,598,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Tudor Pro Cycling Team,,,672,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Team Bahrain Victorious,,,1134,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,76230,,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Antonio Tiberi,Team Bahrain Victorious,ITA,,20,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Lennert Van Eetvelt,Lotto–Intermarché,BEL,,104,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Jørgen Nordhagen,Visma–Lease a Bike,NOR,,115,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Mathys Rondel,Tudor Pro Cycling Team,FRA,,158,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Tijmen Graat,Visma–Lease a Bike,NED,,230,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Embret Svestad-Bårdseng,INEOS Grenadiers,NOR,,237,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Georg Steinhauser,EF Education–EasyPost,GER,,281,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Pablo Castrillo,Movistar Team,ESP,,297,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Junior Lecerf,Soudal–Quick-Step,BEL,,337,

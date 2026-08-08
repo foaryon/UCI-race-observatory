@@ -1,0 +1,9 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-06-07,Vizille,Saint-Ismier,146.20,Medium-mountain stage,,,PUBLISHED
+2,2026-06-08,Saint-Martin-le-Vinoux,Le Puy-en-Velay,234.30,Hilly stage,,,PUBLISHED
+3,2026-06-09,Perreux,Perreux,28.40,Team time trial,,,PUBLISHED
+4,2026-06-10,Le Puy-en-Velay,Montrond-les-Bains,167.40,Hilly stage,,,PUBLISHED
+5,2026-06-11,Saint-Chamond,Parc des Oiseaux - Villard-les-Dombes,195.80,Hilly stage,,,PUBLISHED
+6,2026-06-12,Saint-Vulbas,Crest-Voland,182.30,Mountain stage,,,PUBLISHED
+7,2026-06-13,La Bridoire,Grand Colombier,133.60,Mountain stage,,,PUBLISHED
+8,2026-06-14,Beaufort,Plateau de Solaison - Brison,120.10,Mountain stage,,,PUBLISHED

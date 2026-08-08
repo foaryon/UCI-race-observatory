@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Demi Vollering,FDJ United–Suez,NED,107659,,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Antonia Niedermaier,Canyon//SRAM,GER,,30,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Anna van der Breggen,Team SD Worx–Protime,NED,,97,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Elisa Longo Borghini,UAE Team ADQ,ITA,,164,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Niamh Fisher-Black,Lidl–Trek,NZL,,206,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Femke de Vries,Visma–Lease a Bike,NED,,307,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Isabella Holmgren,Lidl–Trek,CAN,,430,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Urška Žigart,AG Insurance–Soudal,SLO,,759,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Valentina Cavallar,Team SD Worx–Protime,AUT,,792,
+9,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Lore De Schepper,AG Insurance–Soudal,BEL,,809,
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Demi Vollering,FDJ United–Suez,NED,,,67
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Antonia Niedermaier,Canyon//SRAM,GER,,,55
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Anna van der Breggen,Team SD Worx–Protime,NED,,,53
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Isabella Holmgren,Lidl–Trek,CAN,,,28
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Valentina Cavallar,Team SD Worx–Protime,AUT,,,24
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Lauren Dickson,FDJ United–Suez,GBR,,,21
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Caroline Andersson,Liv AlUla Jayco,SWE,,,21
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Marlen Reusser,Movistar Team,SUI,,,18
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Femke de Vries,Visma–Lease a Bike,NED,,,11
+9,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Niamh Fisher-Black,Lidl–Trek,NZL,,,10
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Elisa Balsamo,Lidl–Trek,ITA,,,152
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Demi Vollering,FDJ United–Suez,NED,,,73
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Célia Gery,FDJ United–Suez,FRA,,,63
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Lara Gillespie,UAE Team ADQ,IRL,,,60
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Elisa Longo Borghini,UAE Team ADQ,ITA,,,55
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Chiara Consonni,Canyon//SRAM,ITA,,,49
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Antonia Niedermaier,Canyon//SRAM,GER,,,48
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Anna van der Breggen,Team SD Worx–Protime,NED,,,42
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Lucinda Brand,Lidl–Trek,NED,,,31
+9,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Lily Williams,Human Powered Health,USA,,,30
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Lidl–Trek,,325750,,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,AG Insurance–Soudal,,,203,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,FDJ United–Suez,,,602,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Visma–Lease a Bike,,,1358,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,UAE Team ADQ,,,1443,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Team SD Worx–Protime,,,2441,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Liv AlUla Jayco,,,3221,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Canyon//SRAM,,,3384,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Uno-X Mobility,,,3556,
+9,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Human Powered Health,,,3723,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Isabella Holmgren,Lidl–Trek,CAN,108089,,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Lore De Schepper,AG Insurance–Soudal,BEL,,379,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Viktória Chladoňová,Visma–Lease a Bike,SVK,,1644,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Rosita Reijnhout,Visma–Lease a Bike,NED,,1741,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Marion Bunel,Visma–Lease a Bike,FRA,,1753,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Célia Gery,FDJ United–Suez,FRA,,2078,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Gaia Segato,Vini Fantini–BePink,ITA,,2561,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Justyna Czapla,Canyon//SRAM,GER,,4398,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Stina Kagevi,EF Education–Oatly,SWE,,4434,
+9,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Mirre Knaven,EF Education–Oatly,NED,,4887,

@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Anders Foldager,Team Jayco–AlUla,DEN,12990,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Quinten Hermans,Pinarello–Q36.5 Pro Cycling Team,BEL,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Benoît Cosnefroy,UAE Team Emirates XRG,FRA,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Romain Grégoire,Groupama–FDJ United,FRA,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Eduard Prades,Caja Rural–Seguros RGA,ESP,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Fredrik Dversnes,Uno-X Mobility,NOR,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Luca Van Boven,Lotto–Intermarché,BEL,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Fernando Barceló,Caja Rural–Seguros RGA,ESP,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Brady Gilmore,NSN Cycling Team,AUS,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Alex Molenaar,Caja Rural–Seguros RGA,NED,,0,

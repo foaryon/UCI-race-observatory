@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Franziska Koch,FDJ United–Suez,GER,12616,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Marianne Vos,Visma–Lease a Bike,NED,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Pauline Ferrand-Prévot,Visma–Lease a Bike,FRA,,6,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Lotte Kopecky,Team SD Worx–Protime,BEL,,90,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Megan Jastrab,UAE Team ADQ,USA,,90,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Lorena Wiebes,Team SD Worx–Protime,NED,,140,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Charlotte Kool,Fenix–Deceuninck,NED,,140,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Lara Gillespie,UAE Team ADQ,IRE,,140,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Arlenis Sierra,Movistar Team,CUB,,140,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Lucinda Brand,Lidl–Trek,NED,,140,

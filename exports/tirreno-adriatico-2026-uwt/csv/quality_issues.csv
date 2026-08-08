@@ -1,0 +1,4 @@
+rule_id,severity,subject_kind,subject_label,detail
+route_length_mismatch,BLOCKER,route_version,stage 3,route line is 224.951 km against an official 221.000 km (delta 3.951 km); geometry quarantined as CONFLICTING
+route_length_mismatch,BLOCKER,route_version,stage 4,route line is 210.286 km against an official 213.000 km (delta -2.714 km); geometry quarantined as CONFLICTING
+route_jump_between_vertices,WARNING,route_version,stage 2,largest gap between consecutive vertices is 2426 m

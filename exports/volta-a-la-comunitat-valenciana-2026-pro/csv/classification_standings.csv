@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,47412,,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,João Almeida,UAE Team Emirates XRG,POR,,31,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,34,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Antonio Tiberi,Team Bahrain Victorious,ITA,,36,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Brandon McNulty,UAE Team Emirates XRG,USA,,50,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Magnus Sheffield,INEOS Grenadiers,USA,,76,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,122,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Ben Turner,INEOS Grenadiers,GBR,,130,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Riley Sheehan,NSN Cycling Team,USA,,135,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Viktor Soenens,Soudal–Quick-Step,BEL,,137,
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Danny van der Tuuk,Euskaltel–Euskadi,POL,,,27
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Julien Bernard,Lidl–Trek,FRA,,,17
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Raúl García Pierna,Movistar Team,ESP,,,16
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Carlos García Pierna,Burgos Burpellet BH,ESP,,,16
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,,10
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Antonio Tiberi,Team Bahrain Victorious,ITA,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Steff Cras,Soudal–Quick-Step,BEL,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Adrià Pericas,UAE Team Emirates XRG,ESP,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,João Almeida,UAE Team Emirates XRG,POR,,,6
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Magnus Sheffield,INEOS Grenadiers,USA,,,4
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Biniam Girmay,NSN Cycling Team,ERI,,,37
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,,33
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Ben Turner,INEOS Grenadiers,GBR,,,32
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Raúl García Pierna,Movistar Team,ESP,,,30
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,,30
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Andrew August,INEOS Grenadiers,USA,,,29
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Ådne Holter,Uno-X Mobility,NOR,,,21
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,8,João Almeida,UAE Team Emirates XRG,POR,,,20
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Emil Herzog,Red Bull–Bora–Hansgrohe,GER,,,20
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Arne Marit,Red Bull–Bora–Hansgrohe,BEL,,,20
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Red Bull–Bora–Hansgrohe,,142411,,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,UAE Team Emirates XRG,,,64,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Movistar Team,,,323,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Soudal–Quick-Step,,,487,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Team Bahrain Victorious,,,613,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,NSN Cycling Team,,,620,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,INEOS Grenadiers,,,637,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Burgos Burpellet BH,,,664,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Lidl–Trek,,,756,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Uno-X Mobility,,,782,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,47447,,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Antonio Tiberi,Team Bahrain Victorious,ITA,,2,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Magnus Sheffield,INEOS Grenadiers,USA,,42,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Viktor Soenens,Soudal–Quick-Step,BEL,,103,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Iván Romeo,Movistar Team,ESP,,106,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Raúl García Pierna,Movistar Team,ESP,,130,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Pablo Castrillo,Movistar Team,ESP,,137,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Johannes Kulset,Uno-X Mobility,NOR,,143,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Pau Martí,NSN Cycling Team,ESP,,143,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Andrii Ponomar,Petrolike,UKR,,152,

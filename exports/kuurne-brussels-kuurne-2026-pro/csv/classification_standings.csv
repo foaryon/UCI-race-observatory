@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Matthew Brennan,Visma–Lease a Bike,GBR,15965,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Luca Mozzato,Tudor Pro Cycling Team,ITA,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Matteo Trentin,Tudor Pro Cycling Team,ITA,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Matevž Govekar,Team Bahrain Victorious,SLO,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Mike Teunissen,XDS Astana Team,NED,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Laurenz Rex,Soudal–Quick-Step,BEL,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Tobias Lund Andresen,Decathlon CMA CGM,DEN,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Cees Bol,Decathlon CMA CGM,NED,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Luke Lamperti,EF Education–EasyPost,USA,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Jordi Meeus,Red Bull–Bora–Hansgrohe,BEL,,0,

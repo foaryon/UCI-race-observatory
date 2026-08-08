@@ -1,0 +1,7 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-04-06,Bilbao,Bilbao,13.80,Individual time trial,,,PUBLISHED
+2,2026-04-07,Pamplona-Iruña,Cuevas de Mendukilo,164.10,Mountain stage,,,PUBLISHED
+3,2026-04-08,Basauri,Basauri,152.80,Hilly stage,,,PUBLISHED
+4,2026-04-09,Galdakao,Galdakao,167.20,Hilly stage,,,PUBLISHED
+5,2026-04-10,Eibar,Eibar,176.20,Medium mountain stage,,,PUBLISHED
+6,2026-04-11,Goizper-Antzuola,Bergara,135.40,Medium mountain stage,,,PUBLISHED

@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Paula Blasi,UAE Team ADQ,ESP,14535,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Katarzyna Niewiadoma-Phinney,Canyon//SRAM Zondacrypto,POL,,27,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Demi Vollering,FDJ United–Suez,NED,,27,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Letizia Paternoster,Liv AlUla Jayco,ITA,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Noemi Rüegg,EF Education–Oatly,SUI,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Karlijn Swinkels,UAE Team ADQ,NED,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Sarah Van Dam,Visma–Lease a Bike,CAN,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Riejanne Markus,Lidl–Trek,NED,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Anna van der Breggen,Team SD Worx–Protime,NED,,43,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Puck Pieterse,Fenix–Premier Tech,NED,,43,

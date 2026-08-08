@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Jonas Vingegaard,Visma–Lease a Bike,DEN,93396,,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Lenny Martinez,Team Bahrain Victorious,FRA,,82,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,90,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Valentin Paret-Peintre,Soudal–Quick-Step,FRA,,103,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,133,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Felix Gall,Decathlon CMA CGM,AUT,,197,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Mattias Skjelmose,Lidl–Trek,DEN,,251,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Cian Uijtdebroeks,Movistar Team,BEL,,320,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Matthew Riccitello,Decathlon CMA CGM,USA,,325,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Richard Carapaz,EF Education–EasyPost,ECU,,336,
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Giulio Ciccone,Lidl–Trek,ITA,,,73
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Marc Soler,UAE Team Emirates XRG,ESP,,,61
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,44
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Baptiste Veistroffer,Lotto–Intermarché,FRA,,,39
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,,27
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Lenny Martinez,Team Bahrain Victorious,FRA,,,27
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Embret Svestad-Bårdseng,INEOS Grenadiers,NOR,,,24
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Davide Piganzoli,Visma–Lease a Bike,ITA,,,22
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,,21
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Felix Gall,Decathlon CMA CGM,AUT,,,20
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Dorian Godon,INEOS Grenadiers,FRA,,,32
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,24
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Baptiste Veistroffer,Lotto–Intermarché,FRA,,,18
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Ethan Vernon,NSN Cycling Team,GBR,,,16
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Remco Evenepoel,Red Bull–Bora–Hansgrohe,BEL,,,16
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Magnus Cort,Uno-X Mobility,DEN,,,13
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Lenny Martinez,Team Bahrain Victorious,FRA,,,13
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Liam Slock,Lotto–Intermarché,BEL,,,12
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Brady Gilmore,NSN Cycling Team,AUS,,,10
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Giulio Ciccone,Lidl–Trek,ITA,,,6
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Red Bull–Bora–Hansgrohe,,280992,,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Decathlon CMA CGM,,,339,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Visma–Lease a Bike,,,449,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Soudal–Quick-Step,,,520,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Movistar Team,,,688,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Team Bahrain Victorious,,,806,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Caja Rural–Seguros RGA,,,1269,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,XDS Astana Team,,,1373,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,INEOS Grenadiers,,,1487,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,EF Education–EasyPost,,,2371,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Lenny Martinez,Team Bahrain Victorious,FRA,93478,,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Cian Uijtdebroeks,Movistar Team,BEL,,238,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Jaume Guardeño,Caja Rural–Seguros RGA,ESP,,871,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Jan Castellon,Caja Rural–Seguros RGA,ESP,,1082,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Jakob Omrzel,Team Bahrain Victorious,SLO,,1728,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Adrià Pericas,UAE Team Emirates XRG,ESP,,1754,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Simone Gualdi,Lotto–Intermarché,ITA,,2059,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Maxime Decomble,Groupama–FDJ United,FRA,,2096,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Léo Bisiaux,Decathlon CMA CGM,FRA,,2122,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Jørgen Nordhagen,Visma–Lease a Bike,NOR,,2151,

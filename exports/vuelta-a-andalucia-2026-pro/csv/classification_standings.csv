@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Iván Romeo,Movistar Team,ESP,67630,,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Andreas Leknessund,Uno-X Mobility,NOR,,7,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Tom Pidcock,Pinarello–Q36.5 Pro Cycling Team,GBR,,27,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Jan Christen,UAE Team Emirates XRG,SUI,,44,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Romain Grégoire,Groupama–FDJ United,FRA,,44,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Alex Aranburu,Cofidis,ESP,,51,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,54,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Clément Braz Afonso,Groupama–FDJ United,FRA,,56,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Tim Wellens,UAE Team Emirates XRG,BEL,,63,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Jon Barrenetxea,Movistar Team,ESP,,71,
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Josh Burnett,Burgos Burpellet BH,NZL,,,18
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Iván Romeo,Movistar Team,ESP,,,12
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Andreas Leknessund,Uno-X Mobility,NOR,,,11
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Victor Campenaerts,Visma–Lease a Bike,BEL,,,10
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Jesús Herrada,Burgos Burpellet BH,ESP,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Tom Pidcock,Pinarello–Q36.5 Pro Cycling Team,GBR,,,7
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Geoffrey Bouchard,Team TotalEnergies,FRA,,,6
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Juan Pedro López,Movistar Team,ESP,,,6
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,,4
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Samuel Flórez,Modern Adventure Pro Cycling,COL,,,4
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Alex Aranburu,Cofidis,ESP,,,54
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Sandy Dujardin,Team TotalEnergies,FRA,,,38
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Tom Crabbe,Team Flanders–Baloise,BEL,,,37
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Iván Romeo,Movistar Team,ESP,,,35
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Jan Christen,UAE Team Emirates XRG,SUI,,,34
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Søren Wærenskjold,Uno-X Mobility,NOR,,,34
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Tom Pidcock,Pinarello–Q36.5 Pro Cycling Team,GBR,,,33
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Andreas Leknessund,Uno-X Mobility,NOR,,,29
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Nicolò Buratti,MBH Bank CSB Telecom Fort,ITA,,,28
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Paul Penhoët,Groupama–FDJ United,FRA,,,26
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Movistar Team,,203038,,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Uno-X Mobility,,,7,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Groupama–FDJ United,,,36,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Burgos Burpellet BH,,,74,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,MBH Bank CSB Telecom Fort,,,86,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Team TotalEnergies,,,101,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Red Bull–Bora–Hansgrohe,,,162,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,UAE Team Emirates XRG,,,206,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Cofidis,,,226,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Pinarello–Q36.5 Pro Cycling Team,,,414,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Jan Christen,UAE Team Emirates XRG,SUI,67674,,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Johannes Kulset,Uno-X Mobility,NOR,,28,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Lorenzo Nespoli,MBH Bank CSB Telecom Fort,ITA,,30,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Rayan Boulahoite,Team TotalEnergies,FRA,,42,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Juan Diego Quintero,Petrolike,COL,,170,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Matisse Van Kerckhove,Visma–Lease a Bike,BEL,,535,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Luke Tuckwell,Red Bull–Bora–Hansgrohe,AUS,,649,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Ibai Azanza,Equipo Kern Pharma,ESP,,1388,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,William Smith,Visma–Lease a Bike,GBR,,1583,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Maxime Decomble,Groupama–FDJ United,FRA,,1786,

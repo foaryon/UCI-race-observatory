@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Demi Vollering,FDJ United–Suez,NED,15397,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Pauline Ferrand-Prévot,Visma–Lease a Bike,FRA,,42,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Puck Pieterse,Fenix–Premier Tech,NED,,42,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Lotte Kopecky,Team SD Worx–Protime,BEL,,64,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Zoe Bäckstedt,Canyon//SRAM Zondacrypto,GBR,,64,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Karlijn Swinkels,UAE Team ADQ,NED,,64,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Silvia Persico,UAE Team ADQ,ITA,,67,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Elisa Longo Borghini,UAE Team ADQ,ITA,,67,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Mischa Bredewold,Team SD Worx–Protime,NED,,118,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Franziska Koch,FDJ United–Suez,GER,,118,

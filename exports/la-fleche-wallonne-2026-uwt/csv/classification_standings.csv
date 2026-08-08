@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,16529,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Mauro Schmid,Team Jayco–AlUla,SUI,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Ben Tulett,Visma–Lease a Bike,GBR,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Benoît Cosnefroy,UAE Team Emirates XRG,FRA,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Mattias Skjelmose,Lidl–Trek,DEN,,8,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Alex Baudin,EF Education–EasyPost,FRA,,8,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Ion Izagirre,Cofidis,ESP,,10,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Lenny Martinez,Team Bahrain Victorious,FRA,,10,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Romain Grégoire,Groupama–FDJ United,FRA,,10,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Andreas Kron,Uno-X Mobility,DEN,,10,

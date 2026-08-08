@@ -1,0 +1,2 @@
+rule_id,severity,subject_kind,subject_label,detail
+route_jump_between_vertices,WARNING,route_version,stage 4,largest gap between consecutive vertices is 2146 m

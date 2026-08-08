@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Tadej Pogačar,UAE Team Emirates XRG,SLO,54523,,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Richard Carapaz,EF Education–EasyPost,ECU,,392,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Mathias Vacek,Lidl–Trek,CZE,,413,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Tobias Foss,Netcompany INEOS,NOR,,454,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Ilan Van Wilder,Soudal–Quick-Step,BEL,,471,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Brandon McNulty,UAE Team Emirates XRG,USA,,473,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Matthew Riccitello,Decathlon CMA CGM,USA,,528,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Primož Roglič,Red Bull–Bora–Hansgrohe,SLO,,563,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Sergio Higuita,XDS Astana Team,COL,,566,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Bart Lemmen,Visma–Lease a Bike,NED,,584,
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Louis Vervaeke,Soudal–Quick-Step,BEL,,,52
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Bauke Mollema,Lidl–Trek,NED,,,32
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Lenny Martinez,Team Bahrain Victorious,FRA,,,23
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Paul Double,Team Jayco–AlUla,GBR,,,17
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Tadej Pogačar,UAE Team Emirates XRG,SLO,,,14
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Xandro Meurisse,Pinarello–Q36.5 Pro Cycling Team,BEL,,,13
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Jhonatan Narváez,UAE Team Emirates XRG,ECU,,,10
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Mauro Schmid,Team Jayco–AlUla,SUI,,,10
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Bart Lemmen,Visma–Lease a Bike,NED,,,6
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Andrea Bagioli,Lidl–Trek,ITA,,,6
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Tadej Pogačar,UAE Team Emirates XRG,SLO,,,42
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Bart Lemmen,Visma–Lease a Bike,NED,,,20
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Romain Grégoire,Groupama–FDJ United,FRA,,,18
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Jhonatan Narváez,UAE Team Emirates XRG,ECU,,,16
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Xandro Meurisse,Pinarello–Q36.5 Pro Cycling Team,BEL,,,14
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Richard Carapaz,EF Education–EasyPost,ECU,,,12
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Lenny Martinez,Team Bahrain Victorious,FRA,,,12
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Marcel Camprubí,Pinarello–Q36.5 Pro Cycling Team,ESP,,,12
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Mathieu van der Poel,Alpecin–Premier Tech,NED,,,10
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Andrea Bagioli,Lidl–Trek,ITA,,,8
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,UAE Team Emirates XRG,,164700,,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Decathlon CMA CGM,,,1237,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Soudal–Quick-Step,,,1279,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Team Jayco–AlUla,,,1475,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Lidl–Trek,,,1981,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Movistar Team,,,2109,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Visma–Lease a Bike,,,2321,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Netcompany INEOS,,,2381,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Groupama–FDJ United,,,2795,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Red Bull–Bora–Hansgrohe,,,2896,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Mathias Vacek,Lidl–Trek,CZE,54936,,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Matthew Riccitello,Decathlon CMA CGM,USA,,115,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Finlay Pickering,Team Jayco–AlUla,GBR,,329,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Simon Dalby,Uno-X Mobility,DEN,,441,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Lorenzo Germani,Groupama–FDJ United,ITA,,1007,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Romain Grégoire,Groupama–FDJ United,FRA,,1055,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Ewen Costiou,Groupama–FDJ United,FRA,,1111,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Lenny Martinez,Team Bahrain Victorious,FRA,,1239,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Andrew August,Netcompany INEOS,USA,,1268,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Bjoern Koerdt,Team Picnic–PostNL,GBR,,1276,

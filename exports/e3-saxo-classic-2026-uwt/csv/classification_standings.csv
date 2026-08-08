@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Mathieu van der Poel,Alpecin–Premier Tech,NED,17115,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Per Strand Hagenes,Visma–Lease a Bike,NOR,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Florian Vermeersch,UAE Team Emirates XRG,BEL,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Stan Dewulf,Decathlon CMA CGM,BEL,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Jonas Abrahamsen,Uno-X Mobility,NOR,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Tobias Lund Andresen,Decathlon CMA CGM,DEN,,24,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Christophe Laporte,Visma–Lease a Bike,FRA,,24,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Gianni Vermeersch,Red Bull–Bora–Hansgrohe,BEL,,24,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Mads Pedersen,Lidl–Trek,DEN,,24,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Matteo Trentin,Tudor Pro Cycling Team,ITA,,24,

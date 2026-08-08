@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Elise Chabbey,FDJ United–Suez,SUI,12942,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Katarzyna Niewiadoma-Phinney,Canyon//SRAM Zondacrypto,POL,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Franziska Koch,FDJ United–Suez,GER,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Elisa Longo Borghini,UAE Team ADQ,ITA,,3,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Magdeleine Vallieres,EF Education–Oatly,CAN,,6,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Puck Pieterse,Fenix–Premier Tech,NED,,16,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Marianne Vos,Visma–Lease a Bike,NED,,34,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Monica Trinca Colonel,Liv AlUla Jayco,ITA,,37,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Shirin van Anrooij,Lidl–Trek,NED,,81,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Niamh Fisher-Black,Lidl–Trek,NZL,,107,

@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Demi Vollering,FDJ United–Suez,NED,15022,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Puck Pieterse,Fenix–Premier Tech,NED,,89,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Katarzyna Niewiadoma-Phinney,Canyon//SRAM Zondacrypto,POL,,89,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Anna van der Breggen,Team SD Worx–Protime,NED,,89,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Paula Blasi,UAE Team ADQ,ESP,,108,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Isabella Holmgren,Lidl–Trek,CAN,,108,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Elise Chabbey,FDJ United–Suez,SUI,,116,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Magdeleine Vallieres,EF Education–Oatly,CAN,,116,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Juliette Berthet,FDJ United–Suez,FRA,,116,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Axelle Dubau-Prévot,EF Education–Oatly,FRA,,116,

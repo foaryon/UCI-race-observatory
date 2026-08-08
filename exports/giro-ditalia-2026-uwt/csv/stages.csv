@@ -1,0 +1,22 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-05-08,Nessebar ( Bulgaria ),Burgas (Bulgaria),147.00,Flat stage,,,PUBLISHED
+2,2026-05-09,Burgas (Bulgaria),Veliko Tarnovo (Bulgaria),221.00,Hilly stage,,,PUBLISHED
+3,2026-05-10,Plovdiv (Bulgaria),Sofia (Bulgaria),175.00,Flat stage,,,PUBLISHED
+4,2026-05-12,Catanzaro,Cosenza,138.00,Flat stage,,,PUBLISHED
+5,2026-05-13,Praia a Mare,Potenza,203.00,Hilly stage,,,PUBLISHED
+6,2026-05-14,Paestum,Naples,142.00,Flat stage,,,PUBLISHED
+7,2026-05-15,Formia,Blockhaus,244.00,Mountain stage,,,PUBLISHED
+8,2026-05-16,Chieti,Fermo,156.00,Hilly stage,,,PUBLISHED
+9,2026-05-17,Cervia,Corno alle Scale,184.00,Hilly stage,,,PUBLISHED
+10,2026-05-19,Viareggio,Massa,42.00,Individual time trial,,,PUBLISHED
+11,2026-05-20,Porcari,Chiavari,195.00,Hilly stage,,,PUBLISHED
+12,2026-05-21,Imperia,Novi Ligure,175.00,Flat stage,,,PUBLISHED
+13,2026-05-22,Alessandria,Verbania,189.00,Hilly stage,,,PUBLISHED
+14,2026-05-23,Aosta,Pila,133.00,Mountain stage,,,PUBLISHED
+15,2026-05-24,Voghera,Milan,157.00,Flat stage,,,PUBLISHED
+16,2026-05-26,Bellinzona ( Switzerland ),Carì (Switzerland),113.00,Mountain stage,,,PUBLISHED
+17,2026-05-27,Cassano d'Adda,Andalo,202.00,Hilly stage,,,PUBLISHED
+18,2026-05-28,Fai della Paganella,Pieve di Soligo,171.00,Flat stage,,,PUBLISHED
+19,2026-05-29,Feltre,Alleghe,151.00,Mountain stage,,,PUBLISHED
+20,2026-05-30,Gemona del Friuli,Piancavallo,200.00,Mountain stage,,,PUBLISHED
+21,2026-05-31,Rome,Rome,131.00,Flat stage,,,PUBLISHED

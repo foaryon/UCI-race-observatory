@@ -1,0 +1,5 @@
+rule_id,severity,subject_kind,subject_label,detail
+route_length_mismatch,BLOCKER,route_version,stage 1,route line is 139.948 km against an official 146.200 km (delta -6.252 km); geometry quarantined as CONFLICTING
+route_length_mismatch,BLOCKER,route_version,stage 2,route line is 237.027 km against an official 234.300 km (delta 2.727 km); geometry quarantined as CONFLICTING
+route_length_mismatch,BLOCKER,route_version,stage 4,route line is 164.402 km against an official 167.400 km (delta -2.998 km); geometry quarantined as CONFLICTING
+route_length_mismatch,BLOCKER,route_version,stage 5,route line is 198.104 km against an official 195.800 km (delta 2.304 km); geometry quarantined as CONFLICTING

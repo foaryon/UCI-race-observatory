@@ -1,0 +1,9 @@
+stage_number,source_id,length_km,official_km,length_delta_km,neutralised_km,assembled_parts,oriented,finish_residual_m,km0_residual_m,verdict
+1,cyclingstage.com,171.371,171.200,0.171,,1,as-published,,,ACCEPTED_THIRD_PARTY
+2,cyclingstage.com,186.926,187.000,-0.074,,1,as-published,,,ACCEPTED_THIRD_PARTY
+3,cyclingstage.com,23.524,23.500,0.024,,1,as-published,,,ACCEPTED_THIRD_PARTY
+4,cyclingstage.com,194.762,195.000,-0.238,,1,as-published,,,ACCEPTED_THIRD_PARTY
+5,cyclingstage.com,205.268,205.400,-0.132,,1,as-published,,,ACCEPTED_THIRD_PARTY
+6,cyclingstage.com,179.183,179.300,-0.117,,1,as-published,,,ACCEPTED_THIRD_PARTY
+7,cyclingstage.com,138.781,138.700,0.081,,1,as-published,,,ACCEPTED_THIRD_PARTY
+8,cyclingstage.com,146.722,145.000,1.722,,1,as-published,,,ACCEPTED_THIRD_PARTY

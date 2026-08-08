@@ -1,0 +1,9 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-03-08,Achères,Carrières-sous-Poissy,171.20,Flat stage,,,PUBLISHED
+2,2026-03-09,Épône,Montargis,187.00,Flat stage,,,PUBLISHED
+3,2026-03-10,Cosne-Cours-sur-Loire,Pouilly-sur-Loire,23.50,Team time trial,,,PUBLISHED
+4,2026-03-11,Bourges,Uchon,195.00,Medium mountain stage,,,PUBLISHED
+5,2026-03-12,Cormoranche-sur-Saône,Colombier-le-Vieux,205.40,Hilly stage,,,PUBLISHED
+6,2026-03-13,Barbentane,Apt,179.30,Hilly stage,,,PUBLISHED
+7,2026-03-14,Nice,Auron Isola-Village,138.70,Mountain stage,,,PUBLISHED
+8,2026-03-15,Nice,Nice,145.00,Medium mountain stage,,,PUBLISHED

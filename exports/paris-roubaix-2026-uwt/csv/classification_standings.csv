@@ -1,0 +1,11 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Wout van Aert,Visma–Lease a Bike,BEL,19012,,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Tadej Pogačar,UAE Team Emirates XRG,SLO,,0,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Jasper Stuyven,Soudal–Quick-Step,BEL,,13,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Mathieu van der Poel,Alpecin–Premier Tech,NED,,15,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Christophe Laporte,Visma–Lease a Bike,FRA,,15,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Mick van Dijke,Red Bull–Bora–Hansgrohe,NED,,15,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Mads Pedersen,Lidl–Trek,DEN,,15,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Stefan Bissegger,Decathlon CMA CGM,SUI,,20,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Nils Politt,UAE Team Emirates XRG,GER,,156,
+1,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Mike Teunissen,XDS Astana Team,NED,,156,

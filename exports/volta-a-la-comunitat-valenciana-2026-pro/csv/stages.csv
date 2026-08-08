@@ -1,0 +1,6 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-02-04,Segorbe,Torreblanca,160.00,Hilly stage,,,PUBLISHED
+2,2026-02-05,Carlet,Alginet,17.00,Individual time trial,,,PUBLISHED
+3,2026-02-06,Orihuela,San Vicente del Raspeig,158.00,Mountain stage,,,PUBLISHED
+4,2026-02-07,La Nucía,Teulada Moraira,172.00,Hilly stage,,,PUBLISHED
+5,2026-02-08,Bétera,Valencia,94.70,Hilly stage,,,PUBLISHED

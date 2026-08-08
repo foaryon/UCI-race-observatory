@@ -1,0 +1,845 @@
+{
+ "report_version": "coverage-report/1.0.0",
+ "evidence_current_to": "2026-08-08T13:23:36+00:00",
+ "scope": {
+  "races_registered": 137,
+  "races_in_scope": 67,
+  "races_retained_out_of_scope": 70,
+  "stages_in_scope": 200,
+  "out_of_scope_because": [
+   {
+    "reason": ".Pro is outside the published scope: the product covers the UCI WorldTour, the UCI Women's WorldTour and the Elite Road World Championships. The evidence is retained.",
+    "races": 61
+   },
+   {
+    "reason": "Under-23 and Junior championship events are collected and not published; the product covers the Elite events only",
+    "races": 8
+   },
+   {
+    "reason": "this event has no single gender, and the published record has no way to say so without filing it under one",
+    "races": 1
+   }
+  ]
+ },
+ "evidence": {
+  "artifacts": 1321,
+  "observations": 2567,
+  "claims": 46819,
+  "claims_placed_to_a_race": 43273,
+  "vault_bytes": 5438113498,
+  "claims_by_authority_tier": {
+   "TIER_0_OFFICIAL": 36547,
+   "TIER_2_ENCYCLOPEDIC": 10271,
+   "TIER_A_ARCHIVE": 1
+  },
+  "evidence_coverage": {
+   "rows": 17644,
+   "rows_citing_a_claim": 17644,
+   "pct": 100.0,
+   "by_table": {
+    "core.entity_identifier_claims": {
+     "rows": 575,
+     "with_claim": 575
+    },
+    "core.participation_records": {
+     "rows": 184,
+     "with_claim": 184
+    },
+    "core.points_scales": {
+     "rows": 881,
+     "with_claim": 881
+    },
+    "core.races": {
+     "rows": 137,
+     "with_claim": 137
+    },
+    "core.stages": {
+     "rows": 320,
+     "with_claim": 320
+    },
+    "core.teams": {
+     "rows": 1797,
+     "with_claim": 1797
+    },
+    "core.tt_start_orders": {
+     "rows": 189,
+     "with_claim": 189
+    },
+    "geo.official_climbs": {
+     "rows": 73,
+     "with_claim": 73
+    },
+    "geo.official_waypoints": {
+     "rows": 144,
+     "with_claim": 144
+    },
+    "geo.route_timetables": {
+     "rows": 1509,
+     "with_claim": 1509
+    },
+    "results.classification_rows": {
+     "rows": 2858,
+     "with_claim": 2858
+    },
+    "results.jersey_by_stage": {
+     "rows": 105,
+     "with_claim": 105
+    },
+    "results.published_stage_results": {
+     "rows": 3409,
+     "with_claim": 3409
+    },
+    "results.stage_result_records": {
+     "rows": 5242,
+     "with_claim": 5242
+    },
+    "results.stage_winners": {
+     "rows": 221,
+     "with_claim": 221
+    }
+   }
+  },
+  "raw_field_coverage": {
+   "columns_declared": 640,
+   "columns_holding_a_value": 634,
+   "columns_entirely_null": 6,
+   "columns_in_empty_tables": 0,
+   "pct": 99.06,
+   "note": "Share of declared columns that hold at least one value, over the columns whose table has rows at all. A column in an empty table is not an unfilled field — there is nothing yet for it to be unfilled in — so it is counted separately rather than dragging the figure down."
+  },
+  "confidence_weighted_coverage": {
+   "rule": "high = 1.0, medium = 0.0, low = 0.0",
+   "why_this_rule": "Declared rather than tuned, and deliberately the harshest reading available: it counts only what the organiser itself published and gives no credit to geodata or encyclopedic corroboration. A weighting with nothing to adjust cannot be adjusted toward a flattering answer. The composition below is published so a reader who prefers another weighting can apply it to these same counts.",
+   "bands": {
+    "high": {
+     "rows": 11076,
+     "pct_of_cited": 62.77,
+     "sources": [
+      "TIER_0_OFFICIAL"
+     ]
+    },
+    "medium": {
+     "rows": 0,
+     "pct_of_cited": 0.0,
+     "sources": [
+      "TIER_1G_GEODATA"
+     ]
+    },
+    "low": {
+     "rows": 6568,
+     "pct_of_cited": 37.23,
+     "sources": [
+      "TIER_2_ENCYCLOPEDIC"
+     ]
+    }
+   },
+   "rows_with_a_claim_but_no_resolvable_source": 0,
+   "score_pct": 62.77
+  }
+ },
+ "coverage": {
+  "in_scope": {
+   "event_depth": {
+    "CALENDAR": 14,
+    "SCHEDULE": 5,
+    "RESULTS": 48
+   },
+   "spatial_depth": {
+    "NONE": 37,
+    "ROUTE": 29,
+    "ITINERARY": 1
+   }
+  },
+  "all": {
+   "event_depth": {
+    "CALENDAR": 39,
+    "SCHEDULE": 15,
+    "RESULTS": 83
+   },
+   "spatial_depth": {
+    "NONE": 101,
+    "ROUTE": 35,
+    "ITINERARY": 1
+   }
+  }
+ },
+ "spatial_coverage": {
+  "km_with_usable_geometry": 18169.0,
+  "km_in_scope": 24716.0,
+  "pct": 73.5,
+  "stages_publishing_a_distance": 171,
+  "note": "The denominator is itself incomplete: only 171 of 200 in-scope stages publish a distance. It is reported as measured rather than extrapolated.",
+  "held_but_uncountable": 16
+ },
+ "analytical_readiness": [
+  {
+   "analysis": "elevation_profile",
+   "requires": "usable geometry with sampled elevation",
+   "stages_ready": 136,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "gradient_series",
+   "requires": "profile plus a windowed gradient",
+   "stages_ready": 136,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "climb_detection",
+   "requires": "a gradient series on usable geometry",
+   "stages_ready": 102,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "climb_residual_vs_official",
+   "requires": "a detection matched to a published summit altitude",
+   "stages_ready": 13,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "passage_window",
+   "requires": "official schedules on a distance axis",
+   "stages_ready": 19,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "solar_position",
+   "requires": "a passage window and a position",
+   "stages_ready": 19,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "wind_components",
+   "requires": "a passage window, a position and a weather grid",
+   "stages_ready": 19,
+   "stages_in_scope": 200
+  },
+  {
+   "analysis": "derived_general_classification",
+   "requires": "Tier-0 per-stage times for every prior stage",
+   "stages_ready": 20,
+   "stages_in_scope": 200
+  }
+ ],
+ "completeness": {
+  "in_scope_with_results": 48,
+  "concluded_without_results": 1,
+  "not_yet_raced": 19,
+  "claim": "1 concluded in-scope races carry no result."
+ },
+ "quality_issues": [
+  {
+   "severity": "BLOCKER",
+   "rule": "route_length_mismatch",
+   "count": 19
+  },
+  {
+   "severity": "INFO",
+   "rule": "route_length_unverifiable",
+   "count": 18
+  },
+  {
+   "severity": "INFO",
+   "rule": "classification_snapshot_not_published",
+   "count": 7
+  },
+  {
+   "severity": "INFO",
+   "rule": "route_superseded_by_amendment",
+   "count": 2
+  },
+  {
+   "severity": "INFO",
+   "rule": "schedule_corroborated_by_parcours",
+   "count": 2
+  },
+  {
+   "severity": "INFO",
+   "rule": "race_status_disputed_by_organiser",
+   "count": 1
+  },
+  {
+   "severity": "WARNING",
+   "rule": "waypoint_position_disagreement",
+   "count": 32
+  },
+  {
+   "severity": "WARNING",
+   "rule": "route_jump_between_vertices",
+   "count": 15
+  },
+  {
+   "severity": "WARNING",
+   "rule": "profile_elevation_residual",
+   "count": 5
+  },
+  {
+   "severity": "WARNING",
+   "rule": "calendar_links_series_not_edition",
+   "count": 3
+  },
+  {
+   "severity": "WARNING",
+   "rule": "published_rank_sequence_broken",
+   "count": 1
+  },
+  {
+   "severity": "WARNING",
+   "rule": "stage_date_outside_race_window",
+   "count": 1
+  }
+ ],
+ "open_gaps_by_status": {
+  "UNAVAILABLE": 202,
+  "CONFLICTING": 27,
+  "ACCESS_RESTRICTED": 3,
+  "PENDING_MANUAL_REVIEW": 3,
+  "OUT_OF_SCOPE": 1
+ },
+ "research_exhausted_fields": 0,
+ "research_exhausted_note": "None. MASTER_GOAL §12 permits that mark only after a documented eight-step search, and no gap has been through it. Claiming exhaustion without the search would be the same kind of lie as inventing the data.",
+ "confidence_distribution": {
+  "verified": 47,
+  "provisional": 14,
+  "sourced": 6
+ },
+ "formulas": {
+  "registered": 17,
+  "without_declared_limits": 0
+ },
+ "sources": [
+  {
+   "id": "aso-arcgis",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "OPEN_API",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "aso-arcgis-gpx",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "OPEN_API",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "aso-storage",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "beneluxtour.eu",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "UNREACHABLE",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "cadelevansgreatoceanroadrace.com.au",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "CHALLENGE_WALLED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "climbfinder.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "copenhagensprint.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "copernicus-dem-glo30",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "Copernicus DEM licence (free use and redistribution, attribution required)",
+   "redistributable": true
+  },
+  {
+   "id": "cyclassics-hamburg.de",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "cyclingcols.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "TERMS_PROHIBITED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "cyclingprodata.com",
+   "tier": "TIER_1_SPECIALIST",
+   "access": "SUBRESOURCE_DISALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "cyclingsportpromotion.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "cyclingstage.com",
+   "tier": "TIER_1G_GEODATA",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "dataride.uci.ch",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "BROWSER_REQUIRED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "ddvl.eu",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "download.geofabrik.de",
+   "tier": "TIER_1G_GEODATA",
+   "access": "SUBRESOURCE_DISALLOWED",
+   "licence": "ODbL 1.0",
+   "redistributable": true
+  },
+  {
+   "id": "eschborn-frankfurt.de",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "firstcycling",
+   "tier": "TIER_1_SPECIALIST",
+   "access": "CHALLENGE_WALLED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "gent-wevelgem.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "gpcqm.ca",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "ign-geoplateforme",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "Etalab-2.0",
+   "redistributable": true
+  },
+  {
+   "id": "ilombardia.it",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "inflandersfieldsmiddelkerkewevelgem.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "itzulia-women.eus",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "itzulia.eus",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "klasikoa.eus",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "komoot.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "la-flamme-rouge.eu",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "CHALLENGE_WALLED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "la-fleche-wallonne-femmes.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "la-fleche-wallonne.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "lavuelta.es",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "lavueltafemenina.es",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "letour.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SUBRESOURCE_DISALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "letourfemmes.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "liege-bastogne-liege-femmes.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "liege-bastogne-liege.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "milanosanremo.it",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "nominatim.openstreetmap.org",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "ODbL 1.0",
+   "redistributable": true
+  },
+  {
+   "id": "omloophetnieuwsblad.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "open-meteo",
+   "tier": "TIER_1W_WEATHER",
+   "access": "OPEN_API",
+   "licence": "CC BY 4.0",
+   "redistributable": true
+  },
+  {
+   "id": "openrunner.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "osrm-demo",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "ODbL",
+   "redistributable": false
+  },
+  {
+   "id": "overpass-api.de",
+   "tier": "TIER_1G_GEODATA",
+   "access": "SUBRESOURCE_DISALLOWED",
+   "licence": "ODbL 1.0",
+   "redistributable": true
+  },
+  {
+   "id": "overpass.kumi.systems",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "ODbL 1.0",
+   "redistributable": true
+  },
+  {
+   "id": "overpass.private.coffee",
+   "tier": "TIER_1G_GEODATA",
+   "access": "OPEN_API",
+   "licence": "ODbL 1.0",
+   "redistributable": true
+  },
+  {
+   "id": "paris-nice.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "paris-roubaix-femmes.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "paris-roubaix.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "pco.bzh",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "procyclingstats",
+   "tier": "TIER_1_SPECIALIST",
+   "access": "CHALLENGE_WALLED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "ridewithgps.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SUBRESOURCE_DISALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "rondevanbrugge.be",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "shcmty.net",
+   "tier": "TIER_X_LAPSED_DOMAIN",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "strava.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "CREDENTIAL_REQUIRED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "swisstopo",
+   "tier": "TIER_1G_GEODATA",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "Open Government Data",
+   "redistributable": false
+  },
+  {
+   "id": "thealulatour.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "theuaetour.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "theuaetourwomen.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tour-auvergne-rhone-alpes.fr",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tour-of-britain.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tour-of-oman.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourdepologne.pl",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourderomandie.ch",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourderomandiefeminin.ch",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourdesuisse.ch",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourdownunder.com.au",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "tourofguangxi.com.cn",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "trobroleon.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "trofeobinda.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "uci.org",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "veloviewer.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "velowire.com",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "voltacatalunya.cat",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "vueltaburgos.com",
+   "tier": "TIER_0_OFFICIAL",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "All rights reserved",
+   "redistributable": false
+  },
+  {
+   "id": "web.archive.org",
+   "tier": "TIER_A_ARCHIVE",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "Varies with the archived publisher",
+   "redistributable": false
+  },
+  {
+   "id": "wikipedia",
+   "tier": "TIER_2_ENCYCLOPEDIC",
+   "access": "SERVER_RENDERED_ALLOWED",
+   "licence": "CC-BY-SA-4.0",
+   "redistributable": true
+  }
+ ],
+ "uncomputed_metrics": {}
+}

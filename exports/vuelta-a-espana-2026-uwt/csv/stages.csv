@@ -1,0 +1,22 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-08-22,Monaco,Monaco,9.00,Individual time trial,,,PUBLISHED
+2,2026-08-23,Monaco,Manosque (France),215.50,Hilly stage,,,PUBLISHED
+3,2026-08-24,Gruissan (France),Font Romeu (France),166.70,Medium-mountain stage,,,PUBLISHED
+4,2026-08-25,Andorra La Vella (Andorra),Andorra La Vella (Andorra),104.90,Mountain stage,,,PUBLISHED
+5,2026-08-26,Falset,Roquetes,171.10,Hilly stage,,,PUBLISHED
+6,2026-08-27,Alcossebre,Castellón,176.80,Medium-mountain stage,,,PUBLISHED
+7,2026-08-28,Vall d'Alba,Aramón Valdelinares,149.90,Mountain stage,,,PUBLISHED
+8,2026-08-29,Puçol,Xeraco,176.40,Flat stage,,,PUBLISHED
+9,2026-08-30,Villajoyosa,Alto de Aitana,187.50,Mountain stage,,,PUBLISHED
+10,2026-09-01,Alcaraz,Elche de la Sierra,184.50,Hilly stage,,,PUBLISHED
+11,2026-09-02,Cartagena,Lorca,156.10,Flat stage,,,PUBLISHED
+12,2026-09-03,Vera,Calar Alto,166.50,Mountain stage,,,PUBLISHED
+13,2026-09-04,Almuñécar,Loja,193.20,Medium-mountain stage,,,PUBLISHED
+14,2026-09-05,Jaén,Sierra de la Pandera,152.70,Mountain stage,,,PUBLISHED
+15,2026-09-06,Palma del Río,Córdoba,181.20,Medium-mountain stage,,,PUBLISHED
+16,2026-09-08,Cortegana,Palos de la Frontera,186.00,Flat stage,,,PUBLISHED
+17,2026-09-09,Dos Hermanas,Seville,189.20,Flat stage,,,PUBLISHED
+18,2026-09-10,El Puerto de Santa María,Jerez de la Frontera,32.50,Individual time trial,,,PUBLISHED
+19,2026-09-11,Vélez-Málaga,Peñas Blancas,205.10,Hilly stage,,,PUBLISHED
+20,2026-09-12,La Calahorra,Collado del Alguacil,187.00,Mountain stage,,,PUBLISHED
+21,2026-09-13,Granada,Granada,99.40,Flat stage,,,PUBLISHED

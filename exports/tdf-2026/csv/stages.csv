@@ -1,0 +1,22 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-07-04,Barcelone,Barcelone,19.60,Team Time-Trial,200,0.000,PUBLISHED
+2,2026-07-05,Tarragone,Barcelone,168.50,Hilly,2500,,PUBLISHED
+3,2026-07-06,Granollers,Les Angles,195.90,Mountain,3850,8.620,PUBLISHED
+4,2026-07-07,Carcassonne,Foix,181.90,Hilly,2700,8.273,PUBLISHED
+5,2026-07-08,Lannemezan,Pau,158.30,Flat,1600,5.322,PUBLISHED
+6,2026-07-09,Pau,Gavarnie-Gèdre,186.20,Mountain,4100,7.584,PUBLISHED
+7,2026-07-10,Hagetmau,Bordeaux,175.10,Flat,850,3.565,PUBLISHED
+8,2026-07-11,Périgueux,Bergerac,180.40,Flat,1150,5.926,PUBLISHED
+9,2026-07-12,Malemort,Ussel,154.60,Hilly,3300,,PUBLISHED
+10,2026-07-14,Aurillac,Le Lioran,166.60,Mountain,3800,7.304,PUBLISHED
+11,2026-07-15,Vichy,Nevers,161.30,Flat,1400,7.833,PUBLISHED
+12,2026-07-16,Circuit Nevers Magny-Cours,Chalon-sur-Saône,179.10,Flat,1800,5.002,PUBLISHED
+13,2026-07-17,Dole,Belfort,205.80,Hilly,2400,12.293,PUBLISHED
+14,2026-07-18,Mulhouse,Le Markstein Fellering,155.30,Mountain,3800,,PUBLISHED
+15,2026-07-19,Champagnole,Plateau de Solaison,183.90,Mountain,3950,3.603,PUBLISHED
+16,2026-07-21,Évian-les-Bains,Thonon-les-Bains,26.10,Individual time-trial,500,0.000,PUBLISHED
+17,2026-07-22,Chambery,Voiron,174.70,Flat,2200,8.565,PUBLISHED
+18,2026-07-23,Voiron,Orcières-Merlette,185.20,Mountain,3900,10.438,PUBLISHED
+19,2026-07-24,Gap,Alpe d'Huez,127.90,Mountain,3500,5.470,PUBLISHED
+20,2026-07-25,Le Bourg d'Oisans,Alpe d'Huez,170.90,Mountain,5450,6.390,PUBLISHED
+21,2026-07-26,Thoiry,Paris Champs-Élysées,88.70,Flat,1000,,PUBLISHED

@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Juan Ayuso,Lidl–Trek,ESP,57072,,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Paul Seixas,Decathlon CMA CGM,FRA,,14,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,João Almeida,UAE Team Emirates XRG,POR,,59,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Oscar Onley,INEOS Grenadiers,GBR,,82,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Kévin Vauquelin,INEOS Grenadiers,FRA,,100,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Matthew Riccitello,Decathlon CMA CGM,USA,,113,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Daniel Martínez,Red Bull–Bora–Hansgrohe,COL,,113,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,135,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Thymen Arensman,INEOS Grenadiers,NED,,138,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Yannis Voisard,Tudor Pro Cycling Team,SUI,,155,
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Tomás Contte,Aviludo–Louletano–Loulé,ARG,,,18
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Juan Ayuso,Lidl–Trek,ESP,,,14
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Paul Seixas,Decathlon CMA CGM,FRA,,,13
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Maximilian Schachmann,Soudal–Quick-Step,GER,,,9
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,João Almeida,UAE Team Emirates XRG,POR,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Oscar Onley,INEOS Grenadiers,GBR,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Julian Alaphilippe,Tudor Pro Cycling Team,FRA,,,7
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Nicolás Tivani,Aviludo–Louletano–Loulé,ARG,,,4
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,,3
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Tobias Bayer,Alpecin–Premier Tech,AUT,,,3
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Paul Magnier,Soudal–Quick-Step,FRA,,,53
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Juan Ayuso,Lidl–Trek,ESP,,,50
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Paul Seixas,Decathlon CMA CGM,FRA,,,41
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Jordi Meeus,Red Bull–Bora–Hansgrohe,BEL,,,40
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Oscar Onley,INEOS Grenadiers,GBR,,,33
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,6,João Almeida,UAE Team Emirates XRG,POR,,,29
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Matthew Riccitello,Decathlon CMA CGM,USA,,,18
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Pavel Bittner,Team Picnic–PostNL,CZE,,,16
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Hugo Nunes,Credibom / LA Alumínios / Marcos Car,POR,,,15
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Jasper Philipsen,Alpecin–Premier Tech,BEL,,,14
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,INEOS Grenadiers,,171475,,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,UAE Team Emirates XRG,,,621,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Lidl–Trek,,,648,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Decathlon CMA CGM,,,660,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Pinarello–Q36.5 Pro Cycling Team,,,682,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Tudor Pro Cycling Team,,,727,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Red Bull–Bora–Hansgrohe,,,825,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,EF Education–EasyPost,,,1018,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Team Jayco–AlUla,,,1048,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Lotto–Intermarché,,,1355,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,57086,,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Juan Guillermo Martínez,Team Picnic–PostNL,COL,,258,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Héctor Álvarez,Lidl–Trek,ESP,,263,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Jarno Widar,Lotto–Intermarché,BEL,,323,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Duarte Domingues,Credibom / LA Alumínios / Marcos Car,POR,,866,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Gonçalo Tavares,Efapel Cycling,POR,,1040,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Rafael Barbas,Tavfer–Ovos Matinados–Mortágua,POR,,1479,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Paul Magnier,Soudal–Quick-Step,FRA,,1512,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Jens Verbrugghe,NSN Cycling Team,BEL,,1787,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Pablo Lospitao,Caja Rural–Seguros RGA,ESP,,1883,

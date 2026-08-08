@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Jonas Vingegaard,Visma–Lease a Bike,DEN,91511,,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Daniel Martínez,Red Bull–Bora–Hansgrohe,COL,,263,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Georg Steinhauser,EF Education–EasyPost,GER,,367,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Kévin Vauquelin,INEOS Grenadiers,FRA,,384,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Lenny Martinez,Team Bahrain Victorious,FRA,,451,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Marc Soler,UAE Team Emirates XRG,ESP,,549,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Ion Izagirre,Cofidis,ESP,,559,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Mathys Rondel,Tudor Pro Cycling Team,FRA,,623,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Alex Baudin,EF Education–EasyPost,FRA,,633,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Harold Tejada,XDS Astana Team,COL,,700,
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,44
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Valentin Paret-Peintre,Soudal–Quick-Step,FRA,,,27
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Casper Pedersen,Soudal–Quick-Step,DEN,,,18
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Mathis Le Berre,Team TotalEnergies,FRA,,,14
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Lenny Martinez,Team Bahrain Victorious,FRA,,,12
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Harold Tejada,XDS Astana Team,COL,,,11
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Mick van Dijke,Red Bull–Bora–Hansgrohe,NED,,,10
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,,9
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Igor Arrieta,UAE Team Emirates XRG,ESP,,,8
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Daniel Martínez,Red Bull–Bora–Hansgrohe,COL,,,8
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,58
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Dorian Godon,INEOS Grenadiers,FRA,,,55
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Harold Tejada,XDS Astana Team,COL,,,45
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Laurence Pithie,Red Bull–Bora–Hansgrohe,NZL,,,44
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Lenny Martinez,Team Bahrain Victorious,FRA,,,37
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Kévin Vauquelin,INEOS Grenadiers,FRA,,,33
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Vito Braet,Lotto–Intermarché,BEL,,,32
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Lewis Askey,NSN Cycling Team,GBR,,,32
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Daniel Martínez,Red Bull–Bora–Hansgrohe,COL,,,23
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Jasper Stuyven,Soudal–Quick-Step,BEL,,,23
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,INEOS Grenadiers,,277214,,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Red Bull–Bora–Hansgrohe,,,205,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Visma–Lease a Bike,,,279,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,EF Education–EasyPost,,,1415,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Groupama–FDJ United,,,1709,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,UAE Team Emirates XRG,,,2141,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,XDS Astana Team,,,2670,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Team TotalEnergies,,,3327,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Tudor Pro Cycling Team,,,3342,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Soudal–Quick-Step,,,4582,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Georg Steinhauser,EF Education–EasyPost,GER,91878,,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Kévin Vauquelin,INEOS Grenadiers,FRA,,17,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Lenny Martinez,Team Bahrain Victorious,FRA,,84,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Mathys Rondel,Tudor Pro Cycling Team,FRA,,256,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Alex Baudin,EF Education–EasyPost,FRA,,266,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Mattéo Vercher,Team TotalEnergies,FRA,,422,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Valentin Paret-Peintre,Soudal–Quick-Step,FRA,,1207,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Nicolas Vinokurov,XDS Astana Team,KAZ,,2154,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Carlos Rodríguez,INEOS Grenadiers,ESP,,2224,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Joshua Tarling,INEOS Grenadiers,GBR,,2270,

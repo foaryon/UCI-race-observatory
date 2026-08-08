@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,100934,,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Matteo Jorgenson,Visma–Lease a Bike,USA,,40,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,42,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Tobias Halland Johannessen,Uno-X Mobility,NOR,,74,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Primož Roglič,Red Bull–Bora–Hansgrohe,SLO,,81,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Giulio Ciccone,Lidl–Trek,ITA,,86,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Santiago Buitrago,Team Bahrain Victorious,COL,,109,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Ben Healy,EF Education–EasyPost,IRL,,115,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Magnus Sheffield,INEOS Grenadiers,USA,,122,
+7,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Alessandro Pinarello,NSN Cycling Team,ITA,,126,
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Diego Pablo Sevilla,Team Polti VisitMalta,ESP,,,33
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Joan Bou,Caja Rural–Seguros RGA,ESP,,,21
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Isaac del Toro,UAE Team Emirates XRG,MEX,,,18
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Timo Kielich,Visma–Lease a Bike,BEL,,,17
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Michael Valgren,EF Education–EasyPost,DEN,,,15
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Jack Haig,INEOS Grenadiers,AUS,,,14
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Mathieu van der Poel,Alpecin–Premier Tech,NED,,,13
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Gregor Mühlberger,Decathlon CMA CGM,AUT,,,11
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Filippo Ganna,INEOS Grenadiers,ITA,,,11
+7,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Clément Braz Afonso,Groupama–FDJ United,FRA,,,10
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,,,36
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Tobias Halland Johannessen,Uno-X Mobility,NOR,,,34
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,,30
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Mathieu van der Poel,Alpecin–Premier Tech,NED,,,24
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Matteo Jorgenson,Visma–Lease a Bike,USA,,,21
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Jonathan Milan,Lidl–Trek,ITA,,,19
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Filippo Ganna,INEOS Grenadiers,ITA,,,17
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Tobias Lund Andresen,Decathlon CMA CGM,DEN,,,17
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Giulio Ciccone,Lidl–Trek,ITA,,,16
+7,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Sam Welsford,INEOS Grenadiers,AUS,,,15
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Red Bull–Bora–Hansgrohe,,303546,,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,EF Education–EasyPost,,,497,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,UAE Team Emirates XRG,,,622,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Groupama–FDJ United,,,823,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Team Bahrain Victorious,,,827,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,INEOS Grenadiers,,,852,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Team Jayco–AlUla,,,1087,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Uno-X Mobility,,,2039,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Movistar Team,,,2115,
+7,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Visma–Lease a Bike,,,2500,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,100934,,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,42,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Magnus Sheffield,INEOS Grenadiers,USA,,122,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Alessandro Pinarello,NSN Cycling Team,ITA,,126,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Guillermo Thomas Silva,XDS Astana Team,URU,,835,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Brieuc Rolland,Groupama–FDJ United,FRA,,898,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Ludovico Crescioli,Team Polti VisitMalta,ITA,,1327,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Edoardo Zambanini,Team Bahrain Victorious,ITA,,1343,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Jan Christen,UAE Team Emirates XRG,SUI,,1444,
+7,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Antonio Tiberi,Team Bahrain Victorious,ITA,,1953,

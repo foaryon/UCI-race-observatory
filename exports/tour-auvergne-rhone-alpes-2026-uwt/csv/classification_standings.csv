@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,106505,,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Luke Tuckwell,Red Bull–Bora–Hansgrohe,AUS,,54,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Juan Ayuso,Lidl–Trek,ESP,,77,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Matteo Jorgenson,Visma–Lease a Bike,USA,,96,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Tobias Halland Johannessen,Uno-X Mobility,NOR,,106,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Mattias Skjelmose,Lidl–Trek,DEN,,161,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Cian Uijtdebroeks,Movistar Team,BEL,,191,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Cristián Rodríguez,XDS Astana Team,ESP,,195,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,José Félix Parra,Caja Rural–Seguros RGA,ESP,,385,
+8,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Guillaume Martin,Groupama–FDJ United,FRA,,441,
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Clément Braz Afonso,Groupama–FDJ United,FRA,,,71
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Isaac del Toro,UAE Team Emirates XRG,MEX,,,36
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Carlos Rodríguez,Netcompany INEOS,ESP,,,32
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Tobias Halland Johannessen,Uno-X Mobility,NOR,,,31
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Laurens De Plus,Netcompany INEOS,BEL,,,30
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Valentin Paret-Peintre,Soudal–Quick-Step,FRA,,,27
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Juan Ayuso,Lidl–Trek,ESP,,,25
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Clément Berthet,Groupama–FDJ United,FRA,,,20
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Harold Tejada,XDS Astana Team,COL,,,16
+8,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Alex Baudin,EF Education–EasyPost,FRA,,,14
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Nadav Raisberg,NSN Cycling Team,ISR,,,62
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Raúl García Pierna,Movistar Team,ESP,,,46
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Henri-François Renard-Haquin,Team Picnic–PostNL,FRA,,,38
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Jordan Jegat,Team TotalEnergies,FRA,,,34
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Tobias Halland Johannessen,Uno-X Mobility,NOR,,,32
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Isaac del Toro,UAE Team Emirates XRG,MEX,,,30
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Maxim Van Gils,Red Bull–Bora–Hansgrohe,BEL,,,25
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Quinn Simmons,Lidl–Trek,USA,,,25
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Anthon Charmig,Uno-X Mobility,DEN,,,25
+8,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Juan Ayuso,Lidl–Trek,ESP,,,24
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Visma–Lease a Bike,,321444,,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Lidl–Trek,,,29,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Groupama–FDJ United,,,140,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,UAE Team Emirates XRG,,,974,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,XDS Astana Team,,,1235,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Uno-X Mobility,,,2231,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Netcompany INEOS,,,2250,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Red Bull–Bora–Hansgrohe,,,2784,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,EF Education–EasyPost,,,2864,
+8,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Decathlon CMA CGM,,,3048,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Isaac del Toro,UAE Team Emirates XRG,MEX,106505,,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Luke Tuckwell,Red Bull–Bora–Hansgrohe,AUS,,54,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Juan Ayuso,Lidl–Trek,ESP,,77,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Cian Uijtdebroeks,Movistar Team,BEL,,191,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Jan Castellon,Caja Rural–Seguros RGA,ESP,,586,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Alex Baudin,EF Education–EasyPost,FRA,,667,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Ramses Debruyne,Alpecin–Premier Tech,BEL,,711,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Lars Craps,Lotto–Intermarché,BEL,,747,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Kévin Vauquelin,Netcompany INEOS,FRA,,763,
+8,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Ben Tulett,Visma–Lease a Bike,GBR,,868,

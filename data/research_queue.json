@@ -1,0 +1,433 @@
+{
+ "evidence_current_to": "2026-08-08",
+ "ladder": {
+  "1": "primary official sources",
+  "2": "organiser technical documents, roadbooks, route pages",
+  "3": "UCI references",
+  "4": "credible public sources for leads and corroboration",
+  "5": "eligible open data and archives",
+  "6": "independent reconstruction or derivation where methodologically valid"
+ },
+ "method": "Priority is §24's formula with every input read from the database: coverage_gap is the stage count, event_importance is the UCI class, source_availability_likelihood falls as ladder steps are exhausted without result. The factors are declared constants, not tuned weights, and the number orders a queue rather than measuring anything.",
+ "open_gaps": 236,
+ "open_in_scope": 104,
+ "research_exhausted": 0,
+ "queue": [
+  {
+   "race": "giro-ditalia-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 63.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "vuelta-a-espana-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 56.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "Recheck after 2026-08-22: the race is on 2026-08-22 and organisers publish routes closer to the date. §12 step 5: search eligible open data and archives.",
+   "recheck_after": "2026-08-22"
+  },
+  {
+   "race": "giro-ditalia-women-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 27.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-de-france-femmes-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 24.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "Recheck after 2026-08-09: the race started on 2026-08-01 and runs to 2026-08-09, which is when a route that was never published in advance appears. §12 step 5: search eligible open data and archives.",
+   "recheck_after": "2026-08-09"
+  },
+  {
+   "race": "paris-nice-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 21.33,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-auvergne-rhone-alpes-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 21.33,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tirreno-adriatico-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 21.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "la-vuelta-femenina-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 18.67,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "uae-tour-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 18.67,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "volta-a-catalunya-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 18.67,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-de-romandie-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 16.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-down-under-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 16.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-of-the-basque-country-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 16.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-de-suisse-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 13.33,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "tour-de-suisse-women-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 13.33,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "uae-tour-women-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 10.67,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "vuelta-a-burgos-feminas-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 10.67,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "itzulia-women-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 8.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "womens-tour-down-under-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 8.0,
+   "searched_steps": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 5: search eligible open data and archives.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "amstel-gold-race-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "amstel-gold-race-2026-wwt",
+   "class": ".WWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "clasica-de-san-sebastian-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "e3-saxo-classic-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "giro-ditalia-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "stage 1 route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  },
+  {
+   "race": "giro-ditalia-2026-uwt",
+   "class": ".UWT",
+   "in_scope": true,
+   "field_family": "§5.3",
+   "subject": "stage 10 route geometry",
+   "priority": 3.0,
+   "searched_steps": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "next_action": "§12 step 2: search organiser technical documents, roadbooks, route pages.",
+   "recheck_after": "2027-02-04"
+  }
+ ]
+}

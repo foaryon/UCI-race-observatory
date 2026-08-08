@@ -1,0 +1,1 @@
+stage_number,km_from_start,waypoint_label,elevation_by_distance_m,window_start,window_end,window_width_s,sun_elevation_deg,sun_azimuth_deg,temperature_c,wind_speed_ms,wind_dir_deg,air_density_kgm3,headwind_ms,crosswind_ms,exposure_class

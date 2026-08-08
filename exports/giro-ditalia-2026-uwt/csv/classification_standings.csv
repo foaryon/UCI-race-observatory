@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Jonas Vingegaard,Visma–Lease a Bike,DEN,300171,,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Felix Gall,Decathlon CMA CGM,AUT,,322,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Jai Hindley,Red Bull–Bora–Hansgrohe,AUS,,385,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Thymen Arensman,Netcompany INEOS,NED,,422,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Derek Gee-West,Lidl–Trek,CAN,,476,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Afonso Eulálio,Team Bahrain Victorious,POR,,579,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Michael Storer,Tudor Pro Cycling Team,AUS,,613,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Davide Piganzoli,Visma–Lease a Bike,ITA,,652,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Damiano Caruso,Team Bahrain Victorious,ITA,,684,
+21,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Egan Bernal,Netcompany INEOS,COL,,774,
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Giulio Ciccone,Lidl–Trek,ITA,,,277
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,266
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Einer Rubio,Movistar Team,COL,,,164
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Felix Gall,Decathlon CMA CGM,AUT,,,124
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Jardi Christiaan van der Lee,EF Education–EasyPost,NED,,,108
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Jai Hindley,Red Bull–Bora–Hansgrohe,AUS,,,65
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Diego Pablo Sevilla,Team Polti VisitMalta,ESP,,,63
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Igor Arrieta,UAE Team Emirates XRG,ESP,,,55
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Derek Gee-West,Lidl–Trek,CAN,,,54
+21,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Jack Haig,Netcompany INEOS,AUS,,,40
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Paul Magnier,Soudal–Quick-Step,FRA,,,200
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Jonathan Milan,Lidl–Trek,ITA,,,153
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Guillermo Thomas Silva,XDS Astana Team,URU,,,99
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Andreas Leknessund,Uno-X Mobility,NOR,,,87
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Jonas Vingegaard,Visma–Lease a Bike,DEN,,,81
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Jasper Stuyven,Soudal–Quick-Step,BEL,,,75
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Mattia Bais,Team Polti VisitMalta,ITA,,,74
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Giulio Ciccone,Lidl–Trek,ITA,,,69
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Felix Gall,Decathlon CMA CGM,AUT,,,67
+21,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Manuele Tarozzi,Bardiani–CSF 7 Saber,ITA,,,66
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Visma–Lease a Bike,,902561,,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,Netcompany INEOS,,,2407,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Red Bull–Bora–Hansgrohe,,,2907,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,Tudor Pro Cycling Team,,,3867,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Decathlon CMA CGM,,,5099,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Pinarello–Q36.5 Pro Cycling Team,,,6978,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Team Bahrain Victorious,,,8012,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Lidl–Trek,,,11001,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Movistar Team,,,11108,
+21,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Team Jayco–AlUla,,,12229,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Afonso Eulálio,Team Bahrain Victorious,POR,300750,,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Davide Piganzoli,Visma–Lease a Bike,ITA,,73,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Mathys Rondel,Tudor Pro Cycling Team,FRA,,333,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Johannes Kulset,Uno-X Mobility,NOR,,1487,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Igor Arrieta,UAE Team Emirates XRG,ESP,,2771,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,2917,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Embret Svestad-Bårdseng,Netcompany INEOS,NOR,,3840,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Ludovico Crescioli,Team Polti VisitMalta,ITA,,4398,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Gianmarco Garofoli,Soudal–Quick-Step,ITA,,5364,
+21,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Johannes Staune-Mittet,Decathlon CMA CGM,NOR,,6282,

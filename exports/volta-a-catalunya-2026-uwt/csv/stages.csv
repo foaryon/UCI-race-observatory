@@ -1,0 +1,8 @@
+stage_number,stage_date,start_location,finish_location,distance_km,stage_type,elevation_gain_m,neutralised_km,status
+1,2026-03-23,Sant Feliu de Guíxols,Sant Feliu de Guíxols,172.60,Flat stage,,,PUBLISHED
+2,2026-03-24,Figueres,Banyoles,167.40,Flat stage,,,PUBLISHED
+3,2026-03-25,Costa Daurada ( Mont-roig del Camp ),Costa Daurada ( Vila-seca ),159.50,Flat stage,,,PUBLISHED
+4,2026-03-26,Mataró,Vallter Camprodon,173.00,Mountain stage,,,PUBLISHED
+5,2026-03-27,La Seu d'Urgell,La Molina (Coll de Pal),155.30,Mountain stage,,,PUBLISHED
+6,2026-03-28,Berga,Queralt,158.20,Mountain stage,,,PUBLISHED
+7,2026-03-29,Barcelona,Barcelona,95.10,Hilly stage,,,PUBLISHED

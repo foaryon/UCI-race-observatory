@@ -1,0 +1,2 @@
+rule_id,severity,subject_kind,subject_label,detail
+route_length_unverifiable,INFO,route_version,stage 1,"route line is 156.963 km and no official distance is held for this stage, so the length was not cross-checked. The geometry is published as observed; its agreement with the organiser is unmeasured, not confirmed."

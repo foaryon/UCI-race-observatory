@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,72455,,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,150,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Tobias Halland Johannessen,Uno-X Mobility,NOR,,153,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Ion Izagirre,Cofidis,ESP,,230,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Clément Champoussin,XDS Astana Team,FRA,,283,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Pello Bilbao,Team Bahrain Victorious,ESP,,303,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Javier Romo,Movistar Team,ESP,,305,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Igor Arrieta,UAE Team Emirates XRG,ESP,,325,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Alex Baudin,EF Education–EasyPost,FRA,,341,
+6,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Kévin Vauquelin,INEOS Grenadiers,FRA,,453,
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,,,32
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Marc Soler,UAE Team Emirates XRG,ESP,,,31
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Anders Halland Johannessen,Uno-X Mobility,NOR,,,19
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Mattias Skjelmose,Lidl–Trek,DEN,,,18
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,,18
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Ben Healy,EF Education–EasyPost,IRL,,,17
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Igor Arrieta,UAE Team Emirates XRG,ESP,,,13
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Kévin Vauquelin,INEOS Grenadiers,FRA,,,11
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Tobias Halland Johannessen,Uno-X Mobility,NOR,,,10
+6,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Javier Romo,Movistar Team,ESP,,,9
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,,,87
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Tobias Halland Johannessen,Uno-X Mobility,NOR,,,49
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Florian Lipowitz,Red Bull–Bora–Hansgrohe,GER,,,38
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Igor Arrieta,UAE Team Emirates XRG,ESP,,,36
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Ion Izagirre,Cofidis,ESP,,,35
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Mattias Skjelmose,Lidl–Trek,DEN,,,35
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Andrew August,INEOS Grenadiers,USA,,,34
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Kévin Vauquelin,INEOS Grenadiers,FRA,,,34
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Primož Roglič,Red Bull–Bora–Hansgrohe,SLO,,,34
+6,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Guillaume Martin,Groupama–FDJ United,FRA,,,25
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Movistar Team,,218991,,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,XDS Astana Team,,,501,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,EF Education–EasyPost,,,848,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,UAE Team Emirates XRG,,,1901,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Decathlon CMA CGM,,,2216,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Visma–Lease a Bike,,,2953,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Cofidis,,,3483,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Uno-X Mobility,,,3627,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,INEOS Grenadiers,,,4410,
+6,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,Caja Rural–Seguros RGA,,,4455,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Paul Seixas,Decathlon CMA CGM,FRA,72455,,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Markel Beloki,EF Education–EasyPost,ESP,,1119,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Adrià Pericas,UAE Team Emirates XRG,ESP,,2800,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Johannes Kulset,Uno-X Mobility,NOR,,3047,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Michael Leonard,EF Education–EasyPost,CAN,,3274,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Peter Øxenberg,INEOS Grenadiers,DEN,,3316,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Tim Rex,Visma–Lease a Bike,BEL,,3643,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Andrew August,INEOS Grenadiers,USA,,3967,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Maxime Decomble,Groupama–FDJ United,FRA,,4316,
+6,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Bjoern Koerdt,Team Picnic–PostNL,GBR,,4644,

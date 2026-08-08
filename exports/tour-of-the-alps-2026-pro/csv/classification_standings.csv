@@ -1,0 +1,51 @@
+after_stage,classification,authority_tier,is_partial,rank,rider_label,team_label,nationality,time_s,gap_s,points
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,1,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,68512,,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,2,Egan Bernal,INEOS Grenadiers,COL,,40,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,3,Thymen Arensman,INEOS Grenadiers,NED,,50,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,4,Michael Storer,Tudor Pro Cycling Team,AUS,,69,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,5,Mathys Rondel,Tudor Pro Cycling Team,FRA,,105,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,6,Jakob Omrzel,Team Bahrain Victorious,SLO,,115,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,7,Chris Harper,Pinarello–Q36.5 Pro Cycling Team,AUS,,115,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,8,Ben O'Connor,Team Jayco–AlUla,AUS,,119,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,9,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,171,
+5,GENERAL,TIER_2_ENCYCLOPEDIC,True,10,Giovanni Aleotti,Red Bull–Bora–Hansgrohe,ITA,,191,
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,1,Lennart Jasch,Tudor Pro Cycling Team,GER,,,22
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,2,Sean Quinn,EF Education–EasyPost,USA,,,20
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,3,Darren Rafferty,EF Education–EasyPost,IRL,,,16
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,4,Juan Felipe Rodriguez,EF Education–EasyPost,COL,,,14
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,5,Sam Oomen,Lidl–Trek,NED,,,12
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,6,Davide Bais,Team Polti VisitMalta,ITA,,,11
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,7,Tom Pidcock,Pinarello–Q36.5 Pro Cycling Team,GBR,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,8,Rainer Kepplinger,Team Bahrain Victorious,AUT,,,8
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,9,Peter Øxenberg,INEOS Grenadiers,DEN,,,6
+5,MOUNTAINS,TIER_2_ENCYCLOPEDIC,True,10,Ben Zwiehoff,Red Bull–Bora–Hansgrohe,GER,,,6
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,1,Tommaso Dati,Team Ukyo,ITA,,,53
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,2,Tom Pidcock,Pinarello–Q36.5 Pro Cycling Team,GBR,,,53
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,3,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,,,50
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,4,Lennart Jasch,Tudor Pro Cycling Team,GER,,,39
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,5,Egan Bernal,INEOS Grenadiers,COL,,,39
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,6,Thymen Arensman,INEOS Grenadiers,NED,,,32
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,7,Sean Quinn,EF Education–EasyPost,USA,,,23
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,8,Florian Stork,Tudor Pro Cycling Team,GER,,,22
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,9,Sam Oomen,Lidl–Trek,NED,,,20
+5,POINTS,TIER_2_ENCYCLOPEDIC,True,10,Aleksandr Vlasov,Red Bull–Bora–Hansgrohe,,,,18
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,1,,Red Bull–Bora–Hansgrohe,,205906,,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,2,,INEOS Grenadiers,,,38,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,3,,Tudor Pro Cycling Team,,,379,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,4,,EF Education–EasyPost,,,620,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,5,,Bardiani–CSF 7 Saber,,,997,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,6,,Team Jayco–AlUla,,,1007,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,7,,Pinarello–Q36.5 Pro Cycling Team,,,1583,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,8,,Team Picnic–PostNL,,,1597,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,9,,Lidl–Trek,,,1674,
+5,TEAM,TIER_2_ENCYCLOPEDIC,True,10,,MBH Bank CSB Telecom Fort,,,2374,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,1,Giulio Pellizzari,Red Bull–Bora–Hansgrohe,ITA,68512,,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,2,Mathys Rondel,Tudor Pro Cycling Team,FRA,,105,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,3,Jakob Omrzel,Team Bahrain Victorious,SLO,,115,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,4,Juan Felipe Rodriguez,EF Education–EasyPost,COL,,427,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,5,Darren Rafferty,EF Education–EasyPost,IRL,,529,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,6,Luca Paletti,Bardiani–CSF 7 Saber,ITA,,544,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,7,Filip Gruszczyński,MBH Bank CSB Telecom Fort,POL,,1097,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,8,Peter Øxenberg,INEOS Grenadiers,DEN,,1279,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,9,Matteo Vanhuffel,Team Picnic–PostNL,BEL,,1435,
+5,YOUTH,TIER_2_ENCYCLOPEDIC,True,10,Finlay Pickering,Team Bahrain Victorious,GBR,,1518,

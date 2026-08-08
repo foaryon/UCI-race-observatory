@@ -1,0 +1,566 @@
+{
+  "export_version": "export-center/1.0.0",
+  "evidence_current_to": "2026-07-29T17:04:27+00:00",
+  "race": "Giro d'Italia Women 2026",
+  "datasets": {
+    "stages": {
+      "rows": 9,
+      "columns": [
+        "stage_number",
+        "stage_date",
+        "start_location",
+        "finish_location",
+        "distance_km",
+        "stage_type",
+        "elevation_gain_m",
+        "neutralised_km",
+        "status"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ],
+      "note": "distance_km is the current official figure. Stage 21 was shortened from 133 km to 89 on 25 July 2026; rows describing the withdrawn course are retained in other datasets and carry status = CONFLICTING."
+    },
+    "stage_results": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "rank",
+        "rider",
+        "bib",
+        "team",
+        "finish_time_s",
+        "gap_s",
+        "bonus_s",
+        "penalty_s",
+        "status"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "general_classification": {
+      "rows": 0,
+      "columns": [
+        "after_stage",
+        "rank",
+        "rider",
+        "cumulative_s",
+        "gap_s",
+        "stages_completed",
+        "status"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": "general_classification",
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "startlist": {
+      "rows": 0,
+      "columns": [
+        "bib",
+        "rider",
+        "team"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "roadbook_itinerary": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "sequence",
+        "waypoint_label",
+        "road_ref",
+        "km_from_start",
+        "km_to_finish",
+        "caravan_local",
+        "sched_fast_local",
+        "sched_mid_local",
+        "sched_slow_local",
+        "row_kind",
+        "schedule_basis",
+        "status"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "official_climbs": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "name",
+        "category",
+        "summit_km",
+        "summit_elev_m",
+        "length_km",
+        "avg_gradient_pct",
+        "status"
+      ],
+      "sources": [
+        "letour.fr"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "participation": {
+      "rows": 184,
+      "columns": [
+        "rider",
+        "bib",
+        "team",
+        "outcome",
+        "published_code",
+        "exit_stage_number",
+        "last_classified_stage"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "official_course_points": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "kind",
+        "category",
+        "label",
+        "km_from_start",
+        "lon",
+        "lat",
+        "altitude_m",
+        "climb_length_km",
+        "avg_gradient_pct",
+        "final_straight_m",
+        "road_width_m",
+        "offset_source",
+        "status",
+        "description"
+      ],
+      "sources": [
+        "aso-arcgis"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "climb_statement_crosscheck": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "roadbook_name",
+        "roadbook_category",
+        "point_category",
+        "altitude_m",
+        "climb_length_km",
+        "roadbook_km",
+        "point_km",
+        "position_residual_km",
+        "roadbook_gradient_pct",
+        "siting_note_gradient_pct",
+        "gradient_residual_pct",
+        "gradients_disagree",
+        "not_in_roadbook_climb_table"
+      ],
+      "sources": [
+        "letour.fr",
+        "aso-arcgis"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "route_provenance": {
+      "rows": 9,
+      "columns": [
+        "stage_number",
+        "source_id",
+        "length_km",
+        "official_km",
+        "length_delta_km",
+        "neutralised_km",
+        "assembled_parts",
+        "oriented",
+        "finish_residual_m",
+        "km0_residual_m",
+        "verdict"
+      ],
+      "sources": [
+        "aso-arcgis",
+        "cyclingstage.com"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "classification_standings": {
+      "rows": 50,
+      "columns": [
+        "after_stage",
+        "classification",
+        "authority_tier",
+        "is_partial",
+        "rank",
+        "rider_label",
+        "team_label",
+        "nationality",
+        "time_s",
+        "gap_s",
+        "points"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "jersey_history": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "classification",
+        "holder_label"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "road_and_sky": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "km_from_start",
+        "waypoint_label",
+        "elevation_by_distance_m",
+        "window_start",
+        "window_end",
+        "window_width_s",
+        "sun_elevation_deg",
+        "sun_azimuth_deg",
+        "temperature_c",
+        "wind_speed_ms",
+        "wind_dir_deg",
+        "air_density_kgm3",
+        "headwind_ms",
+        "crosswind_ms",
+        "exposure_class"
+      ],
+      "sources": [
+        "letour.fr",
+        "IGN_RGE_ALTI",
+        "COPERNICUS_GLO90"
+      ],
+      "derived_from_formula": "passage_window,solar_position,wind_components",
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "elevation_envelope": {
+      "rows": 0,
+      "columns": [
+        "stage_number",
+        "km_from_start",
+        "lon",
+        "lat",
+        "dem_count",
+        "elevation_min_m",
+        "elevation_max_m",
+        "elevation_mean_m",
+        "spread_m",
+        "sources"
+      ],
+      "sources": [
+        "IGN_RGE_ALTI",
+        "COPERNICUS_GLO90"
+      ],
+      "derived_from_formula": "dem_ensemble_spread",
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "quality_issues": {
+      "rows": 1,
+      "columns": [
+        "rule_id",
+        "severity",
+        "subject_kind",
+        "subject_label",
+        "detail"
+      ],
+      "sources": [],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ]
+    },
+    "gap_register": {
+      "rows": 8,
+      "columns": [
+        "field_family",
+        "subject",
+        "status",
+        "reason",
+        "blocking_source",
+        "fallback_used"
+      ],
+      "sources": [],
+      "derived_from_formula": null,
+      "formats": [
+        "csv",
+        "parquet"
+      ],
+      "superseded_rows": 1,
+      "superseded_note": "Rows with status = CONFLICTING describe a course or value the publisher has withdrawn. They are kept as the record of what was published and must be filtered out before treating this dataset as current."
+    },
+    "routes_geojson": {
+      "rows": 0,
+      "sources": [
+        "aso-arcgis"
+      ],
+      "formats": [
+        "geojson"
+      ]
+    },
+    "waypoints_geojson": {
+      "rows": 0,
+      "sources": [
+        "letour.fr"
+      ],
+      "formats": [
+        "geojson"
+      ]
+    },
+    "official_course_points_geojson": {
+      "rows": 0,
+      "sources": [
+        "aso-arcgis"
+      ],
+      "formats": [
+        "geojson"
+      ]
+    }
+  },
+  "licences": {
+    "letour.fr": {
+      "licence": "All rights reserved (Amaury Sport Organisation)",
+      "redistributable": false,
+      "notice": "Official Tour de France data © Amaury Sport Organisation. Exported for local analysis only; no redistribution licence is granted by the publisher."
+    },
+    "wikipedia": {
+      "licence": "CC BY-SA 4.0",
+      "redistributable": true,
+      "notice": "Classification standings, jersey history and stage winners derived from the English Wikipedia article '2026 Tour de France', licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Derivative databases must be shared alike."
+    },
+    "aso-arcgis": {
+      "licence": "All rights reserved (Amaury Sport Organisation)",
+      "redistributable": false,
+      "notice": "Official route geometry © Amaury Sport Organisation. Exported for local analysis only."
+    },
+    "cyclingstage.com": {
+      "licence": "All rights reserved (CyclingStage)",
+      "redistributable": false,
+      "notice": "WITHHELD FROM EXPORT: no redistribution licence."
+    },
+    "IGN_RGE_ALTI": {
+      "licence": "Etalab Open Licence 2.0",
+      "redistributable": true,
+      "notice": "Elevation from IGN RGE ALTI via the Géoplateforme, Etalab Open Licence 2.0. © IGN."
+    },
+    "COPERNICUS_GLO90": {
+      "licence": "Copernicus DEM open licence",
+      "redistributable": true,
+      "notice": "Elevation from Copernicus DEM GLO-90, © European Union, Copernicus Programme, served via Open-Meteo."
+    }
+  },
+  "withheld": [
+    {
+      "what": "route geometry and derived profile",
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": "cyclingstage.com",
+      "reason": "No redistribution licence is granted for these traces, and no alternative licensed geometry exists for these stages, so they are excluded from every export rather than emitted under a licence that does not cover them."
+    }
+  ],
+  "formulas": [
+    {
+      "id": "climb_detection",
+      "version": "build_profiles/0.3.0",
+      "expression": "contiguous ascent >= 150.0 m with mean gradient >= 3.0%, tolerating 40.0 m dips",
+      "units": "n/a",
+      "description": "Derived climb segmentation; never an official category.",
+      "limitations": "Never an official category. The detector finds 44 of the 66 climbs the organiser classifies — every HC, 12 of 13 Cat 1, 9 of 11 Cat 2, 15 of 21 Cat 3, but only 2 of 14 Cat 4. No setting in the swept 4x3 grid exceeds 61% recall, which makes the ceiling definitional rather than a tuning problem: a Cat 4 climb rising 90 m is below every threshold tested, and loosening far enough to catch it buys recall with false summits. A climb this project invented would be worse than one it missed."
+    },
+    {
+      "id": "climb_gradient_measured",
+      "version": "climb_statement_reconciliation/1.0.0",
+      "expression": "ascent over the stated climb length, from the elevation profile the product displays",
+      "units": "%",
+      "description": "Average gradient measured from the DEM, used to adjudicate between two published gradients for the same climb.",
+      "limitations": "Reads the profile at the roadbook summit kilometre and one climb-length before it. Where the two publications also disagree about position, the sampled foot moves with the summit, so the measurement tests the stated gradient rather than the stated position."
+    },
+    {
+      "id": "dem_ensemble_spread",
+      "version": "copernicus_dem/1.0.0",
+      "expression": "spread_m = max(elevation over DEMs) - min(elevation over DEMs)",
+      "units": "metres",
+      "description": "Disagreement between independent DEMs at one route sample.",
+      "limitations": "A spread requires at least two covering sources; a single-source sample has unknown spread, not zero. Resolutions differ (IGN 1-5 m, Copernicus ~90 m), so spread grows in steep terrain by construction and is not an error rate."
+    },
+    {
+      "id": "dem_sampling",
+      "version": "dem_ensemble/1.0.0",
+      "expression": "elevation = RGE_ALTI(lon,lat) resampled every $2 m along the route",
+      "units": "metres",
+      "description": "Elevation sampled from a national DEM along a 2D route line.",
+      "limitations": "RGE ALTI covers France only; samples outside coverage are recorded UNAVAILABLE, never interpolated across the border."
+    },
+    {
+      "id": "general_classification",
+      "version": "derived_gc/1.0.0",
+      "expression": "cumulative_s = Σ_stages (finish_time_s + penalty_s − bonus_s); rank by cumulative_s ascending; gap_s = cumulative_s − min(cumulative_s)",
+      "units": "seconds",
+      "description": "General classification from official per-stage results.",
+      "limitations": "Requires a result row for every stage up to the reference stage. Does not model time cuts, jury time adjustments published only in communiqués, or team-time-trial time allowances beyond what the official per-stage result table already reflects."
+    },
+    {
+      "id": "gradient_windowed",
+      "version": "build_profiles/0.3.0",
+      "expression": "(e[b]-e[a])/(d[b]-d[a])*100 over a 250 m window",
+      "units": "percent",
+      "description": "Elevation change over a declared distance window.",
+      "limitations": "A gradient is meaningless without the window it was measured over, and this one is a fixed distance window rather than a slope at a point. Short, steep pitches are flattened by it and a long shallow drag is not; two profiles with the same windowed gradient can ride very differently. The window is stored in the expression so a reader can see what was averaged, and no maximum gradient derived here is comparable to a publisher's figure measured over a different one."
+    },
+    {
+      "id": "neutralised_zone_length",
+      "version": "official_routes/1.0.0",
+      "expression": "head of the official polyline remaining after trimming the official race distance backwards from the finish",
+      "units": "km",
+      "description": "Length of the neutralised/parade section preceding KM0.",
+      "limitations": "Assumes the polyline ends exactly at the finish line and that the whole excess is neutralisation; a stage whose line is shorter than its official distance (repeated circuit laps) is excluded rather than fitted."
+    },
+    {
+      "id": "passage_window",
+      "version": "road_and_sky/0.2.0",
+      "expression": "window = [earliest published schedule, latest published schedule]",
+      "units": "s",
+      "description": "Official roadbook passage window; width is the uncertainty.",
+      "limitations": "A property of the road, never a claim about any rider. The window is the interval between the organiser's own earliest and latest published schedules for that point; its width is the uncertainty, and it says when the race is expected to pass, not when anybody did. Nothing derived from it — weather, sun, wind — may be read as a condition any individual experienced."
+    },
+    {
+      "id": "profile_ascent_diagnostic",
+      "version": "profile_reliability/1.0.0",
+      "expression": "sum(max(e[i]-e[i-1], 0)) over profile samples",
+      "units": "metres",
+      "description": "Total ascent implied by the DEM profile, for comparison against the ascent the organiser publishes.",
+      "limitations": "Diagnostic only, never published as a stage figure. Unthresholded summation inflates ascent wherever the profile rests on a single ~90 m DEM: stage 3 reads +39% with 539 of 981 samples on Copernicus alone. Thresholds of 1, 2, 5 and 10 m were tested; the 10 m floor needed to reconcile stage 3 takes stage 7 to -89%, so no threshold is right for both mountain and flat terrain."
+    },
+    {
+      "id": "race_classification",
+      "version": "race_classification/1.0.0",
+      "expression": "series and gender from uci_class; format from the published date range, or from the stage type for a championship event",
+      "units": "classification",
+      "description": "Which published series a race belongs to and whether the product shows it.",
+      "limitations": "Scope is a presentation decision, not a judgement about a race. An out-of-scope race keeps every byte of its evidence and is simply not published. Format comes from the calendar's dates rather than from a stage count, because a stage count this project has not collected would call a stage race a one-day race — a statement about the observatory dressed as a statement about the race."
+    },
+    {
+      "id": "race_coverage_depth",
+      "version": "race_coverage/1.2.0",
+      "expression": "highest tier T such that every tier <= T is satisfied",
+      "units": "tier",
+      "description": "Measured depth of holdings per registered race.",
+      "limitations": "Counts rows held, which is not the same as rows that exist. A race at CALENDAR is one this project has not collected, not one that lacks entries or results. The tier is a statement about the observatory, never about the race. Claim and artifact counts come from a derived attribution that refuses to choose when an artifact serves more than one race, so evidence shared across races is counted for none of them."
+    },
+    {
+      "id": "race_winner_agreement",
+      "version": "race_winner_reconciliation/1.0.0",
+      "expression": "norm(calendar winner) = norm(article GC rank 1)",
+      "units": "races",
+      "description": "How far two independently edited pages agree on who won each race.",
+      "limitations": "Agreement is not proof: both pages can be edited from the same report, so this bounds transcription error rather than establishing the result. Names are compared without accents or case, so an orthographic difference is not counted as a disagreement."
+    },
+    {
+      "id": "season_victory_count",
+      "version": "season_leaders/1.0.0",
+      "expression": "count(rank = 1) over held general classifications and held stage results",
+      "units": "victories",
+      "description": "Victories per rider, team and nation across every race this project holds a result for.",
+      "limitations": "Counts held races, never the season. A win in a race at CALENDAR depth is invisible here because nothing in this database records it, so races_seen is stored on every row and the two must be read together. Names are counted as published: two spellings of one squad stay two, because a rule that merged them would as readily merge two squads that differ."
+    },
+    {
+      "id": "solar_position",
+      "version": "road_and_sky/0.2.0",
+      "expression": "NOAA solar position algorithm",
+      "units": "degrees",
+      "description": "Sun elevation and azimuth at a route point during its window.",
+      "limitations": "Deterministic geometry for a point on the road during its passage window, not for a rider. It ignores terrain shading entirely: a sun elevation of 20 degrees says nothing about whether a valley road was actually in shadow, and in the Alps it frequently was. Computed at the window's midpoint, so a wide window makes the angle less representative in proportion to its width."
+    },
+    {
+      "id": "wind_components",
+      "version": "road_and_sky/0.2.0",
+      "expression": "head = w*cos(theta_wind_from - heading); cross = w*sin(...)",
+      "units": "m/s",
+      "description": "Wind resolved onto route heading. A road property.",
+      "limitations": "A road property resolved onto the route's heading, not a wind any rider felt. It comes from a model grid whose cell is on average 1 km from the road and up to 6.6 km away, at a model elevation that differs from the road by up to 224 m; it is a free-stream value with no account of shelter, trees, buildings or the peloton itself. Headwind and crosswind here describe an exposed road at a moment, and nothing more."
+    }
+  ]
+}

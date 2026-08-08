@@ -1,0 +1,172 @@
+{
+ "evidence_current_to": "2026-08-08",
+ "tally": {
+  "MET": 22,
+  "PARTIAL": 2,
+  "NOT_MECHANICALLY_CHECKED": 3
+ },
+ "clauses": [
+  {
+   "ref": "§1",
+   "clause": "Every UWT, WWT and Elite Worlds event registered",
+   "verdict": "MET",
+   "detail": "67 races in scope, 200 stages"
+  },
+  {
+   "ref": "§1",
+   "clause": "Not a Tour showcase with shallow coverage elsewhere",
+   "verdict": "PARTIAL",
+   "detail": "30/67 races carry route geometry (136/200 stages). Was 1 race at the last release; the Tour is no longer the only deep case, but most of the fleet is still schedule-and-result depth."
+  },
+  {
+   "ref": "§7",
+   "clause": "Results for every race that has been run",
+   "verdict": "MET",
+   "detail": "48 in-scope races carry a result; 17 have not been raced as of 2026-08-08"
+  },
+  {
+   "ref": "§5.1",
+   "clause": "Race card names organiser, site, region",
+   "verdict": "PARTIAL",
+   "detail": "65/67 carry an organiser, each pointing at the claim that produced it (52 race_identity, 8 organiser_legal, 4 uci_worlds, 1 aso_roadbook). Without one: tour-de-romandie-feminin-2026-wwt (open); tour-of-chongming-island-2026-wwt (open). 2 of 2 carry a register entry naming the search and the next action."
+  },
+  {
+   "ref": "§9",
+   "clause": "Field-level provenance on every normalised row",
+   "verdict": "MET",
+   "detail": "17,644/17,644 = 100.0 %"
+  },
+  {
+   "ref": "§10",
+   "clause": "Rebuild from committed evidence reproduces",
+   "verdict": "MET",
+   "detail": "`make verify-rebuild` rebuilds into an empty database from the committed vault and runs the full invariant suite"
+  },
+  {
+   "ref": "§12",
+   "clause": "All eight coverage metrics generated",
+   "verdict": "MET",
+   "detail": "all eight published"
+  },
+  {
+   "ref": "§12.7",
+   "clause": "Every open gap records search actions and next action",
+   "verdict": "MET",
+   "detail": "236/236 carry a next action, 229/236 carry a search log"
+  },
+  {
+   "ref": "§12.8",
+   "clause": "research-exhausted only after documented exhaustion",
+   "verdict": "MET",
+   "detail": "0 gaps marked exhausted. A CHECK constraint refuses the state unless all six ladder steps are recorded, so it cannot be asserted — only earned."
+  },
+  {
+   "ref": "§12.6",
+   "clause": "Every race states when it was last verified",
+   "verdict": "MET",
+   "detail": "137/137 races carry a date their evidence is current to, beside the date the schedule next looks. 2 finished with no result and nothing fetched since; 39 have an open gap and no capture target naming them, so no recheck date can reach them."
+  },
+  {
+   "ref": "§22",
+   "clause": "Scheduled ingestion keeps a failure ledger",
+   "verdict": "MET",
+   "detail": "1 scheduled run(s) recorded in evidence.ingest_runs, 0 still open, 0 attempt(s) recorded as refused or failed with the publisher's answer beside them. A run that finds nothing due is recorded too — without that, a scheduler that stopped firing is indistinguishable from one with no work to do."
+  },
+  {
+   "ref": "§13",
+   "clause": "Unresolved conflicts published, not suppressed",
+   "verdict": "MET",
+   "detail": "106 findings published per race, 19 of them blockers"
+  },
+  {
+   "ref": "§21",
+   "clause": "Nothing private reaches the public tree",
+   "verdict": "MET",
+   "detail": "`make verify-publishable` inspects every byte of the bundle and the deploy refuses to run without it"
+  },
+  {
+   "ref": "§22",
+   "clause": "No credential in the repository",
+   "verdict": "MET",
+   "detail": "deploy token is a repository secret; the vault and database snapshot are excluded from the published tree"
+  },
+  {
+   "ref": "§24",
+   "clause": "Scored research queue driving next actions",
+   "verdict": "MET",
+   "detail": "104 in-scope gaps scored by the §24 formula; highest is giro-ditalia-2026-uwt"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes scope/date",
+   "verdict": "MET",
+   "detail": "§1 of the coverage report, evidence to 2026-08-08"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes measurable coverage metrics",
+   "verdict": "MET",
+   "detail": "§12, eight metrics"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes confidence/evidence distribution",
+   "verdict": "MET",
+   "detail": "three-band composition beside the score"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes unresolved conflicts",
+   "verdict": "MET",
+   "detail": "106 findings"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes research-exhausted fields",
+   "verdict": "MET",
+   "detail": "0 — the register distinguishes exhausted from open"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes source refresh schedule",
+   "verdict": "MET",
+   "detail": "recheck_after per gap, 21 days for an unraced race and 180 for a raced one"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes next highest-value acquisition tasks",
+   "verdict": "MET",
+   "detail": "the §24 queue"
+  },
+  {
+   "ref": "§26",
+   "clause": "Release publishes reproducibility/build manifest",
+   "verdict": "MET",
+   "detail": "`make verify-rebuild`, plus the per-race dataset manifest"
+  },
+  {
+   "ref": "§19",
+   "clause": "Page hierarchy discloses progressively",
+   "verdict": "MET",
+   "detail": "the bundle is split rather than served whole: a 115 KB fleet index, 137 per-race chunks and 333 per-stage chunks, so a reader fetches a race's detail only on asking for that race. The UI suite asserts the same from the browser: two indexes and one stage chunk on first paint."
+  },
+  {
+   "ref": "§4",
+   "clause": "Existing visual identity preserved, not replaced",
+   "verdict": "NOT_MECHANICALLY_CHECKED",
+   "detail": "design judgement, and deliberately ungraded: whether the existing identity survived a change is a comparison against what it looked like before, which this bundle does not hold. The UI suite pins the parts that can be pinned — contrast ratios and reduced-motion behaviour — so a redesign cannot quietly fail those while the question of resemblance stays open."
+  },
+  {
+   "ref": "§15",
+   "clause": "Route, profile and climb experience is modern and legible",
+   "verdict": "NOT_MECHANICALLY_CHECKED",
+   "detail": "design judgement. Legibility is graded mechanically only where it reduces to contrast, which the UI suite checks for body, heading, table-cell, caption and race-held text in both themes; whether the route, profile and climb views are good is not something a script should claim to know."
+  },
+  {
+   "ref": "§20",
+   "clause": "Visualisation integrity and accessibility",
+   "verdict": "NOT_MECHANICALLY_CHECKED",
+   "detail": "half checked, half judgement, and the halves are named rather than averaged. Checked: every chart carries an aria-label, prefers-reduced-motion disables transitions, and all five text roles meet WCAG AA contrast in light and dark. Not checked: whether a chart's encoding is honest to the quantity it draws, which is a claim about meaning."
+  }
+ ]
+}

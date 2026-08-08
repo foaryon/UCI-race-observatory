@@ -1,0 +1,61 @@
+stage_number,roadbook_name,roadbook_category,point_category,altitude_m,climb_length_km,roadbook_km,point_km,position_residual_km,roadbook_gradient_pct,siting_note_gradient_pct,gradient_residual_pct,gradients_disagree,not_in_roadbook_climb_table
+2,Côte de Begues,2,2,399,6.10,94.20,94.548,0.348,6.50,6.50,0.00,False,False
+2,Côte du Château de Montjuïc,3,3,163,1.60,141.60,141.898,0.298,9.30,9.30,0.00,False,False
+3,Côte de Saint Feliu de Codines,3,3,622,7.60,17.20,17.261,0.061,4.50,4.50,0.00,False,False
+3,Col de Toses,1,1,1778,9.30,127.70,127.738,0.038,6.50,6.50,0.00,False,False
+3,Col du Calvaire,3,3,1836,11.40,172.30,172.289,-0.011,4.10,4.10,0.00,False,False
+4,Col de Bedos,4,4,485,3.40,48.20,48.406,0.206,4.40,4.40,0.00,False,False
+4,Col du Paradis,3,3,622,5.90,64.90,65.011,0.111,4.10,4.10,0.00,False,False
+4,Col de Coudons,2,2,883,10.80,104.90,104.954,0.054,5.50,5.50,0.00,False,False
+4,Col de Montségur,2,2,1059,6.90,146.70,146.733,0.033,6.60,6.60,0.00,False,False
+5,Côte de Baleix,3,3,348,1.00,132.70,132.800,0.100,8.80,8.80,0.00,False,False
+6,Côte de Loucrup,4,4,528,2.00,50.90,51.020,0.120,7.10,7.10,0.00,False,False
+6,Côte de Mauvezin,3,3,518,3.00,77.30,77.354,0.054,6.80,6.80,0.00,False,False
+6,Col d'Aspin,1,1,1489,12.00,118.10,118.087,-0.013,6.50,6.50,0.00,False,False
+6,Col du Tourmalet Souvenir Jacques Goddet,HC,HC,2115,17.10,147.80,147.790,-0.010,7.30,7.30,0.00,False,False
+7,Côte de Béguey,4,4,86,1.20,137.30,137.344,0.044,4.40,4.40,0.00,False,False
+8,Côte de Domme,4,4,216,3.70,102.60,102.729,0.129,3.30,3.30,0.00,False,False
+8,Côte du Buisson-de-Cadouin,4,4,191,2.20,140.40,140.511,0.111,5.30,5.30,0.00,False,False
+9,Côte de Naves,3,3,410,2.30,46.00,,,7.40,7.40,0.00,False,False
+9,Suc au May,2,2,903,3.80,74.10,,,7.70,7.50,-0.20,True,False
+9,Mont Bessou,4,4,977,0.90,130.10,,,7.30,1.20,-6.10,True,False
+9,,,3,825,4.80,,,,,6.00,,True,True
+10,Côte de Pailherols,3,3,1043,3.00,68.00,68.093,0.093,7.20,7.20,0.00,False,False
+10,Col de la Griffoul,2,2,1336,5.90,97.30,97.370,0.070,6.70,6.70,0.00,False,False
+10,Col de Prat de Bouc,3,3,1392,3.10,103.80,103.790,-0.010,6.50,6.50,0.00,False,False
+10,Côte de Murat,3,3,1193,5.20,118.80,118.827,0.027,5.30,5.30,0.00,False,False
+10,Puy Mary - Pas de Peyrol,1,1,1589,7.80,135.70,135.700,0.000,6.00,6.00,0.00,False,False
+10,Col de Pertus,1,1,1309,4.40,152.10,152.075,-0.025,8.50,8.50,0.00,False,False
+10,Col de Font de Cère,3,3,1294,3.10,163.90,163.840,-0.060,5.80,5.80,0.00,False,False
+11,Côte de Billonnière,4,4,300,1.10,32.90,32.923,0.023,5.80,5.80,0.00,False,False
+11,Côte de Billy-Chevannes,4,4,360,1.50,123.40,123.455,0.055,5.00,5.00,0.00,False,False
+12,Côte de Lanty,4,4,308,2.10,76.50,76.743,0.243,4.00,4.00,0.00,False,False
+12,Côte de Cuzy,4,4,398,2.50,97.80,97.936,0.136,4.50,4.50,0.00,False,False
+12,Côte de Montagny-lès-Buxy,4,4,391,2.70,159.40,159.484,0.084,4.30,4.30,0.00,False,False
+13,Col des Croix,3,3,678,5.20,157.40,157.464,0.064,4.80,4.80,0.00,False,False
+13,Ballon d'Alsace,1,1,1173,8.80,175.90,175.873,-0.027,6.90,6.90,0.00,False,False
+14,Grand Ballon,1,1,1336,21.60,36.60,36.494,-0.106,4.70,4.70,0.00,False,False
+14,Col du Page,2,2,959,9.80,71.30,71.345,0.045,4.70,4.70,0.00,False,False
+14,Ballon d'Alsace,1,1,1173,8.90,94.40,94.518,0.118,6.90,6.90,0.00,False,False
+14,Col du Haag,1,1,1233,11.20,149.40,149.669,0.269,7.30,7.30,0.00,False,False
+15,Côte des Rousses,3,3,1097,6.60,36.80,37.018,0.218,5.10,5.10,0.00,False,False
+15,Le Salève - Col de la Croisette,1,1,1175,4.70,136.00,136.061,0.061,11.20,11.20,0.00,False,False
+15,Côte du Mont,3,3,823,2.10,146.00,146.134,0.134,8.30,8.30,0.00,False,False
+17,Côte de Bassa,4,4,481,1.60,19.20,19.381,0.181,5.50,5.50,0.00,False,False
+17,Côte de Rossillon,4,4,686,1.70,35.50,35.733,0.233,4.60,1.60,-3.00,True,False
+17,Col des Près,3,3,1142,3.60,49.60,49.749,0.149,6.80,6.80,0.00,False,False
+17,Côte de Saint-Jean d'Arvey,4,4,611,1.20,59.50,59.654,0.154,5.70,5.70,0.00,False,False
+18,Côte d'Engins,1,1,854,11.50,36.70,36.869,0.169,5.40,5.40,0.00,False,False
+18,Côte de Monteynard,2,2,844,9.70,92.20,92.332,0.132,5.00,5.00,0.00,False,False
+18,Côte des Terrasses,3,3,836,3.40,112.80,112.899,0.099,6.60,6.60,0.00,False,False
+18,Côte de Saint-Léger-les-Mélèzes,3,3,1237,2.50,166.20,166.224,0.024,6.90,6.90,0.00,False,False
+19,Col Bayard,2,2,1246,4.80,4.80,4.864,0.064,7.20,7.20,0.00,False,False
+19,Col du Noyer,1,1,1664,7.20,25.20,25.247,0.047,8.50,8.50,0.00,False,False
+19,Col d'Ornon,2,2,1371,5.40,99.20,99.184,-0.016,6.40,6.40,0.00,False,False
+19,,,3,1850,3.70,,127.900,,,6.20,,True,True
+20,Col de la Croix de Fer,HC,HC,2067,24.00,33.70,33.959,0.259,5.20,5.20,0.00,False,False
+20,Col du Télégraphe,1,1,1566,11.90,87.60,87.716,0.116,7.10,7.10,0.00,False,False
+20,Col du Galibier Souvenir Henri Desgrange,HC,HC,2642,17.70,110.50,110.648,0.148,6.90,6.90,0.00,False,False
+20,Col de Sarenne,HC,HC,1999,12.80,156.50,156.606,0.106,7.30,7.30,0.00,False,False
+20,,,3,1850,3.70,,170.900,,,6.20,,True,True
+21,,,4,128,1.00,,,,,6.50,,True,True

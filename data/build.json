@@ -1,0 +1,3280 @@
+{
+ "manifest_version": "build-manifest/1.0.0",
+ "purpose": "The build behind the race and stage views published beside this file: what code ran, on what evidence, with which parameters, on which machine, and exactly what it produced. The commit named below is the one the export ran from, which is the parent of the commit carrying this file — a manifest is written before it is committed, so it cannot name the commit it ends up inside. `make verify-manifest` recomputes the output hashes and holds this tree to them.",
+ "evidence_current_to": "2026-08-08T13:23:36+00:00",
+ "code": {
+  "commit": "2e88c649d2e011e92f95e2535ac0fda1efb6aa55",
+  "commit_date": "2026-08-08T13:22:53+00:00",
+  "tree": "dirty",
+  "dirty_paths": [
+   {
+    "path": "db/migrations/0111_three_organisers_publish_their_own_finishing_order.sql",
+    "status": "??"
+   },
+   {
+    "path": "tools/parse/parse_aso_rankings.py",
+    "status": "M"
+   },
+   {
+    "path": "tools/parse/parse_letour.py",
+    "status": "M"
+   }
+  ],
+  "measured_over": [
+   "Makefile",
+   "db/migrations",
+   "tools"
+  ],
+  "unavailable": null
+ },
+ "pipeline": {
+  "app_bundle": "app-bundle/0.5.0",
+  "race_registry": "race-registry/1.0.0",
+  "build_manifest": "build-manifest/1.0.0",
+  "schema": {
+   "migrations_applied": 108,
+   "head": "0111_three_organisers_publish_their_own_finishing_order.sql",
+   "digest": "8a74d5811121524779f42d29866600c478a28dbbbaa3044db21759e75584e51c",
+   "note": "The applied-migration ledger, not the directory listing. A migration present in the repository and absent from the database would change what the queries below could read, so the database's own record is what this states."
+  },
+  "note": "Version strings imported from the exporters, never copied. A manifest that restates a constant can be wrong about it."
+ },
+ "parameters": {
+  "app_bundle": {
+   "profile_target_points": 900,
+   "spark_points": 32,
+   "profile_decimals": {
+    "km": 3,
+    "elevation_m": 1,
+    "gradient_pct": 2,
+    "lonlat": 5
+   }
+  },
+  "race_registry": {
+   "season_leaders_per_dimension": 15
+  },
+  "note": "The exporters' own named constants, imported at emit time. Thresholds belonging to the derive stage are deliberately not repeated here: every derived field already travels with its formula id, version, expression, units and limitations in each product's `index.json` manifest, and a second copy in a second file is a second thing to go stale."
+ },
+ "environment": {
+  "python": "3.11.15",
+  "python_implementation": "CPython",
+  "psycopg": "3.3.4",
+  "postgresql": "16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)",
+  "postgis": "3.4.2",
+  "platform": {
+   "system": "Linux",
+   "release": "6.18.5-fc-v20",
+   "machine": "x86_64"
+  },
+  "not_captured": {
+   "python_dependencies": "No lockfile exists. psycopg and pypdf are installed by name, so the versions above are the only ones this build can read; nothing is claimed about the rest of the interpreter's environment.",
+   "operating_system_packages": "The PostgreSQL and PostGIS strings above are what the server reports about itself. The build does not enumerate the host's packages and does not pretend to."
+  }
+ },
+ "inputs": {
+  "artifacts": 1321,
+  "bytes": 5438113498,
+  "digest": "54bfbec4c8d2b23bd583683672476daf813cacaa9284e625e1b7542d2ff5e000",
+  "by_source": [
+   {
+    "source_id": "aso-arcgis",
+    "artifacts": 12,
+    "digest": "e4617399f27cdb5ab84471d2d8f936737fd282e59ee7ddbdc16016779db8fd64"
+   },
+   {
+    "source_id": "aso-storage",
+    "artifacts": 7,
+    "digest": "e71af486fc098ef72449105daa4320978b6f04630f53e7f78764a191160f2298"
+   },
+   {
+    "source_id": "cadelevansgreatoceanroadrace.com.au",
+    "artifacts": 1,
+    "digest": "594b950d3939082c4496d590016dd79a4e549cf127d9e57a28bfd770d2a4027a"
+   },
+   {
+    "source_id": "copenhagensprint.com",
+    "artifacts": 6,
+    "digest": "c9a4f44c73e85a327d0a7a3eecfb4e139b7edb3b762ec56ff95442666f51bced"
+   },
+   {
+    "source_id": "copernicus-dem-glo30",
+    "artifacts": 134,
+    "digest": "9b229af44dcfbdce7d9c753e8d9ee14289eb1693abf1b68e6f0ae58180d91e8f"
+   },
+   {
+    "source_id": "cyclassics-hamburg.de",
+    "artifacts": 7,
+    "digest": "e4ab40a3a18d0d98c43b25596c6ca21bef7bdb1ffa5401021037adfde93c95bb"
+   },
+   {
+    "source_id": "cyclingprodata.com",
+    "artifacts": 1,
+    "digest": "430a323c9459911631eeb2f2bf17b073b2b6d19d9c9c8373f5b7c6f144bb89ad"
+   },
+   {
+    "source_id": "cyclingsportpromotion.com",
+    "artifacts": 2,
+    "digest": "f1676ad94fb7b2fb079508b55d394c1187f756b99f933f9eed6c3fde1ac0a3a7"
+   },
+   {
+    "source_id": "cyclingstage.com",
+    "artifacts": 227,
+    "digest": "e7f31f19c91d427c73ef29702f321b0e49c11542f4d8fc2c2cecffc52cf288d6"
+   },
+   {
+    "source_id": "ddvl.eu",
+    "artifacts": 2,
+    "digest": "2006594a273ed6daeb7133ae24a016e4ddbcb2cec9e8f8e045292bf8901cb15a"
+   },
+   {
+    "source_id": "eschborn-frankfurt.de",
+    "artifacts": 5,
+    "digest": "6a58468b6a29e7c33b78d2f8e85432bb99f0d4543bb5831b97f7292f0f7072c4"
+   },
+   {
+    "source_id": "gent-wevelgem.be",
+    "artifacts": 2,
+    "digest": "403802af73c75836f888742830f1979d46c48ec708473d3da14daba83249cef9"
+   },
+   {
+    "source_id": "gpcqm.ca",
+    "artifacts": 4,
+    "digest": "b37337f915c309a0c88aad45ada7d7843b3d0a5ec61912077cf3e628f2dd3611"
+   },
+   {
+    "source_id": "ign-geoplateforme",
+    "artifacts": 36,
+    "digest": "4d618d8e584b2ff1b1bc1a6a93f5367def83f664ab56b63d4aec652ac6e3b976"
+   },
+   {
+    "source_id": "ilombardia.it",
+    "artifacts": 2,
+    "digest": "966d67f821acf8e7b84be3e6b6b54f201ba1955d0ad3841d59515f5244f35a90"
+   },
+   {
+    "source_id": "inflandersfieldsmiddelkerkewevelgem.be",
+    "artifacts": 2,
+    "digest": "19b2de8f287e6bb05dbec8605088e558b82264a5831f8cac0012d527cf37a325"
+   },
+   {
+    "source_id": "itzulia-women.eus",
+    "artifacts": 3,
+    "digest": "5d4e1104de175cbd05a76fe1e1a60137663beca96a654f8dc7b1df63706ffadf"
+   },
+   {
+    "source_id": "itzulia.eus",
+    "artifacts": 4,
+    "digest": "28fc8a3997a4485bf128c89bc3c49a8e59ebb6a4e18f273cb180968280958306"
+   },
+   {
+    "source_id": "klasikoa.eus",
+    "artifacts": 7,
+    "digest": "9f5ff0cc15096dfee43aaf15db4a12206954c668edef0bc4066da9ad3eaed82d"
+   },
+   {
+    "source_id": "la-flamme-rouge.eu",
+    "artifacts": 1,
+    "digest": "1e2a69f1bdc1a7bd8557aaa46d61ea3fefd918cfaa313ace912befd288b7c0bb"
+   },
+   {
+    "source_id": "la-fleche-wallonne-femmes.be",
+    "artifacts": 5,
+    "digest": "398eae7e0cd1e984a6bd8e0f59c722c95e655fab55dbf747a4df5b9507191f8a"
+   },
+   {
+    "source_id": "la-fleche-wallonne.be",
+    "artifacts": 5,
+    "digest": "bac7cc85a457ad0788d2a77acbface46cfe858ac3048853697713c302114730a"
+   },
+   {
+    "source_id": "lavuelta.es",
+    "artifacts": 4,
+    "digest": "2c4ba5211049388755a3b2be0e3a265089df9daca6c3201d4a172a6977c0ec8f"
+   },
+   {
+    "source_id": "lavueltafemenina.es",
+    "artifacts": 4,
+    "digest": "3008c51769c83dc88d08f2063d90ec8389eec4c3a1319311a547a8cad6e168d4"
+   },
+   {
+    "source_id": "letour.fr",
+    "artifacts": 370,
+    "digest": "d07d07cb2e11e930f73fe3b399608d86b5a8bf05e38ca64cc4f15d67dca536e9"
+   },
+   {
+    "source_id": "letourfemmes.fr",
+    "artifacts": 44,
+    "digest": "79873d95e763680260b9917a3774294642807c33163ae7e30d0d304e6ab527da"
+   },
+   {
+    "source_id": "liege-bastogne-liege-femmes.be",
+    "artifacts": 5,
+    "digest": "c57878c236664e5447e5a06c14946d490efc54ef103b584cd5b436c7ce72412a"
+   },
+   {
+    "source_id": "liege-bastogne-liege.be",
+    "artifacts": 5,
+    "digest": "380a28c3c7f8c935e86cf1cfb10d7aa2ddde0ff7daa1b0eea3b51245a0d7aa07"
+   },
+   {
+    "source_id": "milanosanremo.it",
+    "artifacts": 4,
+    "digest": "59bc9806b8b284ed674a3633665840c1f89d1a578b50b52cb93e08428100378a"
+   },
+   {
+    "source_id": "omloophetnieuwsblad.be",
+    "artifacts": 2,
+    "digest": "e7faa82722674a28529e9283c618e94730d5cbb179e72cf28205f90a394dd422"
+   },
+   {
+    "source_id": "openrunner.com",
+    "artifacts": 2,
+    "digest": "89d9e8d6f5139426cce2b2528fb3a1c5f5f97ee853ca089a057c040050c42089"
+   },
+   {
+    "source_id": "osrm-demo",
+    "artifacts": 9,
+    "digest": "c6a2b39275f958f6961ab87d676a057e279e336d40fef19bc4675b59e179f0d1"
+   },
+   {
+    "source_id": "overpass-api.de",
+    "artifacts": 1,
+    "digest": "9cf5c80b8f57923224ed10d771232fa04d5b3b9f6e47b9296ec67993c2401c74"
+   },
+   {
+    "source_id": "overpass.kumi.systems",
+    "artifacts": 3,
+    "digest": "f61ab5ed382d679fc6c3cb545c52f3425aa0d60ba1985d1f57f335886ed535c8"
+   },
+   {
+    "source_id": "overpass.private.coffee",
+    "artifacts": 8,
+    "digest": "3249320a122715fda97914b7fe709bb3e96258697d47d61b698069200c2641b4"
+   },
+   {
+    "source_id": "paris-nice.fr",
+    "artifacts": 2,
+    "digest": "c4a7234015e8a1697a8afc728fdc59ded6d04a28f2426648744600e680e2f5d3"
+   },
+   {
+    "source_id": "paris-roubaix-femmes.fr",
+    "artifacts": 5,
+    "digest": "26cf8952e534a8de005160beeefe9232b1230cb764a87468f4834858dc2522fa"
+   },
+   {
+    "source_id": "paris-roubaix.fr",
+    "artifacts": 5,
+    "digest": "97c300e5da40ac5582918a60120446afbb5e4cb6da5de3906482d96c22037e00"
+   },
+   {
+    "source_id": "pco.bzh",
+    "artifacts": 6,
+    "digest": "ec1b24e52f085bf044eb2e11454314de4e1e780db1781e35729f8ad7085cd38e"
+   },
+   {
+    "source_id": "rondevanbrugge.be",
+    "artifacts": 3,
+    "digest": "b4fb424dbb63712ee997e05e53325fc874de1362466ba8daa1291cdd1c5756e0"
+   },
+   {
+    "source_id": "shcmty.net",
+    "artifacts": 1,
+    "digest": "dbde31cd25744e3e65fab8dd61612d43151eaac20e56d92d9b83510e1894a12d"
+   },
+   {
+    "source_id": "swisstopo",
+    "artifacts": 31,
+    "digest": "25a34e04d80932cc7c66b8cd0429f697342722a051c50d87c8ba35add6f2d020"
+   },
+   {
+    "source_id": "thealulatour.com",
+    "artifacts": 3,
+    "digest": "f470f38a13b9bfb406616bcbc58460e36b61a7adb270573dfcbcfda520f71961"
+   },
+   {
+    "source_id": "theuaetour.com",
+    "artifacts": 10,
+    "digest": "5a5c848be79cfa3beadf9c54bda01059683386a26777ff337f302d93faaf90f1"
+   },
+   {
+    "source_id": "theuaetourwomen.com",
+    "artifacts": 7,
+    "digest": "724f4a1519c031527aca643465f6623c6594460b3a40a6d8d39c78cab4f11883"
+   },
+   {
+    "source_id": "tour-auvergne-rhone-alpes.fr",
+    "artifacts": 2,
+    "digest": "3162cb3d44073efbc7427797988c83dcf1460dfaa44176113edf00f32a5c86f1"
+   },
+   {
+    "source_id": "tour-of-britain.com",
+    "artifacts": 4,
+    "digest": "52f143c51a865131264bcf61694a77b57c50fd69c7368138e543a7eb9bcd74f3"
+   },
+   {
+    "source_id": "tour-of-oman.com",
+    "artifacts": 6,
+    "digest": "1411a71ff5cc45b89cab8c905f58b23d21b9027cffcc4954f9d5773b43e273df"
+   },
+   {
+    "source_id": "tourdepologne.pl",
+    "artifacts": 3,
+    "digest": "4ee4ee02ed2d905260b77c77d6fa7c17a8968cc4d6e5a03657f5d18b0910006b"
+   },
+   {
+    "source_id": "tourderomandie.ch",
+    "artifacts": 10,
+    "digest": "b5b184d1cde1da2dd036582fe0d56a10ed3bc1211b23ba4c223d747e13513f65"
+   },
+   {
+    "source_id": "tourderomandiefeminin.ch",
+    "artifacts": 8,
+    "digest": "66275d6b37a800da76bbc5d9db6168fa4b4d7fbec4a19d356b40d7d6fb9a3d03"
+   },
+   {
+    "source_id": "tourdesuisse.ch",
+    "artifacts": 4,
+    "digest": "b5aec1432c4d6f3e4a1040cfeba9c9c9267f8de24c8a90a6e2ddc5c79c60834d"
+   },
+   {
+    "source_id": "tourdownunder.com.au",
+    "artifacts": 4,
+    "digest": "6fc034093f9e265463153e5a242a6e43cfb900b0013d784ea46e77be93b19343"
+   },
+   {
+    "source_id": "tourofguangxi.com.cn",
+    "artifacts": 1,
+    "digest": "c438618c5a79d5d452acbe10ea2cf2328fa01ebff444c2e670e1a8a6a22f2865"
+   },
+   {
+    "source_id": "trobroleon.com",
+    "artifacts": 5,
+    "digest": "b21fecdd99ec8ead133f325262e06e81c05a26057da17e855a909ccf2b783926"
+   },
+   {
+    "source_id": "trofeobinda.com",
+    "artifacts": 2,
+    "digest": "e857721b1059cdd9084a7ad2b07b9999eaec65a775196db8d27c9cc89e5118e2"
+   },
+   {
+    "source_id": "uci.org",
+    "artifacts": 3,
+    "digest": "6289848c20d6d2df0aca9986106f8b13e95739701b8e1c317e95a07e63209cd8"
+   },
+   {
+    "source_id": "velowire.com",
+    "artifacts": 3,
+    "digest": "3c5e7f7dd55fad8e0bbed70b3605cf8e296fdb82b5a45de2e1bc9f21cf3789a1"
+   },
+   {
+    "source_id": "voltacatalunya.cat",
+    "artifacts": 2,
+    "digest": "c1ea2c9cc2eea8770c5369ab7173783163f8b5c5ccb82611938f1435a59f5339"
+   },
+   {
+    "source_id": "vueltaburgos.com",
+    "artifacts": 3,
+    "digest": "c80f7585c1bcdab357c369d7af4619e23cca486e1781e8700d29d5927143314b"
+   },
+   {
+    "source_id": "web.archive.org",
+    "artifacts": 5,
+    "digest": "848bd5449dd6e460aca83b2f30cd50659d354946c561fdf259d776999d69cd27"
+   },
+   {
+    "source_id": "wikipedia",
+    "artifacts": 260,
+    "digest": "994d54b058e6d018640c63942837b6e484d33bff6768956003b9ea3701776c5d"
+   }
+  ],
+  "note": "One digest per source over the SHA-256 of every artifact captured from it, and one over the vault as a whole. The artifacts themselves are not redistributable and are not published; their hashes are what lets a rebuilder establish they hold the same evidence rather than merely the same source names."
+ },
+ "outputs": {
+  "algorithm": "sha256",
+  "scope": [
+   "races.json",
+   "race/*.json",
+   "product/*/*.json",
+   "product/*/stage/*.json"
+  ],
+  "tree_digest": "2243e1e9bcefa6c5cea6f917e7813512a58e48368a099f9279de272238e770b2",
+  "files": 543,
+  "by_race": {
+   "alula-tour-2026-pro": {
+    "digest": "ffe118608e54760ec9277f65b1de774c5a772224aad2047db358970db484d3b1",
+    "files": {
+     "race/alula-tour-2026-pro.json": {
+      "sha256": "14b1c7890cf7992e392847722573bbe9c6fe3d9422fda778c6d119190feed80a",
+      "bytes": 24362
+     }
+    }
+   },
+   "amstel-gold-race-2026-uwt": {
+    "digest": "d234548bc5f34b4be6fd18ec72bd84a05d5831d5f59be146d8eb6e05154158ae",
+    "files": {
+     "product/amstel-gold-race-2026-uwt/index.json": {
+      "sha256": "1d7cf0c4ba80dda89b3ea0d9d719b620016fc3fd67d5a9c88079fc8886858ea4",
+      "bytes": 54906
+     },
+     "product/amstel-gold-race-2026-uwt/quality.json": {
+      "sha256": "5770ccdff1cd4816a5b77b4dcf749df1313e335bfcd539a445eb37f690145625",
+      "bytes": 6342
+     },
+     "product/amstel-gold-race-2026-uwt/stage/1.hi.json": {
+      "sha256": "2a6f05452a9a9533c97ff289236171a56fd4c7caab82efa6eca59def75591e5c",
+      "bytes": 148840
+     },
+     "product/amstel-gold-race-2026-uwt/stage/1.json": {
+      "sha256": "fdd0e8783b4c7d1ba38fff6066d46e6d35df7a09392b6715bec6a1568b803de3",
+      "bytes": 47487
+     },
+     "race/amstel-gold-race-2026-uwt.json": {
+      "sha256": "92809f8da9f4a02cfda7f599a41a3abebe0ea3d682148aadfac60da166be59bb",
+      "bytes": 3905
+     }
+    }
+   },
+   "amstel-gold-race-2026-wwt": {
+    "digest": "7311a0e932da2cbbcd6cf480f7bca8acfba1263b45d11d13ccef3a4306411a56",
+    "files": {
+     "product/amstel-gold-race-2026-wwt/index.json": {
+      "sha256": "a7492f5e3f5b8fa37df3eb3b1824c47906adf2105df091b8496443c68024df95",
+      "bytes": 54847
+     },
+     "product/amstel-gold-race-2026-wwt/quality.json": {
+      "sha256": "90f5cc45c2d43b320e26b9258874a6a50ab569ba4d91448858e1f9b7e5e86467",
+      "bytes": 6342
+     },
+     "product/amstel-gold-race-2026-wwt/stage/1.hi.json": {
+      "sha256": "c3489e5424ea3559372ac2ca5018883eec97b9b3f6a36516ec86cf8417996c10",
+      "bytes": 144570
+     },
+     "product/amstel-gold-race-2026-wwt/stage/1.json": {
+      "sha256": "65d7b02e6f39fc33994785b3a61ee6bc0de2fe11765d52d8303652cc66b4ee0a",
+      "bytes": 46022
+     },
+     "race/amstel-gold-race-2026-wwt.json": {
+      "sha256": "2b92f59bb2eba5eea40a8a04e7c07bfcafba889a65774c0020e6c93e6c548231",
+      "bytes": 3644
+     }
+    }
+   },
+   "arctic-race-of-norway-2026-pro": {
+    "digest": "c0d6b2fab2ecc3f71081a0008744f52279e8147665ee91f0465e3d63e8dfa9a5",
+    "files": {
+     "race/arctic-race-of-norway-2026-pro.json": {
+      "sha256": "381381ffbb8136bd5d431c6ee2f28b98acd68507a595f5fb3ca4937e57b57242",
+      "bytes": 1060
+     }
+    }
+   },
+   "boucles-de-la-mayenne-2026-pro": {
+    "digest": "e6be460cbfa0ed4734a115842bcf3036f48f0692ca3527669be76b2c9fe06b6b",
+    "files": {
+     "race/boucles-de-la-mayenne-2026-pro.json": {
+      "sha256": "e29004785a73d53de2ab0b3ea708022ad87ccf690e7476f7f72b044b5d99e7d6",
+      "bytes": 13415
+     }
+    }
+   },
+   "brabantse-pijl-2026-pro": {
+    "digest": "eb175ec8494708346ee1659b401c79e61af097912f74783d00a2ed48c66cd992",
+    "files": {
+     "product/brabantse-pijl-2026-pro/index.json": {
+      "sha256": "e7b93ebd5023eb3012ec63bc0cf04d5785a8c46416130c0636cb5343978447cd",
+      "bytes": 54789
+     },
+     "product/brabantse-pijl-2026-pro/quality.json": {
+      "sha256": "e33004cb1f9cb55d28f64c50cd86d6f6c103f3d290fd332dc9a32a810a91a5f6",
+      "bytes": 6342
+     },
+     "product/brabantse-pijl-2026-pro/stage/1.hi.json": {
+      "sha256": "e1403a703dda1bb88950f54b6dd87e21387a4bc8a04a176765eed2866e7f9198",
+      "bytes": 99830
+     },
+     "product/brabantse-pijl-2026-pro/stage/1.json": {
+      "sha256": "6a557b1f08b5973f479a432940ea7a78d36e6d00c98d283712669575d5f17cbd",
+      "bytes": 44884
+     },
+     "race/brabantse-pijl-2026-pro.json": {
+      "sha256": "8493c6f1c64749fecef250bbd36d23465e19251919b32a1fe58d6703b199430e",
+      "bytes": 3546
+     }
+    }
+   },
+   "bredene-koksijde-classic-2026-pro": {
+    "digest": "9091aac0ab4b9319a0b9ad550c8aa8ff783ab125138be5b8054fbd5f24b7634e",
+    "files": {
+     "race/bredene-koksijde-classic-2026-pro.json": {
+      "sha256": "198346e800cd45053f85b1f95ccbbb13ec73d23936559a1b594c696a8f147758",
+      "bytes": 3692
+     }
+    }
+   },
+   "bretagne-classic-2026-uwt": {
+    "digest": "16867f850e03880f6ae2fbeef549c4db698a1121068d0a5795488ea3c8783dbf",
+    "files": {
+     "race/bretagne-classic-2026-uwt.json": {
+      "sha256": "7bea9731c9a349ebe14a66b3c325a6a37f8a7e1a3df32ee43e058a7b2ce823c7",
+      "bytes": 1195
+     }
+    }
+   },
+   "brussels-cycling-classic-2026-pro": {
+    "digest": "e4263252c511176d291ab271ddbc40ceb7cc1c342a682be6bc42c5692910e36e",
+    "files": {
+     "race/brussels-cycling-classic-2026-pro.json": {
+      "sha256": "2f324ea473c73377a01b3c2b0d01bf0e0afd8d7952b07f92aa3942885bb64bbe",
+      "bytes": 3527
+     }
+    }
+   },
+   "cadel-evans-great-ocean-road-race-2026-uwt": {
+    "digest": "d05117a3cd41e1173f9324fe8a32c3175c67245434b4d374666ca414233386dc",
+    "files": {
+     "race/cadel-evans-great-ocean-road-race-2026-uwt.json": {
+      "sha256": "8d3ecb309af65be2d4c65b1d660bdef7579a4a13926043bdfbb8dabcafc264d9",
+      "bytes": 3562
+     }
+    }
+   },
+   "cadel-evans-great-ocean-road-race-2026-wwt": {
+    "digest": "3e00ebff144a61e280938c738921237107d3d28ae0dfc9110d797069a6807c71",
+    "files": {
+     "race/cadel-evans-great-ocean-road-race-2026-wwt.json": {
+      "sha256": "1658e9ba998dc45badf7dc544da34e05b3c07f8253475c666237d52ecd42c99c",
+      "bytes": 3285
+     }
+    }
+   },
+   "circuit-franco-belge-2026-pro": {
+    "digest": "a81dd6f4bd624cce18f5f4f19df339262847dbdbcf6988f3ff59820d37e979c3",
+    "files": {
+     "race/circuit-franco-belge-2026-pro.json": {
+      "sha256": "6ffddaeaa1488d3669f4e30f8e875396c9c2c7ccc973ecc301e63e214130d342",
+      "bytes": 3813
+     }
+    }
+   },
+   "clasica-de-almeria-2026-pro": {
+    "digest": "9d0e38fc441862ea7fbac3b040ace15d2a49d0c0ca079d09dc9934c0797e558f",
+    "files": {
+     "race/clasica-de-almeria-2026-pro.json": {
+      "sha256": "1f4504d472907f7d066cf9209a3309000f6902db92e9cf6c70a4b7250344f460",
+      "bytes": 3496
+     }
+    }
+   },
+   "clasica-de-san-sebastian-2026-uwt": {
+    "digest": "df5712f5f4db3360a0752e946249466fa26553b748946492cb104c032e498a44",
+    "files": {
+     "race/clasica-de-san-sebastian-2026-uwt.json": {
+      "sha256": "83e9fe5f6bf3321a33b6e34b0e222713feb710b57a91bf6560ecf61a50acd7f8",
+      "bytes": 1234
+     }
+    }
+   },
+   "classic-lorient-agglomeration-2026-wwt": {
+    "digest": "86bc341b94d7b07fe6c8b859c66ad8b9c61be39b00e7a09ae307391169765ab0",
+    "files": {
+     "race/classic-lorient-agglomeration-2026-wwt.json": {
+      "sha256": "d46d4be08d864cd45972c62202038349d777c297d01fb6a1ad56b23ab0e9e66f",
+      "bytes": 1256
+     }
+    }
+   },
+   "classique-dunkerque-2026-pro": {
+    "digest": "c0c976611ebad6770abf466d73ec50ca339d3381be759468557d1e0d7b1308a6",
+    "files": {
+     "race/classique-dunkerque-2026-pro.json": {
+      "sha256": "9fb760e798ac0fb24ca2dd2612eb38735731ac68837e204e6619ef3e6da7112c",
+      "bytes": 3441
+     }
+    }
+   },
+   "copenhagen-sprint-2026-uwt": {
+    "digest": "24c76ff5898a75b5140909ff348b1bb22b631cfc35f12a6f57a9b6171fed9848",
+    "files": {
+     "race/copenhagen-sprint-2026-uwt.json": {
+      "sha256": "5a67b52827acb3eee82ad416c6f617e54e0ec44e5e62f56d0793d4b0a238874c",
+      "bytes": 3751
+     }
+    }
+   },
+   "copenhagen-sprint-2026-wwt": {
+    "digest": "acc4c59d5500bc3512b30281d90cf609a1a25a1708aaf31e09d1269efe84b599",
+    "files": {
+     "race/copenhagen-sprint-2026-wwt.json": {
+      "sha256": "2601f097cb312ffbd832eede7fc425138df3429cff5b2687a11e82a63e6e64a6",
+      "bytes": 3373
+     }
+    }
+   },
+   "coppa-bernocchi-2026-pro": {
+    "digest": "2c918e1607f3c8b80e79db2a190376ce2fb1870db426991dc1b9869c362eb200",
+    "files": {
+     "race/coppa-bernocchi-2026-pro.json": {
+      "sha256": "45e729f16548f0ec2e8a49e8d5fe119de3b0dc68ee19583fe127fbfb91ef8a3c",
+      "bytes": 1047
+     }
+    }
+   },
+   "coppa-sabatini-2026-pro": {
+    "digest": "c4b886ed5cf00bbc0736242714eefe3a22e3403ce62a6861a99e2023b1782afb",
+    "files": {
+     "race/coppa-sabatini-2026-pro.json": {
+      "sha256": "8ff5f8a5788eb4965d2e578176a9e53e886fa8b9f41adaebbd6d729c211d1d1e",
+      "bytes": 1045
+     }
+    }
+   },
+   "cro-race-2026-pro": {
+    "digest": "256cd284ff4a5791c0bad62fac463fff973016f6a53f3bf16ac3674229ed36b9",
+    "files": {
+     "race/cro-race-2026-pro.json": {
+      "sha256": "5e598eb24e014b6d6a2ab9cc91624a6bcca926e5591247a68d0305c7d112917e",
+      "bytes": 1035
+     }
+    }
+   },
+   "czech-tour-2026-pro": {
+    "digest": "575540222dc750260609427f06da4cec539254384ac971f974af2362fa8063b9",
+    "files": {
+     "race/czech-tour-2026-pro.json": {
+      "sha256": "1933310edff216338df1f089194ae7c4f14063f92b4122ab63f0f9ec32300909",
+      "bytes": 1046
+     }
+    }
+   },
+   "deutschland-tour-2026-pro": {
+    "digest": "f0ca5da6d6fd184e3a2a1f614517a878ce24d13bf7f583f9b102a76a4e066b07",
+    "files": {
+     "race/deutschland-tour-2026-pro.json": {
+      "sha256": "8e294edb811800bcf1be4cae273000fee35a44f9060608bc1cd724a1efe8ad48",
+      "bytes": 1051
+     }
+    }
+   },
+   "dwars-door-vlaanderen-2026-uwt": {
+    "digest": "757875d106b652973c50fedcd0c572eaf478d45db6ec465d6cfc5683f0a92f6d",
+    "files": {
+     "product/dwars-door-vlaanderen-2026-uwt/index.json": {
+      "sha256": "e40bd18b02bc307393364fdcbf938d5598d3659e8212e0ace2314c54a2d45ac1",
+      "bytes": 54807
+     },
+     "product/dwars-door-vlaanderen-2026-uwt/quality.json": {
+      "sha256": "28c0053f2227698daa203a954f3d92f14a29eb74884448c956ac5033182b31d8",
+      "bytes": 6320
+     },
+     "product/dwars-door-vlaanderen-2026-uwt/stage/1.hi.json": {
+      "sha256": "054d5fe087ac311520f8e640b5216a07e0cc70ab4d0de31e36604e5b35fbd088",
+      "bytes": 123691
+     },
+     "product/dwars-door-vlaanderen-2026-uwt/stage/1.json": {
+      "sha256": "ef94d6939460343021645df943d41ab398971122159b0889f5336c043b7ba37c",
+      "bytes": 50474
+     },
+     "race/dwars-door-vlaanderen-2026-uwt.json": {
+      "sha256": "6e74436200788b7638481672ca51310935005569db37aac06bf9464788502917",
+      "bytes": 3752
+     }
+    }
+   },
+   "dwars-door-vlaanderen-2026-wwt": {
+    "digest": "8534e7576b903d30e303c873ef04eb951a00c18c2373a4175f41835df94ca12a",
+    "files": {
+     "race/dwars-door-vlaanderen-2026-wwt.json": {
+      "sha256": "33e4eee34c6a51409083ba53fcec0c6b53d9ef277bafa097da2a9ff6e680bba3",
+      "bytes": 3477
+     }
+    }
+   },
+   "e3-saxo-classic-2026-uwt": {
+    "digest": "edc591769c8618eb5daaeb8c0a2f5c9e8f2057081425cd2320639c52a5c3dd37",
+    "files": {
+     "product/e3-saxo-classic-2026-uwt/index.json": {
+      "sha256": "ce4a6e79419a702a3263bb0918acf2ddc909b5cfaecda74c38960d1ea5bc4aa7",
+      "bytes": 54789
+     },
+     "product/e3-saxo-classic-2026-uwt/quality.json": {
+      "sha256": "8195e52ae7b972ac4d795df448d8934bfedc99c3bb55c566022d98f56e80a853",
+      "bytes": 6342
+     },
+     "product/e3-saxo-classic-2026-uwt/stage/1.hi.json": {
+      "sha256": "42153bd6cce64a3f406dc015e55cbcfd019adfc34ccdbfe1b62f4db605377706",
+      "bytes": 142176
+     },
+     "product/e3-saxo-classic-2026-uwt/stage/1.json": {
+      "sha256": "3c90d733eb67a02cb6c060393a17986e8dfd5cf01c92e9902f0098e41cd09a5f",
+      "bytes": 49904
+     },
+     "race/e3-saxo-classic-2026-uwt.json": {
+      "sha256": "bd5fd294a09da04d5c4706365cffc4335d3a07923dfc1c6645b87be3e1c89f85",
+      "bytes": 3751
+     }
+    }
+   },
+   "eschborn-frankfurt-2026-uwt": {
+    "digest": "0bbc43c07b262f956fed95c006f060dd749cfe19cdd0082ef6a5dc2c51f758ce",
+    "files": {
+     "race/eschborn-frankfurt-2026-uwt.json": {
+      "sha256": "60f892360331058e41911a3c3bd2b8ae900be1ed2ae3b885792602125dfa7562",
+      "bytes": 30388
+     }
+    }
+   },
+   "faun-ardeche-classic-2026-pro": {
+    "digest": "44b5515bb85b76454c88afcc7f8ae24b163c80ecd5ca96aa638aa877c6e633c5",
+    "files": {
+     "race/faun-ardeche-classic-2026-pro.json": {
+      "sha256": "b0ee07f379e727da5ef9022ca72b1b7ddb22765742569b26bda579af490f4dca",
+      "bytes": 3618
+     }
+    }
+   },
+   "faun-drome-classic-2026-pro": {
+    "digest": "a7a9cd60340ebc1478078ecf0ac9bb39cf6a4e31350c9b80735131b5acf94cf5",
+    "files": {
+     "race/faun-drome-classic-2026-pro.json": {
+      "sha256": "f65735fdef80e30094d28d4988ff4d7a61aa2fc4f142f6e96b2592525073424b",
+      "bytes": 3625
+     }
+    }
+   },
+   "figueira-champions-classic-2026-pro": {
+    "digest": "9b426c7427205a6240f2ba50fb8b9f75014b4aeff6ddb3b5adf5ce0c8a5561e5",
+    "files": {
+     "race/figueira-champions-classic-2026-pro.json": {
+      "sha256": "aaf7426fefe8aed44aa2c7c63fd4797c83c56913c7d7fb0aecd6338ca6b5fab5",
+      "bytes": 3756
+     }
+    }
+   },
+   "four-days-of-dunkirk-2026-pro": {
+    "digest": "dd1ef5140fe6979c9a0c4c69bc2c23deedb4e8df69cfa6935f841cf155bb1d47",
+    "files": {
+     "race/four-days-of-dunkirk-2026-pro.json": {
+      "sha256": "a88d490f63e0f2aa613e23747ae34359e8781d7cd490e45d6c72ab875d9edac1",
+      "bytes": 14191
+     }
+    }
+   },
+   "gent-wevelgem-2026-uwt": {
+    "digest": "572d012cf2fe6260b36233ec38caa1e75c32c09e43bd01c8ded59e9991520d30",
+    "files": {
+     "race/gent-wevelgem-2026-uwt.json": {
+      "sha256": "550d27ffa695b9cd0d051dd7f4123922d8a0a9329fa919a90b07c7d61f05622d",
+      "bytes": 3775
+     }
+    }
+   },
+   "gent-wevelgem-2026-wwt": {
+    "digest": "306a71a982761719a59f7db93d7849ea59b8f2d9e1d9440fc7cc3e45b0d53b49",
+    "files": {
+     "race/gent-wevelgem-2026-wwt.json": {
+      "sha256": "42d0b2e4b0a8ebdc4d20bf2924f1e560fb73bebae01ab413bd3b4cca66711ee9",
+      "bytes": 3644
+     }
+    }
+   },
+   "giro-del-veneto-2026-pro": {
+    "digest": "478a468bbb594af345c9d3056e5b49cf0198e4b56252d8cc614cc2872a02d17a",
+    "files": {
+     "race/giro-del-veneto-2026-pro.json": {
+      "sha256": "edfe120d85fb5f6b11610c97385a91b408a2f6372289c5f64168875f185618aa",
+      "bytes": 1047
+     }
+    }
+   },
+   "giro-dellemilia-2026-pro": {
+    "digest": "0ef9e3a47c687d9c1a7f06bc9efa5fb0ad43517d1a22cacd8ecd6c9b6cdadb7e",
+    "files": {
+     "race/giro-dellemilia-2026-pro.json": {
+      "sha256": "2bab03e286e9c822947b2a093c44fddfc703710b7745495421655533ee0d79cd",
+      "bytes": 1048
+     }
+    }
+   },
+   "giro-ditalia-2026-uwt": {
+    "digest": "58d1eb590e71c8149d3af188d2f017ec7f85a94c2331f305cde03819f0e810e9",
+    "files": {
+     "product/giro-ditalia-2026-uwt/index.json": {
+      "sha256": "ac716c436a34634d36fb58ff52624d51b9f5b068f5e4430a841b99f4229b3fba",
+      "bytes": 105343
+     },
+     "product/giro-ditalia-2026-uwt/quality.json": {
+      "sha256": "143c5bb01eaae7baaf84f30aafaca8f04c1a289dcd6d1395c2ae06b04932d574",
+      "bytes": 12452
+     },
+     "product/giro-ditalia-2026-uwt/stage/1.json": {
+      "sha256": "6adb9a1d08a82154c6398f5eab2fde4432f47ca2ea25d61b7fd5a3aea43b1531",
+      "bytes": 335
+     },
+     "product/giro-ditalia-2026-uwt/stage/10.json": {
+      "sha256": "3e6b91d60cc3a88584141dfc965dfb4ffb87ae17d177c7a2cbd19bb5b69d8ede",
+      "bytes": 436
+     },
+     "product/giro-ditalia-2026-uwt/stage/11.json": {
+      "sha256": "514af7939d14b6f88643dfb66b0a74b59e495699d8f8be0c7b40aad4f2b8306d",
+      "bytes": 444
+     },
+     "product/giro-ditalia-2026-uwt/stage/12.hi.json": {
+      "sha256": "d81f1271365b68a2b1fe5a78d3394193d919c20293f565973cf2f2e4008ddf80",
+      "bytes": 116459
+     },
+     "product/giro-ditalia-2026-uwt/stage/12.json": {
+      "sha256": "bf2fb67a69d3a320bd0595913616f085d1d8786fba9af3f6b3889c85c123f965",
+      "bytes": 45460
+     },
+     "product/giro-ditalia-2026-uwt/stage/13.hi.json": {
+      "sha256": "c0560e4d1df2180d71fd060cdc903ec42935dc3e31fedba35b4b04f7cfdcddd4",
+      "bytes": 92661
+     },
+     "product/giro-ditalia-2026-uwt/stage/13.json": {
+      "sha256": "a0442acc438dbb383a25126c8e9d3935c3c7877504ec7e7ccd85c39080fe745c",
+      "bytes": 46711
+     },
+     "product/giro-ditalia-2026-uwt/stage/14.hi.json": {
+      "sha256": "aa93908c84bbf96cdc0dc25703659316f8c81fc946fa904c5068dc4dc54f8457",
+      "bytes": 133425
+     },
+     "product/giro-ditalia-2026-uwt/stage/14.json": {
+      "sha256": "bdf2ec564630c759e0e090f3ee27255b5308bc3e9101c23f2d4308b8cf9aea25",
+      "bytes": 51113
+     },
+     "product/giro-ditalia-2026-uwt/stage/15.json": {
+      "sha256": "a7750c7c46f8f4f2b45058dc20cc2abe0068cd9710e6904dfbed06f61bc25191",
+      "bytes": 629
+     },
+     "product/giro-ditalia-2026-uwt/stage/16.hi.json": {
+      "sha256": "53eaf36e2f36bf78cce6f32507dbc5ed8f941cf7e06ec2efffdeae75c6cc4a13",
+      "bytes": 106444
+     },
+     "product/giro-ditalia-2026-uwt/stage/16.json": {
+      "sha256": "645b63fafae79d5619164ababd11b2f5b755c2eacfb377019c8902672812a1b7",
+      "bytes": 49248
+     },
+     "product/giro-ditalia-2026-uwt/stage/17.hi.json": {
+      "sha256": "4664c89b2a16ae3c0e42acf39656e27487f9c502011d07c2b8af60ca2146cdd0",
+      "bytes": 146205
+     },
+     "product/giro-ditalia-2026-uwt/stage/17.json": {
+      "sha256": "1eb5f1132fa332d39e396638e8ee6e5de9d0e75e81f16ef572ae4ac59f0845ce",
+      "bytes": 49967
+     },
+     "product/giro-ditalia-2026-uwt/stage/18.json": {
+      "sha256": "e3ebf234ff6a02ed760b5d183bf7dfeef27fe1f643707a8f8f697072e3e27419",
+      "bytes": 539
+     },
+     "product/giro-ditalia-2026-uwt/stage/19.hi.json": {
+      "sha256": "d3504332b9b7ed2649dfec6e2fb4d9d2e0e955f4570745def7e3a0e4afe32dbb",
+      "bytes": 139832
+     },
+     "product/giro-ditalia-2026-uwt/stage/19.json": {
+      "sha256": "2a3c881bad7e8906b9daf2dd23e632684f30c977f0b845288c93a506d52a93a4",
+      "bytes": 52824
+     },
+     "product/giro-ditalia-2026-uwt/stage/2.hi.json": {
+      "sha256": "0206c6d7684cec545bef561ad6e112bbf3f11ba7a9b9d16d6497710711484952",
+      "bytes": 62609
+     },
+     "product/giro-ditalia-2026-uwt/stage/2.json": {
+      "sha256": "0b5498f2f41b4a12c79101a726599ccb7d385506a1e7c67843f7ccff19fa721c",
+      "bytes": 48958
+     },
+     "product/giro-ditalia-2026-uwt/stage/20.hi.json": {
+      "sha256": "159aa98367e5bea5e9e1ca606ce296203bf8a045861cdaf77fb8e07fc2935f8a",
+      "bytes": 150136
+     },
+     "product/giro-ditalia-2026-uwt/stage/20.json": {
+      "sha256": "1a90db14a2504cecfa83aa7f1a1927c4d610476aff47eb7776aa3c5bf81493e4",
+      "bytes": 49257
+     },
+     "product/giro-ditalia-2026-uwt/stage/21.hi.json": {
+      "sha256": "5cc1f383cb4ea113eab6935500cb98ef1276142bea0a3ec81645514b4c23c31d",
+      "bytes": 138820
+     },
+     "product/giro-ditalia-2026-uwt/stage/21.json": {
+      "sha256": "40dacfeb61c0109a130882e0825561c8618e78a1b31b6f6c0b806e92d96d4248",
+      "bytes": 50018
+     },
+     "product/giro-ditalia-2026-uwt/stage/3.hi.json": {
+      "sha256": "33f47c2aa9ceb67805f66eca42ad61903873d29f562a9a48d6a8fe02242cbfcf",
+      "bytes": 58371
+     },
+     "product/giro-ditalia-2026-uwt/stage/3.json": {
+      "sha256": "2c0cc5f9462635d028469a08525b8251a1979fcdf88b2cc7eb4ecadede527a5a",
+      "bytes": 47958
+     },
+     "product/giro-ditalia-2026-uwt/stage/4.json": {
+      "sha256": "4ec89ea52672a2de350d5677d91821a0a1c7820d1be24c7514b8d9c36e972dd1",
+      "bytes": 429
+     },
+     "product/giro-ditalia-2026-uwt/stage/5.hi.json": {
+      "sha256": "e58eccfeb8f5fc5840a5e79593151a69ffc2aed449365a52dc1b00f16449a76a",
+      "bytes": 120062
+     },
+     "product/giro-ditalia-2026-uwt/stage/5.json": {
+      "sha256": "b509d1aeee885f13a251525194c3a9746d2d57f318f213c07f538a94fa6b75ce",
+      "bytes": 49948
+     },
+     "product/giro-ditalia-2026-uwt/stage/6.json": {
+      "sha256": "f605ff269ae02d7270179a01d1129ffbeb5a44d2a23a7b29ff171b9ce66ed60a",
+      "bytes": 726
+     },
+     "product/giro-ditalia-2026-uwt/stage/7.hi.json": {
+      "sha256": "af18810c13498bff3180537b5e949003b1e4cbbc2f759c6647878c4486fc1e76",
+      "bytes": 120070
+     },
+     "product/giro-ditalia-2026-uwt/stage/7.json": {
+      "sha256": "6957022acf4b624d3e339768ad83513b2bb68967ba8f1a71c272616c17dd9739",
+      "bytes": 49956
+     },
+     "product/giro-ditalia-2026-uwt/stage/8.hi.json": {
+      "sha256": "87cab0f991d13fc51771e7948d604b8df0db9b310d5be4fa0275ca7ba6bf3857",
+      "bytes": 91460
+     },
+     "product/giro-ditalia-2026-uwt/stage/8.json": {
+      "sha256": "10b781f9002bdb69347e92904dda6ac5d7a665b823868b6dd9ed20b17449800f",
+      "bytes": 46970
+     },
+     "product/giro-ditalia-2026-uwt/stage/9.hi.json": {
+      "sha256": "8da4cbb43989fb7c16099787c4791e5263344813e236ade11f6d96d4effdf265",
+      "bytes": 107945
+     },
+     "product/giro-ditalia-2026-uwt/stage/9.json": {
+      "sha256": "77d32ba3ae3d01c25548d071d1d361dd2cd90738ba3b2df826f863171a102032",
+      "bytes": 47777
+     },
+     "race/giro-ditalia-2026-uwt.json": {
+      "sha256": "fe29722ae66b12583258333e6b5b861a6a1c442cfd840b5f436daa7ba4743c5f",
+      "bytes": 38209
+     }
+    }
+   },
+   "giro-ditalia-women-2026-wwt": {
+    "digest": "ce0868236472f867f0b4526abd1fc57a866bb16bb012745dfc7d30368ba5b5cf",
+    "files": {
+     "product/giro-ditalia-women-2026-wwt/index.json": {
+      "sha256": "7528709b8728573d7a7d24ea17b41d1d091e20f4cdafa00f8f66bc56b7d20a2c",
+      "bytes": 87384
+     },
+     "product/giro-ditalia-women-2026-wwt/quality.json": {
+      "sha256": "5bd7e5ea0ed279d5aaa517aa34bdc79c0308bfb29aec15bb4d2c0f6cefcf9e90",
+      "bytes": 6545
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/1.hi.json": {
+      "sha256": "a00212d88c49449519e5042357308a732212174372af9f8faef6225d063be7b1",
+      "bytes": 43709
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/1.json": {
+      "sha256": "b6a1f3e0a07375915e450828f00515915d9289ef0954cd8420cd4d49b1f47d3f",
+      "bytes": 41732
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/2.hi.json": {
+      "sha256": "938f8e8dd95f2c5bb3752510662da26eee501e297f70355af7ec3cf1122500c8",
+      "bytes": 77174
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/2.json": {
+      "sha256": "8a9b3831a9f0a2fa6125bdb4f4217309d433670110235567c689749fed1cf2e0",
+      "bytes": 43919
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/3.json": {
+      "sha256": "2e5bd7664348362ebb9bdac3fc7b90590b42b3196a4473a5e35767acf686c48d",
+      "bytes": 428
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/4.hi.json": {
+      "sha256": "b042dc0c5b10c921497481e8e98f94f5418dd67d366f48feaad91a8e54fe96a6",
+      "bytes": 15055
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/4.json": {
+      "sha256": "dbf235bfcee3aedd8c65c7f7a5f4fa537fb2bfb4004e55f4c5253638587fd56b",
+      "bytes": 44630
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/5.hi.json": {
+      "sha256": "574965fbdf17b645856cd6924367b59e039da5b45d5bea3ae97b04e14f75e782",
+      "bytes": 96525
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/5.json": {
+      "sha256": "0922d98ef6013df99012446668cfaa7b719a4ea2390fcb6840728141d1083837",
+      "bytes": 50652
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/6.hi.json": {
+      "sha256": "e5334bd268416a6c20d6216e2425e7122fb5a351ecb3cef8c4fd0241155a4d3b",
+      "bytes": 79083
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/6.json": {
+      "sha256": "17946b87c0beb1b20a65baaa3fec501dfa4f6ea11e2fe27fafdc5b0b099fd3c3",
+      "bytes": 44778
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/7.hi.json": {
+      "sha256": "e45a51ff4e9b2ace2e01f37dd8166c926fe9ede1efffa8e0abb0a8f32108d82d",
+      "bytes": 95450
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/7.json": {
+      "sha256": "d0b8ac34ed5436483fd0f6aa2beab34ec0b1b73fd7d5d306e179e089e953746e",
+      "bytes": 46569
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/8.hi.json": {
+      "sha256": "285ad3150dc1e2fd99124984e7f705f558f0dfd0d6383c1d4dafeecb5c9efa84",
+      "bytes": 86752
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/8.json": {
+      "sha256": "d7c2854512ede4efa36f21f1d68754838399be24f73f9d8917e2d4e518521774",
+      "bytes": 48075
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/9.hi.json": {
+      "sha256": "71a9f983f58db1f226d148009f244ce7fe55ed68e482f79ca56d01c7e60c8156",
+      "bytes": 80137
+     },
+     "product/giro-ditalia-women-2026-wwt/stage/9.json": {
+      "sha256": "c09ae3ef8e67f92df60a5bc903d669b57b380b85836ada6bbfc1e50c8ebeb06a",
+      "bytes": 54005
+     },
+     "race/giro-ditalia-women-2026-wwt.json": {
+      "sha256": "51478f6bcd58511ac29515f61e061c5667bd57e03ca0a467622f01fd3448f260",
+      "bytes": 31686
+     }
+    }
+   },
+   "gp-de-denain-2026-pro": {
+    "digest": "9369545df103bf3e01bf9fcd542a6cda49ed511fd2cb4b5d6c7b1c3c73e51425",
+    "files": {
+     "race/gp-de-denain-2026-pro.json": {
+      "sha256": "9de35c560d4c56026ba052fe706b90cd7e580bfd4943c76ad5c11e109091b06c",
+      "bytes": 3575
+     }
+    }
+   },
+   "gp-de-fourmies-2026-pro": {
+    "digest": "49670eea246054fb60c734f78c9012832af9b114e7c55960c044091065e8d1e7",
+    "files": {
+     "race/gp-de-fourmies-2026-pro.json": {
+      "sha256": "a1e0d31ac8fbc38610da4839d115bd5a4525f5b90a686222a35647c0b15842f9",
+      "bytes": 1046
+     }
+    }
+   },
+   "gp-de-wallonie-2026-pro": {
+    "digest": "538191a9f61eabd37d6d96cce2f007c6a8fdb467b82fcf7e837ea68df776ff6c",
+    "files": {
+     "race/gp-de-wallonie-2026-pro.json": {
+      "sha256": "6d3fbbec3758073cdc821e84eb41ad80bb5ccde4fdfd12914b40ceba8d8d05c4",
+      "bytes": 1047
+     }
+    }
+   },
+   "gp-du-morbihan-2026-pro": {
+    "digest": "b0f37a2835fae994057716ae889fca70bb3fe7eb74adbefde94e1eb6c3bf5e49",
+    "files": {
+     "race/gp-du-morbihan-2026-pro.json": {
+      "sha256": "e3805ac335c44c446e34d14b9ba4e671da2812049094a8834bd3c2894ca62f95",
+      "bytes": 3480
+     }
+    }
+   },
+   "gp-industria-artigianato-2026-pro": {
+    "digest": "965f7b493f72ae51febdee3a40af653adf5f295640eea0912f8fd3920089a87b",
+    "files": {
+     "race/gp-industria-artigianato-2026-pro.json": {
+      "sha256": "9fc9ec9aa6eb0553c642a4aa4101c49c14ed0c1ad6bd3bb66915688535b683c9",
+      "bytes": 1067
+     }
+    }
+   },
+   "gp-miguel-indurain-2026-pro": {
+    "digest": "608df424324209c1a2220d95a90bfe268cd7a30d98effeb10c1396e9591e5b67",
+    "files": {
+     "race/gp-miguel-indurain-2026-pro.json": {
+      "sha256": "733286d21ceb0c348f225f4fb041d49d0f40813012b415de434668aae643a0d9",
+      "bytes": 3450
+     }
+    }
+   },
+   "gran-piemonte-2026-pro": {
+    "digest": "c4614c9a02f37da348d0d585c5f9ff40ff167c835f8829f62519aecdbdbe5e6b",
+    "files": {
+     "race/gran-piemonte-2026-pro.json": {
+      "sha256": "1376e94119f8dd3afd879941aeca5b92845632f014356e9df06ed59397542fd5",
+      "bytes": 1043
+     }
+    }
+   },
+   "grand-prix-cycliste-de-montreal-2026-uwt": {
+    "digest": "6eca05647ef266dce3633d58ee63b9743daa58a7d88e0b33d0a8c910a980edb9",
+    "files": {
+     "race/grand-prix-cycliste-de-montreal-2026-uwt.json": {
+      "sha256": "02bcbef62af66ccb261fc21c6802b39c8ca9ad4f6466e95d7867a67ba8bd8b00",
+      "bytes": 1200
+     }
+    }
+   },
+   "grand-prix-cycliste-de-quebec-2026-uwt": {
+    "digest": "50bba9214951eb2dc204b8470be7eaf4fdb40694c1fdfb6977df01ff29492377",
+    "files": {
+     "race/grand-prix-cycliste-de-quebec-2026-uwt.json": {
+      "sha256": "e9a43daf258ae3bb8f0dba0fcd4b91e623e722fcd38973cd6e597aa179f9113b",
+      "bytes": 1199
+     }
+    }
+   },
+   "hamburg-cyclassics-2026-uwt": {
+    "digest": "5ef13cd000a9a5e48006c67f38813887c0b78fd1b3094d1ac8ec38040d3d65b3",
+    "files": {
+     "race/hamburg-cyclassics-2026-uwt.json": {
+      "sha256": "94e658a028df32a0b2c07e5991acacb80c4d5e1659bf08ddf758617a67717e86",
+      "bytes": 1162
+     }
+    }
+   },
+   "il-lombardia-2026-uwt": {
+    "digest": "98609162c26616b01e93958b0c6d8a08284f527371ee4bf210273b51b0430b7a",
+    "files": {
+     "race/il-lombardia-2026-uwt.json": {
+      "sha256": "9ffc40b32d56d12f40945beb606a7554ee747f7a93e24dc5fca4b25413c72d8a",
+      "bytes": 1080
+     }
+    }
+   },
+   "itzulia-women-2026-wwt": {
+    "digest": "622c0775c760db3bf96fef65062d4df93e48dd194e2831c4fcf0c2bb92410081",
+    "files": {
+     "race/itzulia-women-2026-wwt.json": {
+      "sha256": "309a43977ec39d982ad659a92ad100a59ab6dda3807e7a9ad74cd0c04a48e72c",
+      "bytes": 12255
+     }
+    }
+   },
+   "japan-cup-2026-pro": {
+    "digest": "56fb0c99083b6be8455f2cee27d4bc1b818298d5a1bd9c642c4093ebcfd9eb3e",
+    "files": {
+     "race/japan-cup-2026-pro.json": {
+      "sha256": "d7e1722fead99752bcf786d309b791fb4fadabfe979794217ce32f4c870b6515",
+      "bytes": 1035
+     }
+    }
+   },
+   "kuurne-brussels-kuurne-2026-pro": {
+    "digest": "33e6f5c73e1c18b60a45832cd410d265fc72c466c65652b9fa36489bfd9b6086",
+    "files": {
+     "product/kuurne-brussels-kuurne-2026-pro/index.json": {
+      "sha256": "f4457c17a6d9e8b90ccba231d2af295a7aa177de566cd5d5a3f0da30d1b3764f",
+      "bytes": 54820
+     },
+     "product/kuurne-brussels-kuurne-2026-pro/quality.json": {
+      "sha256": "d129f582d1f681b128b038b222da26c3d5cc4108fa8b90b9763e04134af841dd",
+      "bytes": 6342
+     },
+     "product/kuurne-brussels-kuurne-2026-pro/stage/1.hi.json": {
+      "sha256": "c1d0300a4c9af2e6f69c11e0f90c8fe462456ea0ccd116c5806d42aed3eb078a",
+      "bytes": 141824
+     },
+     "product/kuurne-brussels-kuurne-2026-pro/stage/1.json": {
+      "sha256": "0865937f3a3cbea165255e451a11e6793efe03fc0b172e89dbd314f7967a7c02",
+      "bytes": 48661
+     },
+     "race/kuurne-brussels-kuurne-2026-pro.json": {
+      "sha256": "aa1948a267733917b7d393b5bf27dbe99ed796d3d3900eb99326b56a51130bfd",
+      "bytes": 3812
+     }
+    }
+   },
+   "la-fleche-wallonne-2026-uwt": {
+    "digest": "9dda2ba55add110ceb8220712e6ddf8da72f7cc8fcf9b9cb82b0ca6c6899bcec",
+    "files": {
+     "product/la-fleche-wallonne-2026-uwt/index.json": {
+      "sha256": "4aec1e23989ed54847a9b463646d3f98f57305ae571443d6112534cdfb6e61d2",
+      "bytes": 77569
+     },
+     "product/la-fleche-wallonne-2026-uwt/quality.json": {
+      "sha256": "35d2765fa0eca8c1cfc9fd09463a902923504511c806c4e550acfaf8715119a6",
+      "bytes": 6320
+     },
+     "product/la-fleche-wallonne-2026-uwt/stage/1.hi.json": {
+      "sha256": "910e6ee80d92697ef6a464cfc25129bb32f70d03d8d3a81e851a9e85f711b415",
+      "bytes": 112131
+     },
+     "product/la-fleche-wallonne-2026-uwt/stage/1.json": {
+      "sha256": "a6d7e0299cc66b8a374077e55510c7c59d2971199c8bebec665e4cbfcc22e803",
+      "bytes": 63990
+     },
+     "race/la-fleche-wallonne-2026-uwt.json": {
+      "sha256": "26984ab89ab70db429b29356deacd0cda322603a19c95813aa8216a674312eae",
+      "bytes": 37752
+     }
+    }
+   },
+   "la-fleche-wallonne-femmes-2026-wwt": {
+    "digest": "ed95a975d5243937d4b83253503d20ff8cae166e7a0ade32326cdde361cc3a5d",
+    "files": {
+     "product/la-fleche-wallonne-femmes-2026-wwt/index.json": {
+      "sha256": "7e541986a3754d1c164dbab63976b3bcf638e985b2b121badeab2816083300e8",
+      "bytes": 73776
+     },
+     "product/la-fleche-wallonne-femmes-2026-wwt/quality.json": {
+      "sha256": "06d521f98f285c66a062348b4708e975889bbf0ca957ded2cae84ddf737b3dff",
+      "bytes": 6320
+     },
+     "product/la-fleche-wallonne-femmes-2026-wwt/stage/1.hi.json": {
+      "sha256": "872f90e8790eb0920299a713caf0d179d6bd053d3b4a863bf8f103e484cda47e",
+      "bytes": 72040
+     },
+     "product/la-fleche-wallonne-femmes-2026-wwt/stage/1.json": {
+      "sha256": "441c1ca519d580fea160a3a011aeeb9d45555a714ac1255068336c745b5c16fe",
+      "bytes": 60187
+     },
+     "race/la-fleche-wallonne-femmes-2026-wwt.json": {
+      "sha256": "1d62d4fc62e777a5b5e2729411b62eae2703d70ea134f0cd4925b280466ff274",
+      "bytes": 32003
+     }
+    }
+   },
+   "la-vuelta-femenina-2026-wwt": {
+    "digest": "a18bbdb6defa3f909315891f14af0a4971f36cad1f193c019996f2098f6763e7",
+    "files": {
+     "race/la-vuelta-femenina-2026-wwt.json": {
+      "sha256": "6fc52491bf426ee1a3e5b30b6ac6c9a4d35d1bf556821047bc89ade96423f751",
+      "bytes": 39638
+     }
+    }
+   },
+   "liege-bastogne-liege-2026-uwt": {
+    "digest": "1420395151fbb7d448e69f044c8a805f57c055a3830900c68cfc78d0d3cb284e",
+    "files": {
+     "product/liege-bastogne-liege-2026-uwt/index.json": {
+      "sha256": "8f531072eeaeedc17c9537a237b4ab85de77d2bbfe6156fab601a502a241a8d6",
+      "bytes": 73574
+     },
+     "product/liege-bastogne-liege-2026-uwt/quality.json": {
+      "sha256": "03086be962efbba923cf2e11e0b8adc55ae3f0764e1ec503755332bd50be71b0",
+      "bytes": 6320
+     },
+     "product/liege-bastogne-liege-2026-uwt/stage/1.hi.json": {
+      "sha256": "c7936bd2e423410d6a069cacc02ea6c5199ebda54c6912eff6f9ccc2203176bb",
+      "bytes": 149441
+     },
+     "product/liege-bastogne-liege-2026-uwt/stage/1.json": {
+      "sha256": "36bfcd7e5cbd60b2af917b4a4e904d24a103ca3652633814991000f8b16aee16",
+      "bytes": 63040
+     },
+     "race/liege-bastogne-liege-2026-uwt.json": {
+      "sha256": "0aa5c60196bf8e08616b1df2ca86e62cb66ca1499159ee3acf16f5e7d5b572e0",
+      "bytes": 31286
+     }
+    }
+   },
+   "liege-bastogne-liege-femmes-2026-wwt": {
+    "digest": "9f205d0a645b20a99b07711c3635344e46fa0c1eb8c2e4eeb676b4f3970cca70",
+    "files": {
+     "product/liege-bastogne-liege-femmes-2026-wwt/index.json": {
+      "sha256": "b43c1977edf6da031ccab4f08fb72f95b15991e998e71e82a6e326584ba1fa28",
+      "bytes": 69404
+     },
+     "product/liege-bastogne-liege-femmes-2026-wwt/quality.json": {
+      "sha256": "7b2455c1c1da87c240b5dc53bd2cd82ca3936ec4e37e3b8e86cec1a5e81c6118",
+      "bytes": 6320
+     },
+     "product/liege-bastogne-liege-femmes-2026-wwt/stage/1.hi.json": {
+      "sha256": "e118ad551a4b1ff9ea81474c046f686a7d6cd2517c3a8aff77f037232889838f",
+      "bytes": 142961
+     },
+     "product/liege-bastogne-liege-femmes-2026-wwt/stage/1.json": {
+      "sha256": "1698e0ce2abceb3bd0b94c330cb0048d8cbc2fcd7081a896e0327dd7ec958bda",
+      "bytes": 59697
+     },
+     "race/liege-bastogne-liege-femmes-2026-wwt.json": {
+      "sha256": "88518b450ba85cd1c6689231805be8b17e7cb75a740b21844c8b581b21ed4fd6",
+      "bytes": 24811
+     }
+    }
+   },
+   "maryland-cycling-classic-2026-pro": {
+    "digest": "4b9c7cca2c9cf7150c3803619341e59ef46f62fb6c323e201dc2ff62991944db",
+    "files": {
+     "race/maryland-cycling-classic-2026-pro.json": {
+      "sha256": "f8b177b7e13e4e664320eab254fa5aaaddfd34601f9fb9d7e8deb5cebbd7cad7",
+      "bytes": 1069
+     }
+    }
+   },
+   "milan-san-remo-2026-uwt": {
+    "digest": "2d29f761de136fa54c785c2761c357a12ff42646bdb517198bc9a735063c7c75",
+    "files": {
+     "product/milan-san-remo-2026-uwt/index.json": {
+      "sha256": "bcee102bcda45732469a2adb67959d054cc28953cd3935d22926c6defe50d044",
+      "bytes": 54896
+     },
+     "product/milan-san-remo-2026-uwt/quality.json": {
+      "sha256": "f338ce9c188b3af28dec5c707748ec31995a5e4a8f96675e17daae38df056573",
+      "bytes": 6320
+     },
+     "product/milan-san-remo-2026-uwt/stage/1.hi.json": {
+      "sha256": "e7ba06486718cd6de7554d52da6c3d29cc937815c25c0bf0d88457c904d690e8",
+      "bytes": 144337
+     },
+     "product/milan-san-remo-2026-uwt/stage/1.json": {
+      "sha256": "a7a3eb873c0a4859eec69414163a2187f5653c06c36ce4c63a695032d3847d55",
+      "bytes": 45830
+     },
+     "race/milan-san-remo-2026-uwt.json": {
+      "sha256": "f009b5209f418a006377ee1351977d80a5bd8e7503e08d73037c178a94cb9904",
+      "bytes": 3765
+     }
+    }
+   },
+   "milan-san-remo-women-2026-wwt": {
+    "digest": "7331f597b1067508701601ffcbd3133b043faaf5eaf5ec6df29569578aeb8520",
+    "files": {
+     "race/milan-san-remo-women-2026-wwt.json": {
+      "sha256": "b1be4e3f1e0f82f951257971baffddda7296a9661faf43cbe17e14f3bdae2162",
+      "bytes": 3746
+     }
+    }
+   },
+   "milano-torino-2026-pro": {
+    "digest": "45a4045d18b5f92d8a80e5cfd852d606a1e0f2b33460fddee02d74c56dc54b34",
+    "files": {
+     "race/milano-torino-2026-pro.json": {
+      "sha256": "8491effb7d40a57a3db13e93f9357e39ca93dc92af0847db30e9af2b1345641a",
+      "bytes": 3622
+     }
+    }
+   },
+   "munsterland-giro-2026-pro": {
+    "digest": "b0ef4547d1005c784b7d6efcf923a35edfd80fefb01e544d49112e79a5e2fefb",
+    "files": {
+     "race/munsterland-giro-2026-pro.json": {
+      "sha256": "1785de5ac158daa0b7643f68d31208382d09433a43aa880f339663c0bd41b45a",
+      "bytes": 1052
+     }
+    }
+   },
+   "muscat-classic-2026-pro": {
+    "digest": "363d46276916896a2c7bbae1df2436f633f8ff46060943b0828da1af39515265",
+    "files": {
+     "race/muscat-classic-2026-pro.json": {
+      "sha256": "f3de6c97cb46c7ba327b5a875bdee6394bca1af1881af41bb4ac939e5175a5d6",
+      "bytes": 3371
+     }
+    }
+   },
+   "nokere-koerse-2026-pro": {
+    "digest": "b2e8bfc19402c168d2e4a6885436f57d8e5f2af137fb808c2f657bcf7bb4717e",
+    "files": {
+     "race/nokere-koerse-2026-pro.json": {
+      "sha256": "6807be41a57f0fa28c5f00af5b04c000d37a68be39d8633dbc0fcc7ccdd6b67d",
+      "bytes": 3624
+     }
+    }
+   },
+   "omloop-het-nieuwsblad-2026-uwt": {
+    "digest": "133cb062b1b075070b5216f8481b4dc9e8e4394335ca43461ea629f0ee1bcbbf",
+    "files": {
+     "product/omloop-het-nieuwsblad-2026-uwt/index.json": {
+      "sha256": "8861f7c55e0589a042cb8f5e836833483561b831e2422d2ddfdb63af91aadb82",
+      "bytes": 54815
+     },
+     "product/omloop-het-nieuwsblad-2026-uwt/quality.json": {
+      "sha256": "76a5daf525ae4a9526847ee2c38e567de000a5c9b7da0b253d98f5a721533c7d",
+      "bytes": 6320
+     },
+     "product/omloop-het-nieuwsblad-2026-uwt/stage/1.hi.json": {
+      "sha256": "9935da00b60c3578c1f09dd5e20e386bcb8f824179db628ac13612d15a54a68a",
+      "bytes": 139827
+     },
+     "product/omloop-het-nieuwsblad-2026-uwt/stage/1.json": {
+      "sha256": "fb587c2b1c99506859907162c2c320c3dca1a09517ebcbd6dc63f31a5ce26af6",
+      "bytes": 49599
+     },
+     "race/omloop-het-nieuwsblad-2026-uwt.json": {
+      "sha256": "10b4f29488192346b6e2cd7f2fc5a278e680f1065c4f2c1926b02342023837f0",
+      "bytes": 3826
+     }
+    }
+   },
+   "omloop-het-nieuwsblad-2026-wwt": {
+    "digest": "6f7e8c60332679fa5c245675f6f55508ed3e154e4257494e9dcb7946a13cbe7f",
+    "files": {
+     "race/omloop-het-nieuwsblad-2026-wwt.json": {
+      "sha256": "58bff5d5c142ccaceaa2e0ae224e0c4e90acd8ca3d8540ad52d03cda7d207380",
+      "bytes": 3759
+     }
+    }
+   },
+   "paris-nice-2026-uwt": {
+    "digest": "4b863b077d42b595647a12af700877ff7bb49772f79fee42d4beec7a11579c86",
+    "files": {
+     "product/paris-nice-2026-uwt/index.json": {
+      "sha256": "87124727a0c0679b3c2ee57990264513b76078b3d3df1a21a1f51e1d5f6085db",
+      "bytes": 61889
+     },
+     "product/paris-nice-2026-uwt/quality.json": {
+      "sha256": "abeba257886dc428392d6364f665a5ac5ef49369d77bedfa76b0c405e87d51a1",
+      "bytes": 6799
+     },
+     "product/paris-nice-2026-uwt/stage/1.hi.json": {
+      "sha256": "908485a6cce131a3bbf77c49dddf5009f4f7b4d5145edb4ce0ffea0028445e70",
+      "bytes": 107811
+     },
+     "product/paris-nice-2026-uwt/stage/1.json": {
+      "sha256": "44e15650e13f5ee0cb8a154141329a025413f2827d09bbe53417f6ca49783300",
+      "bytes": 55097
+     },
+     "product/paris-nice-2026-uwt/stage/2.hi.json": {
+      "sha256": "a8b20d4cfb6f1e92ac86cad022541b124fbab3709a6215b3f04515c91db1a734",
+      "bytes": 88714
+     },
+     "product/paris-nice-2026-uwt/stage/2.json": {
+      "sha256": "a988950e955fe999f6c665483ce27676bd88462a5c39c62c8c13d41c0ac6d85a",
+      "bytes": 44687
+     },
+     "product/paris-nice-2026-uwt/stage/3.hi.json": {
+      "sha256": "b7221a73bb6aac51f32232d1ef92dc18ace08ad17f1f0f38cc76de8c2215f760",
+      "bytes": 10779
+     },
+     "product/paris-nice-2026-uwt/stage/3.json": {
+      "sha256": "8b92137b9e5e8c7a5478dea2f1c5fe4f4c70a6e3ec6e7c0ea9176bcf568aa752",
+      "bytes": 30931
+     },
+     "product/paris-nice-2026-uwt/stage/4.hi.json": {
+      "sha256": "3d1da10d354820cc0560d72d56c0f17334234fdfac3e235b02e0d14ebb9436e9",
+      "bytes": 78829
+     },
+     "product/paris-nice-2026-uwt/stage/4.json": {
+      "sha256": "b488400ffc88b84b45175887262ea82f394aca8c7ea3eb10d9aa4495d8858978",
+      "bytes": 48605
+     },
+     "product/paris-nice-2026-uwt/stage/5.hi.json": {
+      "sha256": "ce433627b8887b3de08af5b18411bde4237fb9f419405ca5fea52df5817faf9d",
+      "bytes": 149917
+     },
+     "product/paris-nice-2026-uwt/stage/5.json": {
+      "sha256": "17002055617960546e0da7a351b39325523fc572a0c3bc5f761954d34b24ba5a",
+      "bytes": 49760
+     },
+     "product/paris-nice-2026-uwt/stage/6.hi.json": {
+      "sha256": "98ede739868c8a7d2dbdd81f9ae795f68f3f285acec3138ba06ef2854a802fd6",
+      "bytes": 125243
+     },
+     "product/paris-nice-2026-uwt/stage/6.json": {
+      "sha256": "e1baefb9d7fe50922170bc7d7f356d558c642adf39cb48ed870eed2719b2da35",
+      "bytes": 47597
+     },
+     "product/paris-nice-2026-uwt/stage/7.hi.json": {
+      "sha256": "72702cd42226d02e1a1e36daaa28bb56f3e1ce4ae61a6beeb1167f4636b66b11",
+      "bytes": 127984
+     },
+     "product/paris-nice-2026-uwt/stage/7.json": {
+      "sha256": "d720ae025d1ff7513b5019c52496bdbc4af7a69dfb265427d08a2709622dac62",
+      "bytes": 46996
+     },
+     "product/paris-nice-2026-uwt/stage/8.hi.json": {
+      "sha256": "2bba1eba01e52532559b6e6252dd2e5215835d683b8f2887acc59a4e4fa0c99d",
+      "bytes": 146369
+     },
+     "product/paris-nice-2026-uwt/stage/8.json": {
+      "sha256": "73eb080aa2222b47e5a3567eef67f056a9c93c40849eecb74e70828badac5af5",
+      "bytes": 56200
+     },
+     "race/paris-nice-2026-uwt.json": {
+      "sha256": "802e4af65ce449897cedd24f4276eb18f7ced0e14ffed47a51213b40134f4e9d",
+      "bytes": 27721
+     }
+    }
+   },
+   "paris-roubaix-2026-uwt": {
+    "digest": "765db98a808d4eac85cbd6f355e373d5ab0057b3e97a8d0b5ae21b3573c21f46",
+    "files": {
+     "product/paris-roubaix-2026-uwt/index.json": {
+      "sha256": "2f95d1b5faa38c321ab86af1cd98b81cffb2537f4e0cb5a8f69e16f47c1dc8da",
+      "bytes": 78819
+     },
+     "product/paris-roubaix-2026-uwt/quality.json": {
+      "sha256": "5208636cfd1241ee5b13bab1b2d22079db4f3c8ff5519c19f089a9db93f1bd39",
+      "bytes": 6320
+     },
+     "product/paris-roubaix-2026-uwt/stage/1.hi.json": {
+      "sha256": "fc823e16dc8030b83eea8f1893de6857b80902998bbb8f5e4ab2c72e0f31c9bb",
+      "bytes": 143476
+     },
+     "product/paris-roubaix-2026-uwt/stage/1.json": {
+      "sha256": "813464c1fc42346040a69684499e9e4bea2bca292c578a5025f5c85a36b5962f",
+      "bytes": 72374
+     },
+     "race/paris-roubaix-2026-uwt.json": {
+      "sha256": "8d0334fab6703c3ac65719d30572bf751d78d2a21f58899de56cae68a2d99310",
+      "bytes": 40148
+     }
+    }
+   },
+   "paris-roubaix-femmes-2026-wwt": {
+    "digest": "036bd141421659df86587e4032d3e5bf03218667f0b8b6541d7198f590373743",
+    "files": {
+     "product/paris-roubaix-femmes-2026-wwt/index.json": {
+      "sha256": "ef2293919797713b5b9568e829bfc869a3d2972e9d4d6242157061822bf44088",
+      "bytes": 70956
+     },
+     "product/paris-roubaix-femmes-2026-wwt/quality.json": {
+      "sha256": "2ac5e5c40c45a4d43cae51fa1e0986dae500a67cc6e5bc2d1e081351e95d1ec6",
+      "bytes": 6320
+     },
+     "product/paris-roubaix-femmes-2026-wwt/stage/1.hi.json": {
+      "sha256": "b5aeaa6e763c48300923ccab1d647464f98ec7a82ac11969390b511e7410fa35",
+      "bytes": 137584
+     },
+     "product/paris-roubaix-femmes-2026-wwt/stage/1.json": {
+      "sha256": "99d89750e91e09741758112eb0eb930aca0a3df04fcd754d9fbef262cc7ade3f",
+      "bytes": 62742
+     },
+     "race/paris-roubaix-femmes-2026-wwt.json": {
+      "sha256": "e03a84c071a2a29e4ebf8ad7c70f09859cc5159ccc5d04b040576ed6855c13c2",
+      "bytes": 28043
+     }
+    }
+   },
+   "paris-tours-2026-pro": {
+    "digest": "d8a4ab6568f9874e19d0f0d614daa86d0ffcb6febacc535817a82a28c4ecc80a",
+    "files": {
+     "race/paris-tours-2026-pro.json": {
+      "sha256": "a835a80bf27ecf34f1c424d6237b79d96dd8f2d9d7d910a86135db4c4c7c979a",
+      "bytes": 1042
+     }
+    }
+   },
+   "region-pays-de-la-loire-tour-2026-pro": {
+    "digest": "59a5a6008016f3996acb1d8122061cdd5339c0f9ecc8ece6632d300754b6a19a",
+    "files": {
+     "race/region-pays-de-la-loire-tour-2026-pro.json": {
+      "sha256": "9da98da20003e9edf40c92f3fa0ba2c47277f670869761fedb64b1c7147fd051",
+      "bytes": 13305
+     }
+    }
+   },
+   "renewi-tour-2026-uwt": {
+    "digest": "275ea4553da4373a86f9ddd567ac84cee293d70c27ae2e0f0ce4e0759faaef6c",
+    "files": {
+     "race/renewi-tour-2026-uwt.json": {
+      "sha256": "2cf3a603303f1f66f7ff60acdd8e1f1010a5f11cec131c61576ff7d60cdf45f0",
+      "bytes": 1097
+     }
+    }
+   },
+   "scheldeprijs-2026-pro": {
+    "digest": "9d8ebb81b3d08bbee8ee7fac86b2e372c3354386c74e4ad53f193059ccabf848",
+    "files": {
+     "race/scheldeprijs-2026-pro.json": {
+      "sha256": "07fd9d881786832e2cf2a631cc6232142815763f70af91eabae93069b673be08",
+      "bytes": 3520
+     }
+    }
+   },
+   "strade-bianche-2026-uwt": {
+    "digest": "34b176ff927ce9b85d037aa15994e1118bfa911b40f7ca3fd3f7e79dbbe1a4e9",
+    "files": {
+     "product/strade-bianche-2026-uwt/index.json": {
+      "sha256": "fbbc1fcb9c675ae14718f993e929bf4ba41728e342aa9ed395772c9b05972001",
+      "bytes": 55007
+     },
+     "product/strade-bianche-2026-uwt/quality.json": {
+      "sha256": "3dc0ea06aae2cfbfd031b09f8f13aa812e1869e8bbbdbabcf64ffd08127b639b",
+      "bytes": 6342
+     },
+     "product/strade-bianche-2026-uwt/stage/1.hi.json": {
+      "sha256": "253c3c5fdb86fca7ac7ce39a9e196361f93690e206c2fd12a0581743f2b8a795",
+      "bytes": 148879
+     },
+     "product/strade-bianche-2026-uwt/stage/1.json": {
+      "sha256": "7ee90d37961dcdf6a7c17271fecbd5cd0534d12e2de133e50517dbd3ec5ac3ff",
+      "bytes": 65919
+     },
+     "race/strade-bianche-2026-uwt.json": {
+      "sha256": "cc9be9756e81d093a1a8e8fb39994512b6347a5a176265d783a0376e25e06616",
+      "bytes": 3796
+     }
+    }
+   },
+   "strade-bianche-donne-2026-wwt": {
+    "digest": "0283b3f0019df85b47a9b3638a933091f35ed35800d1cc4ed0411d0fe5408a1d",
+    "files": {
+     "product/strade-bianche-donne-2026-wwt/index.json": {
+      "sha256": "0a01c9aee6610708c27dd7b41bdbaac546fcf9523fe47c572ae0c7854b2e2949",
+      "bytes": 54942
+     },
+     "product/strade-bianche-donne-2026-wwt/quality.json": {
+      "sha256": "fd30ffd28371c4682cc35b235d855551d4eb40c3ddaf41be881feba107bd5907",
+      "bytes": 6342
+     },
+     "product/strade-bianche-donne-2026-wwt/stage/1.hi.json": {
+      "sha256": "a48ca5fedb1ca38dcc7818bce0e7036709cd8d21fb09054d2485ac6eb5b02e61",
+      "bytes": 147295
+     },
+     "product/strade-bianche-donne-2026-wwt/stage/1.json": {
+      "sha256": "ae699e6bd25e42ab491984119596ec5aef83abda20c436c77419b357c36ca0ff",
+      "bytes": 60515
+     },
+     "race/strade-bianche-donne-2026-wwt.json": {
+      "sha256": "21616d3c8dae82e628ae3e3218c120458c0c57d4bb3cb4b5b3c560a5beff11cd",
+      "bytes": 3611
+     }
+    }
+   },
+   "super-8-classic-2026-pro": {
+    "digest": "ec6cc24c68f0900dbb438450be0408e0a3a2a15baa70d3f53ad70794a69422aa",
+    "files": {
+     "race/super-8-classic-2026-pro.json": {
+      "sha256": "71485ab0900a0363ea3c4451614b5097bdd1bae732737f5d5f22c29f9f1fcde4",
+      "bytes": 1049
+     }
+    }
+   },
+   "surf-coast-classic-2026-pro": {
+    "digest": "54bc94e00f2fc3b67fe67ea52dba565ca084a0764e8984a9a76aedf1c5a22a3b",
+    "files": {
+     "race/surf-coast-classic-2026-pro.json": {
+      "sha256": "42959a54911eb182afa5a9fd632a4ff6dfbeb6139da4950fca23f1d39cc6fcef",
+      "bytes": 1589
+     }
+    }
+   },
+   "tdf-2026": {
+    "digest": "c9c479379037d867f3aa036c380de93a4d8f4ba4cf218e8088b5959f43f48187",
+    "files": {
+     "product/tdf-2026/index.json": {
+      "sha256": "91e7dd792e0d4ee6124d6aac2bbd35492c2495f149000e13f8365b568cba334c",
+      "bytes": 120881
+     },
+     "product/tdf-2026/quality.json": {
+      "sha256": "1ac091ebae7de8f0ce6786dfbdfc978c09e8c4d60678dd5929b443e73d59bf85",
+      "bytes": 32811
+     },
+     "product/tdf-2026/stage/1.hi.json": {
+      "sha256": "74652fcdd09bd3ff87a4d8d93af98dd861af0c9a112222fc014b76a7299f94b2",
+      "bytes": 1491
+     },
+     "product/tdf-2026/stage/1.json": {
+      "sha256": "afcfde1d9c77615255c3bd710f022ba20acb21100225662be6e17e48dbac8126",
+      "bytes": 58058
+     },
+     "product/tdf-2026/stage/10.hi.json": {
+      "sha256": "34808751d5d5a6e4a81898ae244628f15e5b2ae8581c98aca24af47307284f67",
+      "bytes": 14350
+     },
+     "product/tdf-2026/stage/10.json": {
+      "sha256": "fe51d1306f1a4c461049b22b46b2481009f48e8dfef8cf512ec51d4a4c26037b",
+      "bytes": 111906
+     },
+     "product/tdf-2026/stage/11.hi.json": {
+      "sha256": "f2ef46723829753caef9360fb4ad9cf01cd99a940e1d4d3b5aa1d97141bb14d2",
+      "bytes": 13586
+     },
+     "product/tdf-2026/stage/11.json": {
+      "sha256": "b06d2396dccd9337b45783787fdbd9715c0c40d5598dc50ea53c5c54cbd5a854",
+      "bytes": 101925
+     },
+     "product/tdf-2026/stage/12.hi.json": {
+      "sha256": "736d29552c6bfe2473ecf9fa4c31851c831ac3db853c665884ade01b2e932140",
+      "bytes": 15127
+     },
+     "product/tdf-2026/stage/12.json": {
+      "sha256": "bdf7390122c3428101871e4582ab18e29c6bbb6eaf029abd28328c3d8130761f",
+      "bytes": 105074
+     },
+     "product/tdf-2026/stage/13.hi.json": {
+      "sha256": "7deb5f93677d6b4580e3f1ff9e49071b7c7628493c60b9d3dd896c280ccdf186",
+      "bytes": 17417
+     },
+     "product/tdf-2026/stage/13.json": {
+      "sha256": "abd213a37ee5b5f828c1fb978fda6d089dd517f36035ca7410b4ffe13e6e0c99",
+      "bytes": 115682
+     },
+     "product/tdf-2026/stage/14.hi.json": {
+      "sha256": "86446fd1630c3924a6010e4151855de03c894c2d91a5a0deb0a7b890cc44c7c9",
+      "bytes": 132000
+     },
+     "product/tdf-2026/stage/14.json": {
+      "sha256": "9bc2774876e8affe577b4a2ea82ccd2fa9cb1c545eba9057e03ecddb4c18a165",
+      "bytes": 114498
+     },
+     "product/tdf-2026/stage/15.hi.json": {
+      "sha256": "9588c729f56ef8bb9ddb90318a6eb7f7e719079e4d831c29e7545c956b2421ae",
+      "bytes": 15701
+     },
+     "product/tdf-2026/stage/15.json": {
+      "sha256": "bd7254b1f4f6796ed891269738dbe453bc8d1c53acc222974711b55c02b7fd65",
+      "bytes": 118572
+     },
+     "product/tdf-2026/stage/16.hi.json": {
+      "sha256": "9a0f649fe6bdb1c29f88ba4f0e8132bbb7a73d9a679758b181c83033ec6df5cf",
+      "bytes": 2155
+     },
+     "product/tdf-2026/stage/16.json": {
+      "sha256": "de77e8635a3738a0221698b7f3c220a008f3a606e23900f10fa1158b127f0a83",
+      "bytes": 52762
+     },
+     "product/tdf-2026/stage/17.hi.json": {
+      "sha256": "b0db911b65c1375832d549c66bbd51f41545084a1e91a5d9a34ce2f5e2f61e51",
+      "bytes": 14730
+     },
+     "product/tdf-2026/stage/17.json": {
+      "sha256": "290a0e19a6e44639de1b9b43ba25da75fecaa6019eb11dc2aee49e87da5c1bd0",
+      "bytes": 110767
+     },
+     "product/tdf-2026/stage/18.hi.json": {
+      "sha256": "bf446fc46abe30b18c7ea600b64005f0ebe8ce62536f209a93cc851ef1bc6e44",
+      "bytes": 15704
+     },
+     "product/tdf-2026/stage/18.json": {
+      "sha256": "47c348d5e7602f9f8220cdbeb01cf642d57fabfb0b6d5658a89fc6dcb56e8d7c",
+      "bytes": 119001
+     },
+     "product/tdf-2026/stage/19.hi.json": {
+      "sha256": "ccebfab01dbe6a6092717779356e8fde0e40868bd86fb37aa817d700c691ae09",
+      "bytes": 10980
+     },
+     "product/tdf-2026/stage/19.json": {
+      "sha256": "1f50da705dae34cc59528a96985ef658308dabfdb2bf49ab9bee5b2772119ecf",
+      "bytes": 93441
+     },
+     "product/tdf-2026/stage/2.hi.json": {
+      "sha256": "cf3551ee93b5e851b75a04b69682870f56336f9e3cdbdd1995b231125063a118",
+      "bytes": 102024
+     },
+     "product/tdf-2026/stage/2.json": {
+      "sha256": "51b11ceef16f9ff6cfd173250d9f5d32e2552efbdfbd448f49c588dd5c7524db",
+      "bytes": 108547
+     },
+     "product/tdf-2026/stage/20.hi.json": {
+      "sha256": "900890c6810d2b9d7947bbceb1140c3d7c01f74b4f355f39e7438d3240d9f1b9",
+      "bytes": 15095
+     },
+     "product/tdf-2026/stage/20.json": {
+      "sha256": "72af77b2f9626f38bf6eae16a1c6bb361c6ff4745e39924748f30e50c8d83177",
+      "bytes": 116443
+     },
+     "product/tdf-2026/stage/21.json": {
+      "sha256": "cab7b147bb6e66ff14a1c89b7d317308b53f0f3217df58f4b2a0d18a49a365c8",
+      "bytes": 20723
+     },
+     "product/tdf-2026/stage/3.hi.json": {
+      "sha256": "e603a3504eee6b3264eaf7dec33e6411039d1c7c661a53f5150829dff0899516",
+      "bytes": 16964
+     },
+     "product/tdf-2026/stage/3.json": {
+      "sha256": "33c0cb72fe6f960041ce335eec1bb8d9059f9bb250712a08c7a5ee8275e28f1a",
+      "bytes": 115400
+     },
+     "product/tdf-2026/stage/4.hi.json": {
+      "sha256": "3bd209331a73c4df500529b6daa9e056c6b59c5e0def502f3757368492cf0910",
+      "bytes": 15359
+     },
+     "product/tdf-2026/stage/4.json": {
+      "sha256": "d1cea29ebf98854cf9d5642a5b704c2072c4a7bfef8ed4e34e3a2da680781e7b",
+      "bytes": 112905
+     },
+     "product/tdf-2026/stage/5.hi.json": {
+      "sha256": "d456c7a42f640e4606e684f8c93f1c166616a49e79c19b507c714646ed120650",
+      "bytes": 13330
+     },
+     "product/tdf-2026/stage/5.json": {
+      "sha256": "904819a7760d823e3fabd862a362b22f5c4d00add5df23e840bc3518695927d5",
+      "bytes": 98066
+     },
+     "product/tdf-2026/stage/6.hi.json": {
+      "sha256": "c9dccc4bff1564e0f7b28f8ceb2c88cc95add4717eb124659153b48c58703545",
+      "bytes": 15873
+     },
+     "product/tdf-2026/stage/6.json": {
+      "sha256": "2a9c6fc7f5eb5df154a2dcbb0cca066ed43f944378223ef15256c20731081bef",
+      "bytes": 117151
+     },
+     "product/tdf-2026/stage/7.hi.json": {
+      "sha256": "702f1e1c7df804fdc5e9b769ceb6b1aadf4748a5c6c04a37b6472720055af9b1",
+      "bytes": 13853
+     },
+     "product/tdf-2026/stage/7.json": {
+      "sha256": "def807925c8190d1990ca6711bd572dedc58e466ea48e3c9f1c05eb8fca7ad66",
+      "bytes": 99707
+     },
+     "product/tdf-2026/stage/8.hi.json": {
+      "sha256": "156e013012b0ce63d17e429791d790398c41172fa4ed27b7b457c712a2faf0ff",
+      "bytes": 14667
+     },
+     "product/tdf-2026/stage/8.json": {
+      "sha256": "e56e810450dcbddaf95ef9d80e789dc5d84625ee3e44a7c5cd7de19003258b34",
+      "bytes": 106447
+     },
+     "product/tdf-2026/stage/9.json": {
+      "sha256": "e78738ae6c3e20a86e6c37b3cf6d7d96a1d12162af438d6c5bbc8104ee7f4cc4",
+      "bytes": 60906
+     },
+     "race/tdf-2026.json": {
+      "sha256": "342a50647546e9d53ac629a73d764bfc2ed41c06a9642c3442853e01387a1c00",
+      "bytes": 58921
+     }
+    }
+   },
+   "tirreno-adriatico-2026-uwt": {
+    "digest": "28a3c47df5def79f09995e9e086106b172865791ebf9d397357b52c853635fa1",
+    "files": {
+     "product/tirreno-adriatico-2026-uwt/index.json": {
+      "sha256": "836ce06baa8ea0aa69a083d05110bc3391b69a52b5112bfa26952b08b7cced8f",
+      "bytes": 61148
+     },
+     "product/tirreno-adriatico-2026-uwt/quality.json": {
+      "sha256": "74999804f6845ff9adf361b076b20ace2fcd1c014325308b7b6fe23ec4d26e86",
+      "bytes": 6592
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/1.hi.json": {
+      "sha256": "9676b149a149f9e0fec9b5308b00dcee3551b9b7e394da5898af41edafda10c3",
+      "bytes": 2096
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/1.json": {
+      "sha256": "a28018779c55847dd28af0e59e0704e163bdfdaa0276e951b96ca75f2b6af5c2",
+      "bytes": 7429
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/2.hi.json": {
+      "sha256": "596cf22e26014d2fe73765f84463b289ce50e4460266b1a2c8a1f11f5ecd2f28",
+      "bytes": 126079
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/2.json": {
+      "sha256": "e4a35f198a3fc2a3233da5b81e9d101073eb01789dcafea645bc51fd8e30bc2a",
+      "bytes": 47643
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/3.hi.json": {
+      "sha256": "201ab4385b7026625040f77f55e61b06b7fbba2fb4b5d223c59339cbffb667de",
+      "bytes": 114996
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/3.json": {
+      "sha256": "f4730472116c6957a59846b0cf211c5e4dbea3fc1b50e06c8a2af5ca60e5c55c",
+      "bytes": 48194
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/4.hi.json": {
+      "sha256": "1292014b31cb5a38a2cf0dea4035ef06bfdd19cadfbfad9be5a71d9f914a3deb",
+      "bytes": 151650
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/4.json": {
+      "sha256": "a879ad176ae432f90f475d444879b6fd6e980f05a73422c6dcfa1421025f34b8",
+      "bytes": 49950
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/5.json": {
+      "sha256": "0d9e17040034db327048eeed5efa81587be0e4e529bd72a90f9d115c22648799",
+      "bytes": 335
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/6.hi.json": {
+      "sha256": "777b38d785d743997adda8174faf1c6f19c9b7ea5a34fb7986f83fb72690dea8",
+      "bytes": 127813
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/6.json": {
+      "sha256": "5e100a6badb7a00363d9389b36c1bbf48a84d1d673179e7f88e57a7a52a56f60",
+      "bytes": 51956
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/7.hi.json": {
+      "sha256": "15e80ba21d21211584be7024733810ea6e006d5aa600fef40bc86306b88b6993",
+      "bytes": 111529
+     },
+     "product/tirreno-adriatico-2026-uwt/stage/7.json": {
+      "sha256": "bffc65403a41963b932bc1d272dc1bdc5c55ef95f61e08fc31b8248405e53fd7",
+      "bytes": 50697
+     },
+     "race/tirreno-adriatico-2026-uwt.json": {
+      "sha256": "d5d6d7c1fc0db5256bbe3b77810564b44187e35e2294ca3d49a56110b680a662",
+      "bytes": 17385
+     }
+    }
+   },
+   "tour-auvergne-rhone-alpes-2026-uwt": {
+    "digest": "606eb66d5b3f8af889782bff6af373bb86e122940394a15bd3eafd8b7497a7a4",
+    "files": {
+     "product/tour-auvergne-rhone-alpes-2026-uwt/index.json": {
+      "sha256": "eb1c7efdcf85c3a0507a2e73873e8556a181319c0a1fa0e50433edc2361be98d",
+      "bytes": 62824
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/quality.json": {
+      "sha256": "2020e5a9029e15ed5f6d99095e89fdd96a53b9be21531993ddb56658dbd25bcb",
+      "bytes": 7763
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/1.json": {
+      "sha256": "83f16659fd6685df2520277c9f2069fbe7421f342c380b4244815dd6fdadba7b",
+      "bytes": 11351
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/2.hi.json": {
+      "sha256": "7b51676ebecaf94456bfa6e84ee55ad96945e94e2fc89f923179ef9c55d61b74",
+      "bytes": 151470
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/2.json": {
+      "sha256": "57601c1ab75c6fe4b6781bb13420c3bade11b97492b2d1641612b0ca33d358f9",
+      "bytes": 48998
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/3.hi.json": {
+      "sha256": "90b1163667219257c0a75db1df0d2bfdf1f5bbb2ab407a5f47054a0cbbcc7cd9",
+      "bytes": 15698
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/3.json": {
+      "sha256": "ae73ce3d1234cff0ac5daf52ccce6058dbc8bf3b1cc2d232f076deff7482d28a",
+      "bytes": 44581
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/4.hi.json": {
+      "sha256": "e1cf14dc712126fc3e0c563ce73239dfcd46e83e08798b0099f8aa25fb5e6038",
+      "bytes": 78216
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/4.json": {
+      "sha256": "1c3f3bebfc44ed57559cc9b36b1c5c9ccadf57c2f379340c2c20489a626c61b2",
+      "bytes": 48929
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/5.hi.json": {
+      "sha256": "3d23ac7d3a33fa8375a90eb77cf084546356536e1fbecc26458c2bb413362364",
+      "bytes": 120553
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/5.json": {
+      "sha256": "9f7ab41c9b41c4550ca76f334b4578bd56e7440a2002a4b2d6c95fd701d588b7",
+      "bytes": 48365
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/6.hi.json": {
+      "sha256": "a1e559a5ee7de367d778449f784e8ffc9f88180e9f3415eab23261b041e49a08",
+      "bytes": 114630
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/6.json": {
+      "sha256": "a3fb867f71b7106788235a037636b9e672da2124b9c929eef676fbc2b59c1868",
+      "bytes": 49502
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/7.hi.json": {
+      "sha256": "02d399fbff42d856996efbe82f2f7d14006f595700e103a62232458a15996a70",
+      "bytes": 91512
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/7.json": {
+      "sha256": "290f53e9c4a63046a867bdaa6954ef6f5f4b1c36287f571101c68e596b5d95e4",
+      "bytes": 49792
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/8.hi.json": {
+      "sha256": "265c32aab3fa051462ce636c6f37a0170cce95c85acd2b0fd7e37033aaa16a97",
+      "bytes": 149181
+     },
+     "product/tour-auvergne-rhone-alpes-2026-uwt/stage/8.json": {
+      "sha256": "7a6508166dfa699a42ecf610e8e25c705fdb2209aeb6e45a54cee45a26c57c81",
+      "bytes": 56180
+     },
+     "race/tour-auvergne-rhone-alpes-2026-uwt.json": {
+      "sha256": "f38a3eda433a2630e2f5381681e28cc45dc1451a4ca24b881a789d3a53eaff11",
+      "bytes": 28200
+     }
+    }
+   },
+   "tour-de-france-femmes-2026-wwt": {
+    "digest": "a29d6fedd68fc4dd1a58c71214069350b5933816f1de3b0eb63a707235554399",
+    "files": {
+     "product/tour-de-france-femmes-2026-wwt/index.json": {
+      "sha256": "b380b3bc8097ccc43f5b4aae8791a5a2527532e1da102f4a9af9907c71d18193",
+      "bytes": 89959
+     },
+     "product/tour-de-france-femmes-2026-wwt/quality.json": {
+      "sha256": "6a35ba3d7126672c6d0702604d461a029574f081d707a84b6eff6c772cfc9224",
+      "bytes": 7400
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/1.hi.json": {
+      "sha256": "869490f20064ad3faca888bfe7c954fdf3c0201bcbe1e0859c4ab0ee6120f2d0",
+      "bytes": 104861
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/1.json": {
+      "sha256": "435290a7838f3aabc2c3d7a07267d450d602f8d85d4e468d8e3420f6dfc57907",
+      "bytes": 64760
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/2.hi.json": {
+      "sha256": "6024b047694ae3b0826d493439894ee5f51ec29849aae8c6e1cff909f5690d96",
+      "bytes": 133613
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/2.json": {
+      "sha256": "2f7474babe1ce5d8c901df8b019fce651d59026973d52a59f1d00bcd0dabede7",
+      "bytes": 64042
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/3.hi.json": {
+      "sha256": "554e60d15e283d20101bf047b14a91e5cdcf930436d0fb39d91913e2860baac0",
+      "bytes": 132146
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/3.json": {
+      "sha256": "ef9b307d9f8feec17e45d6e42abf4b41358614c240978015f218c10d73659f6c",
+      "bytes": 66189
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/4.hi.json": {
+      "sha256": "53eee0adaad51655436b656fb2c8a85f662c331e8dbe6f45c2b62f9ae7c2014c",
+      "bytes": 15350
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/4.json": {
+      "sha256": "691e30e16b8d72d3094523d2bf2cd50e1bd121f535a9657a509d1651dc7b822a",
+      "bytes": 61561
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/5.hi.json": {
+      "sha256": "77e8138000893bfde98fe3c1af2cf0ca99e45a01f5876c069e931017d51148ae",
+      "bytes": 107248
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/5.json": {
+      "sha256": "714bf522af71fbe1e079113c62658248972606ec1c019ee7d273314119bc9157",
+      "bytes": 66850
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/6.hi.json": {
+      "sha256": "a6aeb35ae74aab8028beeac79c4e85d29c6d931e642d5c4dd63ac22d5f0c1d84",
+      "bytes": 100730
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/6.json": {
+      "sha256": "8c7db4173ac6a3c304531f47d943fab4d19410e197ce34a70ed059bc80bddd45",
+      "bytes": 67074
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/7.hi.json": {
+      "sha256": "58470d1d78dfd22b86f38eee69f8e0c9e49384275f81a0a6e6356d64f93afeb4",
+      "bytes": 95510
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/7.json": {
+      "sha256": "e8229927a682c4803812e4af5d9ad13c690d6d65739e87035a9d03d03d4b25d9",
+      "bytes": 64844
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/8.hi.json": {
+      "sha256": "9d382fb7e0a988e3c27f57af127436d5ab19165a858e216c7681cda0e00a51bc",
+      "bytes": 126769
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/8.json": {
+      "sha256": "bf847d0ecc61083b70e6cf3c17d143ca3d757253b5edc59fca9bf1fc86ddf2bd",
+      "bytes": 46959
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/9.hi.json": {
+      "sha256": "49480d27a00a5356367eee06b95e14f3c7ceae244eb684b054ddc958927415a9",
+      "bytes": 102361
+     },
+     "product/tour-de-france-femmes-2026-wwt/stage/9.json": {
+      "sha256": "02733fc776fe2db6d9690a37c4f7beba47a328fc408bb45378139678d9dc12ef",
+      "bytes": 47069
+     },
+     "race/tour-de-france-femmes-2026-wwt.json": {
+      "sha256": "8ca62b2eaead84ecea52989a26ce801ecb7bef04a7c396858ed9cb041feb84e5",
+      "bytes": 131492
+     }
+    }
+   },
+   "tour-de-hongrie-2026-pro": {
+    "digest": "e75b82000ded9d1f92abcd7a4eef38269626df52770daf58f364354997908daa",
+    "files": {
+     "race/tour-de-hongrie-2026-pro.json": {
+      "sha256": "b235e37667937e214cdaa5b37d5fe756d16a7cde2f57b9758f0e98dcb2097cb6",
+      "bytes": 13384
+     }
+    }
+   },
+   "tour-de-langkawi-2026-pro": {
+    "digest": "5f5033582c7388f8551ecd0e87855d0b354983bf9538db9f76984de7eaac1681",
+    "files": {
+     "race/tour-de-langkawi-2026-pro.json": {
+      "sha256": "797c89a247c42f891c86ff4175c9ca2ed134597ba0e1d05acb34782eda29a19a",
+      "bytes": 2324
+     }
+    }
+   },
+   "tour-de-luxembourg-2026-pro": {
+    "digest": "2b463ffc814c7b9203b3fd55ebb5b0af19740d546c1c32a4ed3391bf86dbe074",
+    "files": {
+     "race/tour-de-luxembourg-2026-pro.json": {
+      "sha256": "368586f6f385b91a501c6271d6f299e3598be7a57ec1197709a6873b2b1d2534",
+      "bytes": 1058
+     }
+    }
+   },
+   "tour-de-pologne-2026-uwt": {
+    "digest": "ccf343d264cdfe1a4361a1ad67bebf936b595c08bb910feb3880586cdc5544a4",
+    "files": {
+     "race/tour-de-pologne-2026-uwt.json": {
+      "sha256": "11a5267aeb7f9633ad6b8e7212f419ccdcf7b17083be0f33856bf18ad07dfb8a",
+      "bytes": 1143
+     }
+    }
+   },
+   "tour-de-romandie-2026-uwt": {
+    "digest": "0432cd9a4bf81c994eca5448f68dbf8d9acb957b39ec888bb9692b3a827aca57",
+    "files": {
+     "race/tour-de-romandie-2026-uwt.json": {
+      "sha256": "d39b3f14d10bc0af1eca0b87e882c75703476195baad1b6ecb0e4580761a6a30",
+      "bytes": 15693
+     }
+    }
+   },
+   "tour-de-romandie-feminin-2026-wwt": {
+    "digest": "65cc1d0c30b8d379350fce01fe7e8b3d9c5191ab128499cd0f8d8483c9d96349",
+    "files": {
+     "race/tour-de-romandie-feminin-2026-wwt.json": {
+      "sha256": "2d8dd6875a647b62188077d20a8841cad95168b59119868e7f67fcb60667aa1d",
+      "bytes": 2100
+     }
+    }
+   },
+   "tour-de-suisse-2026-uwt": {
+    "digest": "809509def21d4bc31e379b8b5a9650e4231ce3b6d1b5cae01e8172f3d64774f1",
+    "files": {
+     "product/tour-de-suisse-2026-uwt/index.json": {
+      "sha256": "07b9596586c607856698d31f4d2258af93bc6c32b2105df1be5a303f2052624a",
+      "bytes": 58891
+     },
+     "product/tour-de-suisse-2026-uwt/quality.json": {
+      "sha256": "a4589b8d26da7dd56a962a50cdab8e3487099003a8c81b77dd680c9cc91b4110",
+      "bytes": 5598
+     },
+     "product/tour-de-suisse-2026-uwt/stage/1.hi.json": {
+      "sha256": "c910188af7e942f89a4b121643ec3df60102d7dd1f9d25b6d7499fc6f45616c4",
+      "bytes": 116915
+     },
+     "product/tour-de-suisse-2026-uwt/stage/1.json": {
+      "sha256": "db883c59f0c4013a9a613506d3f772716d41b7003a800d02f51543c26a9d21bd",
+      "bytes": 47909
+     },
+     "product/tour-de-suisse-2026-uwt/stage/2.hi.json": {
+      "sha256": "1277b4cbc87e7d77a59917962594c27fefd593b43db7a379e755e6d985f93ad0",
+      "bytes": 147223
+     },
+     "product/tour-de-suisse-2026-uwt/stage/2.json": {
+      "sha256": "072c44c6dd6aea2dafff7edbaa77e09772b36c34614f2eaa68415434614ada81",
+      "bytes": 47927
+     },
+     "product/tour-de-suisse-2026-uwt/stage/3.hi.json": {
+      "sha256": "705b9fb40727553b5257122ac9d9538f6fe4d8cd55512e7eda35fd163df5264a",
+      "bytes": 148511
+     },
+     "product/tour-de-suisse-2026-uwt/stage/3.json": {
+      "sha256": "7b0a3286f1fc8bc8d8483f3e22db7c87c9013ee633c452f504a7c831c56ffd34",
+      "bytes": 48025
+     },
+     "product/tour-de-suisse-2026-uwt/stage/4.hi.json": {
+      "sha256": "5387f53cbc14d99747d5d18e79eee5d1cb8fe1dc1b4d6256928bcb9d87cc4128",
+      "bytes": 18449
+     },
+     "product/tour-de-suisse-2026-uwt/stage/4.json": {
+      "sha256": "969632681e4ad112a53e82b95d224aac5ca94c4e95d635ab33e459106a5757ac",
+      "bytes": 45081
+     },
+     "product/tour-de-suisse-2026-uwt/stage/5.hi.json": {
+      "sha256": "a4e29f6267863b40a6c21050ebfece51bff4a7b469dc7cdf6930088ff9c9a3c9",
+      "bytes": 154053
+     },
+     "product/tour-de-suisse-2026-uwt/stage/5.json": {
+      "sha256": "5dbe1a3914a75e5ca095ade7bda3dc106a4209a3dbdc155f00f57e9c4fb13c35",
+      "bytes": 56303
+     },
+     "race/tour-de-suisse-2026-uwt.json": {
+      "sha256": "d669c909bc9dda42f2e747a39e3451523a875251d23aa30fb55081b67ad2d4ab",
+      "bytes": 14592
+     }
+    }
+   },
+   "tour-de-suisse-women-2026-wwt": {
+    "digest": "313f933095a10a94a1c09dc7dd6b57942213615985e72776757bf1cf0904ab0b",
+    "files": {
+     "race/tour-de-suisse-women-2026-wwt.json": {
+      "sha256": "4e8d94feaee5c1fbe8c3515f4e334df84d79d148fa6be8e56c352157c649071a",
+      "bytes": 14221
+     }
+    }
+   },
+   "tour-de-wallonie-2026-pro": {
+    "digest": "16ced6049a86fd6fd4730d27ff82cd23ea1edc665a85bccfafa03b8e241a5794",
+    "files": {
+     "race/tour-de-wallonie-2026-pro.json": {
+      "sha256": "93c40687facb0917153b9b6010e6370e0d20e00b6f783834ad28d09437ec434f",
+      "bytes": 14596
+     }
+    }
+   },
+   "tour-down-under-2026-uwt": {
+    "digest": "becdd5e82d9d93d7df60425f32e28dc9ccfcad67059a9e08a1f2a920c8efccb1",
+    "files": {
+     "product/tour-down-under-2026-uwt/index.json": {
+      "sha256": "e87fb2627b57a84d8a2aa411d83e5b27fece34d4cb2afd831d29911470d86f27",
+      "bytes": 59051
+     },
+     "product/tour-down-under-2026-uwt/quality.json": {
+      "sha256": "924cb1d4d9a268f119ff510960c67ea2bcfacf432056bf4a33b1d1bb034348d2",
+      "bytes": 8354
+     },
+     "product/tour-down-under-2026-uwt/stage/0.hi.json": {
+      "sha256": "3101786479ea73bb2fa56e8fd47188bb58cb5d40402063d34a7f75a3e6ce20f2",
+      "bytes": 1764
+     },
+     "product/tour-down-under-2026-uwt/stage/0.json": {
+      "sha256": "8cfbea97e2108fd4a0a2f5157e608794d297c3acd5acd8bc70882a20de99f565",
+      "bytes": 6431
+     },
+     "product/tour-down-under-2026-uwt/stage/1.json": {
+      "sha256": "6adb9a1d08a82154c6398f5eab2fde4432f47ca2ea25d61b7fd5a3aea43b1531",
+      "bytes": 335
+     },
+     "product/tour-down-under-2026-uwt/stage/2.json": {
+      "sha256": "d2317a32a8e4e4f42f4ade106299c3aec94c0b22feed20fea7647e5b9443d596",
+      "bytes": 433
+     },
+     "product/tour-down-under-2026-uwt/stage/3.json": {
+      "sha256": "2e5bd7664348362ebb9bdac3fc7b90590b42b3196a4473a5e35767acf686c48d",
+      "bytes": 428
+     },
+     "product/tour-down-under-2026-uwt/stage/4.hi.json": {
+      "sha256": "6157355bf8f8a4efb4464b880dd20e5054fa88149e82344c4ba2adbf4ce2b7e4",
+      "bytes": 33913
+     },
+     "product/tour-down-under-2026-uwt/stage/4.json": {
+      "sha256": "eae0176a7f7d3ae21f89caa9675985514f83222558511ec8428b199b5664d267",
+      "bytes": 50021
+     },
+     "product/tour-down-under-2026-uwt/stage/5.hi.json": {
+      "sha256": "ee824605bbb010e650e9a8ff065bf108cfe3d07dcc5a5de2c6fb41f1fefca22a",
+      "bytes": 73694
+     },
+     "product/tour-down-under-2026-uwt/stage/5.json": {
+      "sha256": "ec017171e6e8cfd99c90a5b17c03a8b2daa63f7e452a0a3283af1f0c5117c982",
+      "bytes": 54736
+     },
+     "race/tour-down-under-2026-uwt.json": {
+      "sha256": "4ad6fca93264343869bedf0c8ffe62b6b100452ec6883ebeec6dfa281a75cd75",
+      "bytes": 15596
+     }
+    }
+   },
+   "tour-of-belgium-2026-pro": {
+    "digest": "b3a6633d39e0c6c20fa64400bff9202637489b87e22e1fa05668fc6643ae072c",
+    "files": {
+     "race/tour-of-belgium-2026-pro.json": {
+      "sha256": "4d207ed32c525eef478f1060d2282b38f9a466498bc947811fcf9793b6696310",
+      "bytes": 13389
+     }
+    }
+   },
+   "tour-of-britain-2026-pro": {
+    "digest": "7cdf6c7fead57aeaa1369d9ac5c1aefc202b6b612a55c5cfc4d86831acd706fd",
+    "files": {
+     "race/tour-of-britain-2026-pro.json": {
+      "sha256": "5cbfa2e1f9ebf54625139bd48ed0330636a2309f1275e1021d4eefed757f0c15",
+      "bytes": 1211
+     }
+    }
+   },
+   "tour-of-britain-women-2026-wwt": {
+    "digest": "f4c53315cfb0698a0193480cf74a1bc9c4c2ceb925674de0a4d3ed3cf6d5d399",
+    "files": {
+     "race/tour-of-britain-women-2026-wwt.json": {
+      "sha256": "d16065604101e7928304ca9f145cc9237a2d2773a5798d0c90c1e49f6f23981b",
+      "bytes": 1136
+     }
+    }
+   },
+   "tour-of-bruges-2026-uwt": {
+    "digest": "ad58496fa3316428681e343cb2f353238f29d4fa95d5e3263d96521465ad4c66",
+    "files": {
+     "race/tour-of-bruges-2026-uwt.json": {
+      "sha256": "5d60fd95988594a8541eb3c7a14080c16505451f1550af981d5e8ac1508a2a26",
+      "bytes": 3666
+     }
+    }
+   },
+   "tour-of-bruges-women-2026-wwt": {
+    "digest": "0bc01a2bccf65b16acc6f90be626092367d44527a85ee744a5cac9544eb167dd",
+    "files": {
+     "race/tour-of-bruges-women-2026-wwt.json": {
+      "sha256": "2bcd8e4c62b8cfaa0b94864eb763652dfeeb0852e7d4b110a0a6f0e7af9acb90",
+      "bytes": 3643
+     }
+    }
+   },
+   "tour-of-chongming-island-2026-wwt": {
+    "digest": "9004f63cfd96ef44e399f4cda5f831dde9ad9ef89d3f4b933732f60d2582183d",
+    "files": {
+     "race/tour-of-chongming-island-2026-wwt.json": {
+      "sha256": "5cecb64bf5e6b9af8751601cbaf5c65cc0bdc2a52fb5884c777bf162eb42e6f9",
+      "bytes": 1181
+     }
+    }
+   },
+   "tour-of-denmark-2026-pro": {
+    "digest": "c5b5aa95681d58fad38c3adf1fff9e6c993feabaf9e28091d9ba569b298533cb",
+    "files": {
+     "race/tour-of-denmark-2026-pro.json": {
+      "sha256": "9b4d61d2a680dc25f82d7708e7858a036f0b2469e46ac99cab8a4db1fbafcbd3",
+      "bytes": 1092
+     }
+    }
+   },
+   "tour-of-flanders-2026-uwt": {
+    "digest": "60b5c6693e683a4396332e6467b1baa06456c6eb6b14bb927ec0ac902bec3738",
+    "files": {
+     "product/tour-of-flanders-2026-uwt/index.json": {
+      "sha256": "e2f22aaa1aeb24957340ec9391d0baac45e04f33fc3de90d7262b45667f8b3d9",
+      "bytes": 54819
+     },
+     "product/tour-of-flanders-2026-uwt/quality.json": {
+      "sha256": "42e053c0683970fbecb2721da24d5214a7618c0b1564deedf54686fb276d8af7",
+      "bytes": 6342
+     },
+     "product/tour-of-flanders-2026-uwt/stage/1.hi.json": {
+      "sha256": "d38c943d0c20d8d21d260e79be81bc3259e37591cb84d2940d29d868ecfa4c62",
+      "bytes": 141794
+     },
+     "product/tour-of-flanders-2026-uwt/stage/1.json": {
+      "sha256": "969099793999dcbb2f90ac14e1cf893a530eeaf234e603d063f13f9aa8ad3c02",
+      "bytes": 52558
+     },
+     "race/tour-of-flanders-2026-uwt.json": {
+      "sha256": "c5b2079828e9791d0650a2dd0fee9e8471f03692f35aafd289e5b1eeef61244e",
+      "bytes": 3834
+     }
+    }
+   },
+   "tour-of-flanders-2026-wwt": {
+    "digest": "054873bfbff46e4e97dd4629ae7fbfda1e1daeffcf876529e9145e467cffb33d",
+    "files": {
+     "product/tour-of-flanders-2026-wwt/index.json": {
+      "sha256": "1800891476385d0e8a130415af21dd81605b0cbb7ec3eedaaa569eb8abb0f6a2",
+      "bytes": 54841
+     },
+     "product/tour-of-flanders-2026-wwt/quality.json": {
+      "sha256": "a419b5f9ddf1435eebac06baab217555089fa394ed8f8e5d5d35fc8be7e96369",
+      "bytes": 6342
+     },
+     "product/tour-of-flanders-2026-wwt/stage/1.hi.json": {
+      "sha256": "200057d87ab8c2b206ceb5eb825060945dbebde9e4d78ec72b5e6019eb3fa8da",
+      "bytes": 105841
+     },
+     "product/tour-of-flanders-2026-wwt/stage/1.json": {
+      "sha256": "dd6ca420ecec713354c4830cf91428ba6462a323a0ce8e3efc8e3647fdcbff01",
+      "bytes": 49591
+     },
+     "race/tour-of-flanders-2026-wwt.json": {
+      "sha256": "30a8f5b6de80f4d7ff2c028a82c2dbab198239a5bafc773c336aa66b57e929db",
+      "bytes": 3705
+     }
+    }
+   },
+   "tour-of-guangxi-2026-uwt": {
+    "digest": "5ea9a365dd67434556657eea5535bbb252e7e1e9375471d8847feddf2758592c",
+    "files": {
+     "race/tour-of-guangxi-2026-uwt.json": {
+      "sha256": "0a81d591a359bffc23f3cf5134e5854df1ee32cbbdd93fba3b415850e67503f4",
+      "bytes": 1258
+     }
+    }
+   },
+   "tour-of-guangxi-2026-wwt": {
+    "digest": "53590add91bc5ffabd84930a8dd8df1c538e5ccce8dd2231f98fbb27726eeaec",
+    "files": {
+     "race/tour-of-guangxi-2026-wwt.json": {
+      "sha256": "dacd05782c6a497afdc1dac52d701f70d9fbee8bd4ad4218bed99e6a940b4457",
+      "bytes": 1266
+     }
+    }
+   },
+   "tour-of-hainan-2026-pro": {
+    "digest": "2fd9aca3cfcf3ddb34d653fa81ed77449437cb33a5e5588e2d82d220ca8f1932",
+    "files": {
+     "race/tour-of-hainan-2026-pro.json": {
+      "sha256": "2418c98ec9bee4dd41001b718de07ebf51c2dd2a6211f6678d3aee3d46544433",
+      "bytes": 13467
+     }
+    }
+   },
+   "tour-of-magnificent-qinghai-2026-pro": {
+    "digest": "470d631cf3aa0100f0bde0765387a0ed1c3937dfeed4a17eeb45ce3e05b23161",
+    "files": {
+     "race/tour-of-magnificent-qinghai-2026-pro.json": {
+      "sha256": "62b28430f87c49e33d585a08bf50fb157cb48d08b03faa9bfd8de1a0c9be3126",
+      "bytes": 15229
+     }
+    }
+   },
+   "tour-of-norway-2026-pro": {
+    "digest": "4b95db818d30af0e31b1e1c412195681f85a6381b600bfc9ef4735c9f3478105",
+    "files": {
+     "race/tour-of-norway-2026-pro.json": {
+      "sha256": "ebdfba5b2550ab55ea9bee84823d22eccd64159a1e6b12bd1c8187eaa1c4a68e",
+      "bytes": 1570
+     }
+    }
+   },
+   "tour-of-oman-2026-pro": {
+    "digest": "46e3e39c0cc5ed8bc099aab8a1893349b78e17dc702720da08f57c030641e997",
+    "files": {
+     "race/tour-of-oman-2026-pro.json": {
+      "sha256": "8cb00496334feaed5e61159ef76273374092c3d1dab26446b98408fcd62eabf8",
+      "bytes": 25191
+     }
+    }
+   },
+   "tour-of-slovenia-2026-pro": {
+    "digest": "74b7a0570bff27d26c64d092ee7530af834c13fa3ffc1ffd042dc1ee32b9941a",
+    "files": {
+     "race/tour-of-slovenia-2026-pro.json": {
+      "sha256": "b80acf774bfb3edd4bd50108d55a2b93b09a23e58dfa28417f894175e2bacf43",
+      "bytes": 14659
+     }
+    }
+   },
+   "tour-of-the-alps-2026-pro": {
+    "digest": "9b48db48867f9ab78bf8a60f3943c06af5fa81b067d30d25a4c4330250ea88bd",
+    "files": {
+     "product/tour-of-the-alps-2026-pro/index.json": {
+      "sha256": "26b7ef4638ba4ab08e79503952cfcad73ad33930371f370c2c4d7e1fe680b140",
+      "bytes": 59758
+     },
+     "product/tour-of-the-alps-2026-pro/quality.json": {
+      "sha256": "a173c3efeb75fd7e12868892b59ddbb332e8d89aa1882436f7e2bfae9c187951",
+      "bytes": 6198
+     },
+     "product/tour-of-the-alps-2026-pro/stage/1.hi.json": {
+      "sha256": "ae25fd3ce889d58ca8e61232f13d1114e1bba48ea52e3ff255b615c37196dbc9",
+      "bytes": 116096
+     },
+     "product/tour-of-the-alps-2026-pro/stage/1.json": {
+      "sha256": "f9f6ecb99bdea2706896362fcbb6c4c05683ecad5401a27aa1ec9494146f36be",
+      "bytes": 48052
+     },
+     "product/tour-of-the-alps-2026-pro/stage/2.hi.json": {
+      "sha256": "739add8312e354e227dab26f403e9bdfaeacf5b5f51f13f64def2b41e38853b5",
+      "bytes": 89746
+     },
+     "product/tour-of-the-alps-2026-pro/stage/2.json": {
+      "sha256": "5165d3b3717bb4a0edd665de291f7018ffc7b40503a2a1abcc7435dbe1976626",
+      "bytes": 50027
+     },
+     "product/tour-of-the-alps-2026-pro/stage/3.hi.json": {
+      "sha256": "9f60cbf0ead8c933d72ae5ce375769d2d746c17055e4a86e0c8a77bf0da86af9",
+      "bytes": 137973
+     },
+     "product/tour-of-the-alps-2026-pro/stage/3.json": {
+      "sha256": "42fd7fcebc9100d81cb47e1247a6cdfe659e0f6af3a948641e9ddfd3e65ae069",
+      "bytes": 50425
+     },
+     "product/tour-of-the-alps-2026-pro/stage/4.hi.json": {
+      "sha256": "f0bf55cda8a77e7bbf6118dac1e436fef944053deef295e8c9987434e5f1728c",
+      "bytes": 123210
+     },
+     "product/tour-of-the-alps-2026-pro/stage/4.json": {
+      "sha256": "c9c0594dc985ef41bfc584b71165ead0a50428238deecfe2a7646cc889c78d9d",
+      "bytes": 50736
+     },
+     "product/tour-of-the-alps-2026-pro/stage/5.hi.json": {
+      "sha256": "8308f9a2af9ac8e8e7f21af9905191188b4decc3c0e4d88f956a0fcd6027fce8",
+      "bytes": 111988
+     },
+     "product/tour-of-the-alps-2026-pro/stage/5.json": {
+      "sha256": "abd4b2b4fa1e53c56d4b5c7a0f95f1c56ded9c3b366f0736ac24c1089bc52203",
+      "bytes": 56603
+     },
+     "race/tour-of-the-alps-2026-pro.json": {
+      "sha256": "c0a77aba875eb6de6803cd78fd77d9ca5f1ccb8d9be8862390fed7a67b4e226d",
+      "bytes": 14625
+     }
+    }
+   },
+   "tour-of-the-basque-country-2026-uwt": {
+    "digest": "03ad28c941a252280d32bfe06ae9bfb6a058f29598c80a6126b4375f1371e0e0",
+    "files": {
+     "product/tour-of-the-basque-country-2026-uwt/index.json": {
+      "sha256": "29ef7a89e3f6c8a0d6da0d1c263019ac5f4c9795658979ea3de1f1c0a8eb78f7",
+      "bytes": 61661
+     },
+     "product/tour-of-the-basque-country-2026-uwt/quality.json": {
+      "sha256": "a4589b8d26da7dd56a962a50cdab8e3487099003a8c81b77dd680c9cc91b4110",
+      "bytes": 5598
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/1.hi.json": {
+      "sha256": "0830852c13676158766b2caddab8e2c1a7a972445f82d0aa284e29bb6d793ec9",
+      "bytes": 14702
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/1.json": {
+      "sha256": "e309863f9f6c5c0876830d6f0930b48afff32bb42d2621b879abaf3505f0edbd",
+      "bytes": 42904
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/2.hi.json": {
+      "sha256": "d8f37d29fa2c3bfbbcc125b773922d4894d741dc1e03bbd00655d387c021c73a",
+      "bytes": 107878
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/2.json": {
+      "sha256": "4d902f91da75eb29bed8b004674171b746efd8d463d7977b7d4fbb2559ea1b2d",
+      "bytes": 50268
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/3.hi.json": {
+      "sha256": "96a6867c391ca9bf7e882739747002d4389dbf7df2b46e86a3339f4a9f93c2ae",
+      "bytes": 122621
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/3.json": {
+      "sha256": "f45f0da4a49dcf41079fd479f3518aee1ba0744867af16b5c00902debf07e530",
+      "bytes": 48284
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/4.hi.json": {
+      "sha256": "c68ea970ba71a3352a69c9f354d0c3f7bc3ff333fcde829096c89d44fc4639e3",
+      "bytes": 144541
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/4.json": {
+      "sha256": "fd676785e31677a0873458586a80cd39561740721c0b900c0409496586a68875",
+      "bytes": 50362
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/5.hi.json": {
+      "sha256": "314521ac222c23e3d26aa4b8b7654d6362fb10cbd05edf8bdf677ff3b45f5abe",
+      "bytes": 147789
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/5.json": {
+      "sha256": "957cfe5a94cc13756b25027089cc2c0170279b8737b93bfe4f7c7dfd9702f881",
+      "bytes": 51881
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/6.hi.json": {
+      "sha256": "5d00f37a3b156cb32aa1f2da4771e077ad77bb88c5e7535393b23a4076a8273b",
+      "bytes": 117125
+     },
+     "product/tour-of-the-basque-country-2026-uwt/stage/6.json": {
+      "sha256": "78cfaff4c3964198d8301ba386cd82475b0a65405705343d49cee77bb8258a19",
+      "bytes": 56674
+     },
+     "race/tour-of-the-basque-country-2026-uwt.json": {
+      "sha256": "718168c33da2b0ca3f1054819ef1c674aa760bac117da70ab386b46c8c5b1c3c",
+      "bytes": 15796
+     }
+    }
+   },
+   "tour-of-turkiye-2026-pro": {
+    "digest": "d60d5034dfff7a40fb49cbcd551cb9af624b419ee3e465d433c8fa2eae6df006",
+    "files": {
+     "race/tour-of-turkiye-2026-pro.json": {
+      "sha256": "1351215cb71adc953f013579ebd42a251044000799e3b52aebd78db712a031a9",
+      "bytes": 17237
+     }
+    }
+   },
+   "tre-valli-varesine-2026-pro": {
+    "digest": "09813bb7a6f0140c674466a96a6fe4c467cb517300e6c513783c462bc6732924",
+    "files": {
+     "race/tre-valli-varesine-2026-pro.json": {
+      "sha256": "df7c34b50ca377f23b9a6c97a4ee5c24b50d60eb760469f55c2d7d89bf248dbf",
+      "bytes": 1053
+     }
+    }
+   },
+   "tro-bro-leon-2026-pro": {
+    "digest": "7ec72ddab28172fc299c0f24e88ee7d391791c3e471474adb383684a18f0afd0",
+    "files": {
+     "race/tro-bro-leon-2026-pro.json": {
+      "sha256": "86d5b505eb33c5b05a37e7d5996cff8fe1cda6dc41a4aba64eecca719956755f",
+      "bytes": 25641
+     }
+    }
+   },
+   "trofeo-alfredo-binda-comune-di-cittiglio-2026-wwt": {
+    "digest": "9484ac3028a636e5ced704f759653d1d2c2477ed0ff9078aad6066ce79333ce8",
+    "files": {
+     "race/trofeo-alfredo-binda-comune-di-cittiglio-2026-wwt.json": {
+      "sha256": "28412f9e11cbb65e9e41782582eb8bcc9fc5ae358881877bd8538b8d17d13028",
+      "bytes": 3770
+     }
+    }
+   },
+   "trofeo-laigueglia-2026-pro": {
+    "digest": "bf6327618b76dedaf87c788c78e122a78b15323b8ff8b8d0590072bc73a0083d",
+    "files": {
+     "race/trofeo-laigueglia-2026-pro.json": {
+      "sha256": "250c366c18896d0c1afb45483445e2eb951584ec01dc2fbc0579bf6854713736",
+      "bytes": 3771
+     }
+    }
+   },
+   "uae-tour-2026-uwt": {
+    "digest": "fa90fb8f2db9cde500a9585578652abf556a7cab372e1f8e61aa0f0b56e316c1",
+    "files": {
+     "product/uae-tour-2026-uwt/index.json": {
+      "sha256": "28618cb0e8f0e3850fde3ceaad8a478e53e062aa6db24e614dbb615591cc5b9e",
+      "bytes": 59734
+     },
+     "product/uae-tour-2026-uwt/quality.json": {
+      "sha256": "c766fba658a56137297d91fadbfa9fc6c143ad356f7ab86dd67cca278504caba",
+      "bytes": 8879
+     },
+     "product/uae-tour-2026-uwt/stage/1.hi.json": {
+      "sha256": "8816a3944ecd945477d4950fb777c7d2f1157c7ab5b756a7528db5f93aa24d72",
+      "bytes": 74892
+     },
+     "product/uae-tour-2026-uwt/stage/1.json": {
+      "sha256": "b9900ab751bea6a62220ce8093bafc2f8a1c4db4b351cfc6dacf7f0b2f3accbb",
+      "bytes": 46007
+     },
+     "product/uae-tour-2026-uwt/stage/2.hi.json": {
+      "sha256": "bbe7c18010967eed38df4da03fb6359d02d505344b592a6cc59db991fa5714aa",
+      "bytes": 8488
+     },
+     "product/uae-tour-2026-uwt/stage/2.json": {
+      "sha256": "eb7edb264d0dd1bb75fb4afe1c097a34c99d51f757422496e736c9dfab8c2b7d",
+      "bytes": 25186
+     },
+     "product/uae-tour-2026-uwt/stage/3.hi.json": {
+      "sha256": "6e0688fb71680544fb02ebc3bd27de22f8db96565eb1eebef797d824797d16b5",
+      "bytes": 32053
+     },
+     "product/uae-tour-2026-uwt/stage/3.json": {
+      "sha256": "71defa64f7e16e32e8a8213d1a2fcbbf59a38a14eace721a3767b190eac6c009",
+      "bytes": 45995
+     },
+     "product/uae-tour-2026-uwt/stage/4.hi.json": {
+      "sha256": "c02c3f286341b550597b6563f2cc1b96ff2e498f7a0c99f62978bbc286321662",
+      "bytes": 37317
+     },
+     "product/uae-tour-2026-uwt/stage/4.json": {
+      "sha256": "03d47b8781c52b576c224a16caf965f046446f76c24df9c86e60d04ef2068688",
+      "bytes": 47199
+     },
+     "product/uae-tour-2026-uwt/stage/5.hi.json": {
+      "sha256": "e8aa9539941dec6fffbf54574be72109c2311310133f18b99a7e818a2347ac33",
+      "bytes": 23139
+     },
+     "product/uae-tour-2026-uwt/stage/5.json": {
+      "sha256": "de05fa42539079e3d948c7ccde6d9f3017de4035c484a99e910dbd2e1da52267",
+      "bytes": 42778
+     },
+     "product/uae-tour-2026-uwt/stage/6.hi.json": {
+      "sha256": "e2202fac050bb573f9a482c4c528ca497947bbd6681c17ada038ef3b76298a8d",
+      "bytes": 30781
+     },
+     "product/uae-tour-2026-uwt/stage/6.json": {
+      "sha256": "474e5e0f7188c1de6e6af38b2f25610874df0f767c00d8123fcbe56c08612b51",
+      "bytes": 47886
+     },
+     "product/uae-tour-2026-uwt/stage/7.hi.json": {
+      "sha256": "7fab5c37c45bb6abde30d4136768ecf77a30cf66ffeca89b4321752e4a6dc5a0",
+      "bytes": 28533
+     },
+     "product/uae-tour-2026-uwt/stage/7.json": {
+      "sha256": "f3240e6e1211a82b9c751a38826cfff383d469a9911615125077b172d9c7398a",
+      "bytes": 46280
+     },
+     "race/uae-tour-2026-uwt.json": {
+      "sha256": "f196ec9cfbc7883fea93bae107edbd037b21a5548bbbac9d73d66d1e1bf319e3",
+      "bytes": 15795
+     }
+    }
+   },
+   "uae-tour-women-2026-wwt": {
+    "digest": "5d2c447c8a9c1ccb2cef4df2e9275764c4588ede73d1ecf19f863ab806cad634",
+    "files": {
+     "product/uae-tour-women-2026-wwt/index.json": {
+      "sha256": "db21e8a1fcbbc20434e022d456e85a83cdef8a5a56a52b7772e629a67c9b1dff",
+      "bytes": 57025
+     },
+     "product/uae-tour-women-2026-wwt/quality.json": {
+      "sha256": "b02152da6689f05723bd7478bbdeb687b080873fa3d9e64761ede74b3fe2f66d",
+      "bytes": 6638
+     },
+     "product/uae-tour-women-2026-wwt/stage/1.hi.json": {
+      "sha256": "76cd11cdeed6520f5d6408c89c3314a66584cb1f799f3a0efa2537c13a775c0c",
+      "bytes": 29967
+     },
+     "product/uae-tour-women-2026-wwt/stage/1.json": {
+      "sha256": "0cad14bc12263576430a879cf715b925092f27012c19e65c2567b5d37362bc8d",
+      "bytes": 43798
+     },
+     "product/uae-tour-women-2026-wwt/stage/2.hi.json": {
+      "sha256": "7b4792413cd645c2ea7322539cca9f7979b64d11a808804a009d0fc28e561f91",
+      "bytes": 19716
+     },
+     "product/uae-tour-women-2026-wwt/stage/2.json": {
+      "sha256": "6e913f859cf973c0ff0e7c18e21766cb324c00d2b6260d30c3ce626b43f10537",
+      "bytes": 43939
+     },
+     "product/uae-tour-women-2026-wwt/stage/3.hi.json": {
+      "sha256": "a5c250d07c0031d5d00704c6c31d7541f80358d15f882f1731e26799dd678261",
+      "bytes": 28893
+     },
+     "product/uae-tour-women-2026-wwt/stage/3.json": {
+      "sha256": "6d284e247c3c0ce1171122fbc39132eb634fab894cbe8d97bc37f81ab9001039",
+      "bytes": 41420
+     },
+     "product/uae-tour-women-2026-wwt/stage/4.hi.json": {
+      "sha256": "1e1575055655b11669c3be0515b722495863416c07061e3c82a48f61db622782",
+      "bytes": 28590
+     },
+     "product/uae-tour-women-2026-wwt/stage/4.json": {
+      "sha256": "6d2cc4538867a2c6feaaeddf1bc23a1e7cc5c730d5d9b06dd675aba6f16e4b14",
+      "bytes": 52526
+     },
+     "race/uae-tour-women-2026-wwt.json": {
+      "sha256": "4f0dfa3bba8e1d55b32fccdce9b7525b4a70a88de55c3fe1163e443c2160f37b",
+      "bytes": 12113
+     }
+    }
+   },
+   "uci-road-world-championships-elite-mens-individual-time-trial-2026-wc": {
+    "digest": "77a93e467bb88209b895d3458f9dcd936b8e67bea81948ff91bdcb5d53a8e91a",
+    "files": {
+     "race/uci-road-world-championships-elite-mens-individual-time-trial-2026-wc.json": {
+      "sha256": "88a58d3e059fb08f07e40e3518ce62d4eee783ec256eb54271237f45e9b79a9e",
+      "bytes": 1318
+     }
+    }
+   },
+   "uci-road-world-championships-elite-mens-road-race-2026-wc": {
+    "digest": "455ec95e38e91674b400d182d3ae767b75406f48f28395c2a050012673db12f2",
+    "files": {
+     "race/uci-road-world-championships-elite-mens-road-race-2026-wc.json": {
+      "sha256": "63aafe61c3465b20304ff54f7e7012baaf5dce290fbf80dee342bb0e93b2a1c5",
+      "bytes": 1283
+     }
+    }
+   },
+   "uci-road-world-championships-elite-womens-individual-time-trial-2026-wc": {
+    "digest": "b727adea98acef275cf64f738c1731d50c42b2eb546b85b25c8fbd61026008f8",
+    "files": {
+     "race/uci-road-world-championships-elite-womens-individual-time-trial-2026-wc.json": {
+      "sha256": "513792b9b9fae237de6671c2998ecf1e0369a0baf93abb923c564a1b4f50f49f",
+      "bytes": 1322
+     }
+    }
+   },
+   "uci-road-world-championships-elite-womens-road-race-2026-wc": {
+    "digest": "37215ebe7068e5c83af61deae2156a3debde253b6ab6c2ff5281087dea1b2fea",
+    "files": {
+     "race/uci-road-world-championships-elite-womens-road-race-2026-wc.json": {
+      "sha256": "dadc20060f4f08a3edf3af66a5f33fed3d8d2d99132474e83ca488e79a081935",
+      "bytes": 1287
+     }
+    }
+   },
+   "uci-road-world-championships-junior-mens-individual-time-trial-2026-wc": {
+    "digest": "f4c2cf187ac9b1364ac8d72bcf5aa01e18621d998b128583bf22619276d04624",
+    "files": {
+     "race/uci-road-world-championships-junior-mens-individual-time-trial-2026-wc.json": {
+      "sha256": "c9c59c0ff301eacf4e0098508034eb43d4ad18536ab3fb0e7c47a836e3704520",
+      "bytes": 1320
+     }
+    }
+   },
+   "uci-road-world-championships-junior-mens-road-race-2026-wc": {
+    "digest": "797040b781d14104c7e91bbca90f527d0c3baee9ce700ab6de1f9d3c3908d3c4",
+    "files": {
+     "race/uci-road-world-championships-junior-mens-road-race-2026-wc.json": {
+      "sha256": "3b24709e46f3f7cedc7be29c34faff2cd7d62016af621f3232b99ef4d885603a",
+      "bytes": 1285
+     }
+    }
+   },
+   "uci-road-world-championships-junior-womens-individual-time-trial-2026-wc": {
+    "digest": "12efe9c79fbd7cd0fa9504bf5545e3d17b6e9797468d44c795716e8531b9d794",
+    "files": {
+     "race/uci-road-world-championships-junior-womens-individual-time-trial-2026-wc.json": {
+      "sha256": "e0b2e1c524b78873abb7362a6fd97ebe258addffcbfc9a6b4cc08e14accfa702",
+      "bytes": 1324
+     }
+    }
+   },
+   "uci-road-world-championships-junior-womens-road-race-2026-wc": {
+    "digest": "7ce0f116c24ee03b7dc915d3a6f25f12fc1c7b2434bd1db3bb8774e7ef9953f3",
+    "files": {
+     "race/uci-road-world-championships-junior-womens-road-race-2026-wc.json": {
+      "sha256": "48a3d22a0b20dd5de3e7bdb5df45551521d30b4223a2de2f8170d67212dc2623",
+      "bytes": 1288
+     }
+    }
+   },
+   "uci-road-world-championships-mixed-team-relay-2026-wc": {
+    "digest": "e1e5f9bdcdde68d87bd4ae5ca6036df374ea5f0008148f2c80771effaf4e9d48",
+    "files": {
+     "race/uci-road-world-championships-mixed-team-relay-2026-wc.json": {
+      "sha256": "c21e0da217e157a35353f623e3f19de6c1e5b3f689c9e67f6ac0e1afb045751e",
+      "bytes": 1280
+     }
+    }
+   },
+   "uci-road-world-championships-under-23-mens-individual-time-trial-2026-wc": {
+    "digest": "649a716ee24589ba2ade29ca33bfcbb6ce0d3aa9a56a10f84439ef730aa53d2a",
+    "files": {
+     "race/uci-road-world-championships-under-23-mens-individual-time-trial-2026-wc.json": {
+      "sha256": "47a94dd93fcea6854da10295850debc4fa18a43c3a0910285524b6f8db22fead",
+      "bytes": 1324
+     }
+    }
+   },
+   "uci-road-world-championships-under-23-mens-road-race-2026-wc": {
+    "digest": "cf4ad1eb304c6781f8d4e8b64e12428d8f1be7d5f667cfe21fc6677c69855706",
+    "files": {
+     "race/uci-road-world-championships-under-23-mens-road-race-2026-wc.json": {
+      "sha256": "5d65ad068fdd6a1931c9e0ebb9ee0fa2a6e6949e17960f6fe79844ac77b99ed0",
+      "bytes": 1289
+     }
+    }
+   },
+   "uci-road-world-championships-under-23-womens-individual-time-trial-2026-wc": {
+    "digest": "5384a2657ebb5721ae9e80e2bf416c8acd045e78c9e515d3a259cc2c7d6a7f62",
+    "files": {
+     "race/uci-road-world-championships-under-23-womens-individual-time-trial-2026-wc.json": {
+      "sha256": "8a2d3a7131ccf4058d833fdc24365633649d66da6dc7ca74133ee474e2875b88",
+      "bytes": 1328
+     }
+    }
+   },
+   "uci-road-world-championships-under-23-womens-road-race-2026-wc": {
+    "digest": "2cd6ef466ad01a345ebe98e23000083bf459bb8e5175ff66c868df2194cddce0",
+    "files": {
+     "race/uci-road-world-championships-under-23-womens-road-race-2026-wc.json": {
+      "sha256": "fd396cfd36a86e0ef852cd546a603b531dc6146f2c19e278790cb7506e4561a0",
+      "bytes": 1293
+     }
+    }
+   },
+   "veneto-classic-2026-pro": {
+    "digest": "cb1e4917bca02aa4b447c57449ec2b3a0c767f1d067bcde0ede39f2a628f595a",
+    "files": {
+     "race/veneto-classic-2026-pro.json": {
+      "sha256": "a4151596ef028340f954d0e7b916b98692f1a467d9f2df6be9bb25636665b7f9",
+      "bytes": 1045
+     }
+    }
+   },
+   "volta-a-catalunya-2026-uwt": {
+    "digest": "0e6f0d9f8e80c60ec89e81be4edd8041268184ba4a851be3a335313b48e83fbd",
+    "files": {
+     "product/volta-a-catalunya-2026-uwt/index.json": {
+      "sha256": "6e9e38daf36a874269468380c01607fff4ae742229a124eb8e4f44408455ed52",
+      "bytes": 61203
+     },
+     "product/volta-a-catalunya-2026-uwt/quality.json": {
+      "sha256": "59ad3371287a9ef524a654f132fc519efc97b87e625d3c82a8408ef65b2dadf8",
+      "bytes": 6821
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/1.hi.json": {
+      "sha256": "341a41e1ff70a34812f8635a4e5aa1f89421a39c07323db722726e38d66b875a",
+      "bytes": 132615
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/1.json": {
+      "sha256": "b61238c28fae49f78a48bb15620a2bd80115c5e8f21788cbf3ced1021830ce6a",
+      "bytes": 60914
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/2.hi.json": {
+      "sha256": "4ba60d056a4be5e373d96991e9fb93c2712ee9278ec102513af4e14d9b772d54",
+      "bytes": 102148
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/2.json": {
+      "sha256": "8c04b641704ab4e611dead48d8722b1be7f434d72e9abd82e83e389277fa0372",
+      "bytes": 45748
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/3.hi.json": {
+      "sha256": "bec81e1b545cc591bf261bbaefa109793619afea146adc3757c36ca39280a383",
+      "bytes": 148442
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/3.json": {
+      "sha256": "860183d4a6c75b38852ae52b7ed7b171450def1f558d5b77b220eca27b0bd002",
+      "bytes": 48329
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/4.hi.json": {
+      "sha256": "dea161d80ddc32b87c408d4a42a17952a008984b95ff64c25a72b79b359dac16",
+      "bytes": 131084
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/4.json": {
+      "sha256": "c311058d3749fe563820a0d6835c897e117591b7fe9bce912f81490e1d03f587",
+      "bytes": 49290
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/5.hi.json": {
+      "sha256": "e512ef8f4810372e6cd0512a22eac64c7f4a21cdc2c8f8d2d046c904903db20c",
+      "bytes": 136384
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/5.json": {
+      "sha256": "c1ff802adf49753c0e94e7f116f4d55f278cef7752e3fe2ed4c1cda0d327b5f5",
+      "bytes": 50647
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/6.hi.json": {
+      "sha256": "f8e9723d433289cf6c1a6aa069e36acbeb08728046c5e71158c9bd4bc61caa16",
+      "bytes": 154033
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/6.json": {
+      "sha256": "08930d68450c45df6c18e7d83ab45ddc24c2f2506dbc2e9c1991e1d46a2e265e",
+      "bytes": 50616
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/7.hi.json": {
+      "sha256": "df883b4629f272997f66751d0a7eb9a9caf012af218209877a46133d7b2e0010",
+      "bytes": 80002
+     },
+     "product/volta-a-catalunya-2026-uwt/stage/7.json": {
+      "sha256": "0f425e630dfba1ed84e5b198b343e4770b2c89890c5a00d2e508be3aa8fa7a89",
+      "bytes": 49747
+     },
+     "race/volta-a-catalunya-2026-uwt.json": {
+      "sha256": "b59332d58937d439e1a731c4fb467bbdf2a9028194693b6a4c96c9026529b7c6",
+      "bytes": 31556
+     }
+    }
+   },
+   "volta-a-la-comunitat-valenciana-2026-pro": {
+    "digest": "bd72ffd77bfd1cdc87a709a1187449daf75fa1197a6cf3186de4b5e34ef07384",
+    "files": {
+     "product/volta-a-la-comunitat-valenciana-2026-pro/index.json": {
+      "sha256": "fa470502f60eac1cbed20d03f85f4bc1ec0a00983b12dfdbbafa3e723153d0a3",
+      "bytes": 58659
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/quality.json": {
+      "sha256": "4f0b0935093d0bed10273fe5135c04313de1b18860bbd0f46bccf8891d19ae57",
+      "bytes": 8045
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/1.json": {
+      "sha256": "6adb9a1d08a82154c6398f5eab2fde4432f47ca2ea25d61b7fd5a3aea43b1531",
+      "bytes": 335
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/2.hi.json": {
+      "sha256": "a28f5a9b78db44f9aa6a76f483e8b42af38fe887c733435401bdb4ba0153a76f",
+      "bytes": 13117
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/2.json": {
+      "sha256": "2fc08d2cf6a280b4bf7182dd3ae744ffa442e2ff12158722858a03f17e5b567b",
+      "bytes": 38277
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/3.hi.json": {
+      "sha256": "0b0ad4db2e9605cd3723a4f9e37cd61e9cd9c7a199067b74a6ffec43bbd8f640",
+      "bytes": 88126
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/3.json": {
+      "sha256": "7213d1d72294aa54a6f47a263338d8c5516eaa365292eafa9dcb7675bf6280ed",
+      "bytes": 46256
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/4.hi.json": {
+      "sha256": "13819f601ecbd18af5c3a8d6e8bd7c87f19ae067541c303b04a25d54b62ba71c",
+      "bytes": 147621
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/4.json": {
+      "sha256": "7b35e954c381439c00ed537ade0b72f974fe5d495e4c82f85f8f361c8a06700c",
+      "bytes": 49825
+     },
+     "product/volta-a-la-comunitat-valenciana-2026-pro/stage/5.json": {
+      "sha256": "23956ded966907e73a82b09563ecbf04a5773182810ea08d4ab470340619c191",
+      "bytes": 6486
+     },
+     "race/volta-a-la-comunitat-valenciana-2026-pro.json": {
+      "sha256": "4e77c8a4f1c0527b6a952787fb8672e98e9d7ebf17810cb20e777bd98d68904b",
+      "bytes": 14411
+     }
+    }
+   },
+   "volta-ao-algarve-2026-pro": {
+    "digest": "23b67258b5563c82311fec0916f81cf38aea60ed7b1565f5c14e6e5e8bb76f9f",
+    "files": {
+     "product/volta-ao-algarve-2026-pro/index.json": {
+      "sha256": "5939b79da307fae98356630bb394a0aad0cb19e6ed06ac8baf4695119c4349ed",
+      "bytes": 58646
+     },
+     "product/volta-ao-algarve-2026-pro/quality.json": {
+      "sha256": "a173c3efeb75fd7e12868892b59ddbb332e8d89aa1882436f7e2bfae9c187951",
+      "bytes": 6198
+     },
+     "product/volta-ao-algarve-2026-pro/stage/1.hi.json": {
+      "sha256": "0102ace4b01bc6652a5d8eb3e44442031f06a2ee365712b3e7d14fe3c0305512",
+      "bytes": 99420
+     },
+     "product/volta-ao-algarve-2026-pro/stage/1.json": {
+      "sha256": "f2b985d42341c07d870264a79a8c5e1a164c58af1b6775c0eb26838ca8648079",
+      "bytes": 46639
+     },
+     "product/volta-ao-algarve-2026-pro/stage/2.hi.json": {
+      "sha256": "0f601df06b3ec9ba9bfc6ead132c99b81fc4b717df23b8adccac0d0c7394b9c8",
+      "bytes": 74317
+     },
+     "product/volta-ao-algarve-2026-pro/stage/2.json": {
+      "sha256": "6c9d7542bdedb92f715dabb0f332c1e401b0c58b8498154187c04c67542d0699",
+      "bytes": 47664
+     },
+     "product/volta-ao-algarve-2026-pro/stage/3.hi.json": {
+      "sha256": "c13253990301518a82c7ff7e72f0631eaffc17bb48f958e44e971ffd827618de",
+      "bytes": 10350
+     },
+     "product/volta-ao-algarve-2026-pro/stage/3.json": {
+      "sha256": "4a4110338e5aef4f171202327d368abf7cc80cc9860b9554d0ecadd7601f4be5",
+      "bytes": 30160
+     },
+     "product/volta-ao-algarve-2026-pro/stage/4.hi.json": {
+      "sha256": "570bb67675e77ef98374c08fe0516d867c17592c4bece34bd95c66f9cdffd1d8",
+      "bytes": 88234
+     },
+     "product/volta-ao-algarve-2026-pro/stage/4.json": {
+      "sha256": "e0c0ccdf56ff31f5bc199a7ec6034e26f7f006bd9ad4029324ea181062b64172",
+      "bytes": 46047
+     },
+     "product/volta-ao-algarve-2026-pro/stage/5.hi.json": {
+      "sha256": "ae76b723564a08414434e78db93f5234ab6065f0eab14ee0176450f35f2c8715",
+      "bytes": 83492
+     },
+     "product/volta-ao-algarve-2026-pro/stage/5.json": {
+      "sha256": "cfbd2a36e0a49395a7cf61f4135519eaf8773202956a4e4f0de1e63c01c14b40",
+      "bytes": 54964
+     },
+     "race/volta-ao-algarve-2026-pro.json": {
+      "sha256": "34fddcd8098f47d82aa2d18327aa720992d3f6eea67aabdb17a66dd9c3d1a649",
+      "bytes": 14779
+     }
+    }
+   },
+   "vuelta-a-andalucia-2026-pro": {
+    "digest": "d59cedf2e3704d112fdcee74dd0408d6109ae77aecfd1792787f8e7aa1246118",
+    "files": {
+     "product/vuelta-a-andalucia-2026-pro/index.json": {
+      "sha256": "50eb20cd76c4f0c1067622edc9ad900fae5a4fa755ff5c53a92e091dcef6c470",
+      "bytes": 58760
+     },
+     "product/vuelta-a-andalucia-2026-pro/quality.json": {
+      "sha256": "da473e6edca7b8e2eb6084d026fdca32be1f98a1ebf995db251f6de81172f3dd",
+      "bytes": 6541
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/1.hi.json": {
+      "sha256": "40e4a8aa76d4a4c0b1a99cb714ed6dbd878b1fb4a26f61edfa5e24baa43d54ac",
+      "bytes": 99617
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/1.json": {
+      "sha256": "af98adab553e731ed184e50a5db814218f0cadca881e04e27d0c5c5556b1ff15",
+      "bytes": 49209
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/2.hi.json": {
+      "sha256": "d948990d225f113e67d5fcc149a1e3399bcd56e293e4650ebf525625fe202aa6",
+      "bytes": 80195
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/2.json": {
+      "sha256": "be8f005e35e7cac05a332cdfa1976922ff458596dbc3af2c442614074ae5a441",
+      "bytes": 47733
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/3.hi.json": {
+      "sha256": "fabc6e9b1c8b2fb0acb554505e5c3740c14195221c6445a2c7fb4e8d4a127f08",
+      "bytes": 69991
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/3.json": {
+      "sha256": "744b0ed3d5b936386700a6a052e603530f4c180cebf28353952ebc5fda60e7f7",
+      "bytes": 48263
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/4.hi.json": {
+      "sha256": "28054bb57245a177cf7aaac3cb8d151cca72357ac57a2fa79468228caf304143",
+      "bytes": 58817
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/4.json": {
+      "sha256": "e6aa8e2f9059a34525af8bb1fb1334d37018615890ba41989040e04e9dadea14",
+      "bytes": 46783
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/5.hi.json": {
+      "sha256": "42e5b8f9ec9db876bd6cf52c82d24de746d84591ec8178cc0a079d515c9faf77",
+      "bytes": 79577
+     },
+     "product/vuelta-a-andalucia-2026-pro/stage/5.json": {
+      "sha256": "676851e05969c295d85c392c8f6d22c07ee2d20aeb4f0e4a2fe697df7efea3c1",
+      "bytes": 55432
+     },
+     "race/vuelta-a-andalucia-2026-pro.json": {
+      "sha256": "9df9fc9e348204a17e74704f9e6ca50a09e9c24b5f5c438a3eb1eafce2112947",
+      "bytes": 14322
+     }
+    }
+   },
+   "vuelta-a-burgos-2026-pro": {
+    "digest": "8785937ba7483ac122bf968bb31c3172de80188a10870b8174fa7ae18425c8be",
+    "files": {
+     "race/vuelta-a-burgos-2026-pro.json": {
+      "sha256": "c1cedec1b2c8436e3c6be4a01d0515a148f2d1bf3470a7013acfae695de513dc",
+      "bytes": 1044
+     }
+    }
+   },
+   "vuelta-a-burgos-feminas-2026-wwt": {
+    "digest": "18cdd83809fed3dc934e70d0aa25b2fbe69f389b96184e1c95261d0a504342f0",
+    "files": {
+     "race/vuelta-a-burgos-feminas-2026-wwt.json": {
+      "sha256": "9a5be2f62ad030a86a075578bc75d8c49c7a2bef53f0184c69b432828b7d437d",
+      "bytes": 13495
+     }
+    }
+   },
+   "vuelta-a-espana-2026-uwt": {
+    "digest": "15ed3d4fff88079a2a0e5ddc19f96b47831b0eaa6b531838db66944aeb621f88",
+    "files": {
+     "product/vuelta-a-espana-2026-uwt/index.json": {
+      "sha256": "cb71eabfca38756f23987d87d8313371d8cbbae2f3d9986ebfb185211bcdd4c4",
+      "bytes": 75625
+     },
+     "product/vuelta-a-espana-2026-uwt/quality.json": {
+      "sha256": "ab6b5f3646217701ea852740f9afc787ab622bc86f0164044e3ed73e95c8b67b",
+      "bytes": 10588
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/1.json": {
+      "sha256": "6adb9a1d08a82154c6398f5eab2fde4432f47ca2ea25d61b7fd5a3aea43b1531",
+      "bytes": 335
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/10.hi.json": {
+      "sha256": "bd2f0d44b1cbe3ade2478f55e3b51fc5c05fa67a2b9c3d62d9fea8d5ffda540b",
+      "bytes": 95668
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/10.json": {
+      "sha256": "15fd348dfdb2ebaac52ff41c3af6fa9339d93039a131f97be2bc96e935d6f84a",
+      "bytes": 50069
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/11.hi.json": {
+      "sha256": "b21290b62b5e817acd5fb81d7e12b788a4e8d3058aee6b24ffb1ac5b66aee659",
+      "bytes": 74486
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/11.json": {
+      "sha256": "a48bd1bf12b8cd332b928a16ae89c8314504a738466dd87f8b5d683f0d5f843e",
+      "bytes": 46189
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/12.hi.json": {
+      "sha256": "a08d4005db91f52d2426228686619115e030a92beef92e54ddf0424424fcb9b3",
+      "bytes": 132272
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/12.json": {
+      "sha256": "6000f47486d4a39a0923f2e67a6f6ee6e9cc985ac2f5388c4e825b73093d1f1b",
+      "bytes": 52812
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/13.hi.json": {
+      "sha256": "2394ce0bbaa5a3e42e90e49116e577337c325b5187e17c042073dbb44f8ee4f3",
+      "bytes": 118762
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/13.json": {
+      "sha256": "e092f0d312d92ea05d7a53bf12bede87dea727246c0693ad9bd205b8dc3a2111",
+      "bytes": 51057
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/14.hi.json": {
+      "sha256": "7e12b404d3015e4fcebf261443f4b8f86aa9bd94e4d7a9ba1b0142895b77f376",
+      "bytes": 80645
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/14.json": {
+      "sha256": "a5691a228b6c0cd22ac323c08964c94bee1dbca2e22173c1c45a82e60b4918ca",
+      "bytes": 51827
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/15.hi.json": {
+      "sha256": "f2811681454c2d78150349a3f68b08bbbf696c7b7e54f711f725bfde10591b16",
+      "bytes": 88675
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/15.json": {
+      "sha256": "2612cccefe761a08f4deb88f5385348770e4461f09233e180ba0972c96563d95",
+      "bytes": 49580
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/16.hi.json": {
+      "sha256": "ced92fb8382e06b859c1ffcaac239938403b7ad3cc36124082376b43a343e6ff",
+      "bytes": 88297
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/16.json": {
+      "sha256": "7f568c5b55dbf1dcf2a0b54d3242c19af6263cb86e434da42ddcd288fdb1f0a7",
+      "bytes": 47507
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/17.json": {
+      "sha256": "a1ad1ff7e16d4cf6f0ff43b749c06ecf3bd4ed83f23d702a8f23c2da95714ff4",
+      "bytes": 336
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/18.hi.json": {
+      "sha256": "d16202f883f9dc95920bcf216fa384b247500d9ca75f20bef8d046ab143afddc",
+      "bytes": 12020
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/18.json": {
+      "sha256": "434c5b73f4fe323efb2c3a7f067b287d96483c9a806cca20b288e8f09e795ce0",
+      "bytes": 34986
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/19.hi.json": {
+      "sha256": "c0ae851fbaab2e746f62b3f7c8f8199eac3e4b7a8ecf72e137b0341c02748dd1",
+      "bytes": 131987
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/19.json": {
+      "sha256": "c313db8f6a7baedfa1b9dc80fc34f736f4098eefc7f5d8baa016025cb682c288",
+      "bytes": 49480
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/2.hi.json": {
+      "sha256": "ebd07498fdacd13bac37550e29b06706c701519cda38864508a09409845198b2",
+      "bytes": 148170
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/2.json": {
+      "sha256": "eace036053d45d400258e9723cf36b123cbdc7171e1c193b31206e0142e4b899",
+      "bytes": 48803
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/20.hi.json": {
+      "sha256": "684dbde696166a40514398b39646bc055aef3aa685842e952d84a7482a6c1033",
+      "bytes": 144378
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/20.json": {
+      "sha256": "114e9a56eb5d69152dfd2e156b577b6818d5e6953001581e1bd6334755c5c58c",
+      "bytes": 53302
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/21.json": {
+      "sha256": "63ca165e3094344ac14bfbc0daca66fa9aca4746db3dc186b29d8aad2d99e44a",
+      "bytes": 336
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/3.hi.json": {
+      "sha256": "a341fb92ec7d997cea4bb67a95d855876970a123d19a175b39e1dea85e65e450",
+      "bytes": 99985
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/3.json": {
+      "sha256": "9491e76284091e1b749bf0aba23259e708f68689b558d8d4e6e192d20d0c6e5a",
+      "bytes": 46268
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/4.hi.json": {
+      "sha256": "8ff8771bc56c623d7982c9def37a14e93a048d89f12f0b80550622209d52408a",
+      "bytes": 121384
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/4.json": {
+      "sha256": "fa92e6afdc62b76da79c7301bbc25df8cc21bec27ba0a73784335993ac77f75c",
+      "bytes": 51080
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/5.hi.json": {
+      "sha256": "ddd6f6c05b3ed61857afc30981e0e1b67fb25a21336daa7ae74021c27dcd0432",
+      "bytes": 115928
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/5.json": {
+      "sha256": "ee558efcf757a72c12598ca69caf64e14a425404a6dbce1ffaac6ffee1e52d3e",
+      "bytes": 46293
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/6.hi.json": {
+      "sha256": "058bf29aa58252e6f812892cc6a2c03e92b7219e6e7bc81fa3054778f88953ea",
+      "bytes": 92209
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/6.json": {
+      "sha256": "3f671cf3d789ecc1df9e97bab683b16519ba29bc3dbffef1fee89c2941dac76b",
+      "bytes": 48520
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/7.hi.json": {
+      "sha256": "664112f61f6e43f532cc9b9e146675fcabf489d3353d030bb494410ce1558f88",
+      "bytes": 101697
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/7.json": {
+      "sha256": "3ec6d6d318c5719750269a23b17297751df91c5b9d6e702e0b445eee201b4010",
+      "bytes": 50565
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/8.json": {
+      "sha256": "3fd3ea5a7233f2ce73bbe6cc08ea463ad5a0058b13235cfe4562215569be55a7",
+      "bytes": 335
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/9.hi.json": {
+      "sha256": "497ddbd9aa95f7e11cec9c315f8d310c362b252e85ff0069ed454bfec379bf3b",
+      "bytes": 149754
+     },
+     "product/vuelta-a-espana-2026-uwt/stage/9.json": {
+      "sha256": "2bde564424ab4812f0386f9f99d2fcb3bd1f9cdb488c7dde798381128da3cab3",
+      "bytes": 51399
+     },
+     "race/vuelta-a-espana-2026-uwt.json": {
+      "sha256": "e2160190767290ce38264a523f7a47ea62a068352071b787f1b0c437046e938e",
+      "bytes": 5153
+     }
+    }
+   },
+   "womens-tour-down-under-2026-wwt": {
+    "digest": "97d464a5af3c06ad4cb48d76e017ba5a2c878311793b32ea5868c95c445e4de9",
+    "files": {
+     "race/womens-tour-down-under-2026-wwt.json": {
+      "sha256": "3cf2bc769b72e81c1f5af76a2514968986eaa7f9470da4f1e59c525664dc8591",
+      "bytes": 11521
+     }
+    }
+   }
+  },
+  "shared": {
+   "digest": "53e0f7c98496600bef782459e399e2441ca8cfef51a4874327edc329eeefd5ed",
+   "files": {
+    "races.json": {
+     "sha256": "fab4e7418267ceb13d42a21f7928580fe0100199859222f2a70264c61b9655bb",
+     "bytes": 118175
+    }
+   },
+   "note": "The fleet index. It describes every race at once, so it belongs to none of them."
+  },
+  "outside_scope": [
+   "climbs.json",
+   "conformance.json",
+   "coverage.json",
+   "ingestion.json",
+   "public_eligible_races.json",
+   "research_queue.json"
+  ],
+  "not_covered": {
+   "build.json": "A digest cannot cover the file that carries it. No self-hash is emitted, because a number computed over this file with its own hash removed would look like an integrity check and would not be one.",
+   "registers": "The files listed under `outside_scope` are written by `make registers`, which runs after `make export` and therefore after this manifest. Hashing them here would record the previous run's bytes under this run's name."
+  }
+ }
+}

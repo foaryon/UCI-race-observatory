@@ -1,0 +1,276 @@
+{
+ "export_version": "ingestion-ledger/1.0.0",
+ "what_this_is": "Every execution of the recheck schedule (`tools/research/ingest_due.py`), including the executions that found nothing due and fetched nothing. A run that did nothing is published for the same reason a run that failed is: without it, a scheduler that stopped firing looks exactly like a scheduler with no work to do.",
+ "not_live": "This is a schedule, not a live feed. Results appear here when a scheduled run re-fetches a published page and the publisher has posted them — not as they happen. Every live path this project assessed is robots-disallowed or behind a bot challenge, and none of those decisions is worked around. The freshest any figure here can be is the last run that succeeded.",
+ "schedule": {
+  "runner": "tools/research/ingest_due.py",
+  "workflow": ".github/workflows/ingest.yml",
+  "selects": "gaps in evidence.gap_register whose recheck_after has come, and the committed capture targets naming their races",
+  "rate_limit_s_per_host": 1.0,
+  "retries": "bounded, and only for a network error or a 5xx. A robots disallow, a bot challenge and a 4xx are answers, and answers are not retried."
+ },
+ "runs_held": 1,
+ "runs_published": 1,
+ "runs": [
+  {
+   "run_id": "ingest-2026-08-07-6bfdc7eae601",
+   "as_of": "2026-08-07",
+   "started_at": "2026-08-07T16:33:18+00:00",
+   "finished_at": "2026-08-07T16:37:54+00:00",
+   "status": "COMPLETED",
+   "invoked_by": "manual",
+   "runner_version": "ingest-due/1.0.0",
+   "gaps_due": 1,
+   "races_due": [
+    "tour-de-france-femmes-2026-wwt"
+   ],
+   "races_without_target": [],
+   "targets_planned": 29,
+   "targets_attempted": 29,
+   "targets_never_reached": 0,
+   "outcomes": {
+    "captured": 21,
+    "unchanged": 8
+   },
+   "refused_by": [],
+   "note": "After the rebuild, no gap remains due as of 2026-08-07. Every gap this run was for has been re-dated or resolved."
+  }
+ ],
+ "refusals": [],
+ "freshness": {
+  "as_of": "2026-08-08",
+  "last_observation_at": "2026-08-08T13:23:36+00:00",
+  "observations": 2567,
+  "gaps_due_at_as_of": 0,
+  "races_by_result_state": {
+   "HELD": 49,
+   "NOT_YET_RACED": 47,
+   "HELD_IN_PART": 33,
+   "CANCELLED": 3,
+   "RACING_NOW": 3,
+   "ABSENT_AND_UNCHECKED": 2
+  },
+  "finished_with_no_result_and_no_look_since": [
+   {
+    "race": "clasica-de-san-sebastian-2026-uwt",
+    "ended": "2026-08-01",
+    "next_recheck": "2027-02-04",
+    "open_gaps": 1
+   },
+   {
+    "race": "tour-of-denmark-2026-pro",
+    "ended": "2026-08-02",
+    "next_recheck": "2027-02-04",
+    "open_gaps": 2
+   }
+  ],
+  "races_the_schedule_has_no_address_for": [
+   {
+    "race": "arctic-race-of-norway-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-13"
+   },
+   {
+    "race": "coppa-bernocchi-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "coppa-sabatini-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "cro-race-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "czech-tour-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-13"
+   },
+   {
+    "race": "deutschland-tour-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-19"
+   },
+   {
+    "race": "giro-del-veneto-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "giro-dellemilia-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "gp-de-fourmies-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "gp-de-wallonie-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "gp-industria-artigianato-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "gran-piemonte-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "japan-cup-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "maryland-cycling-classic-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "munsterland-giro-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "paris-tours-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "super-8-classic-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "surf-coast-classic-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2027-02-04"
+   },
+   {
+    "race": "tour-de-luxembourg-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "tour-of-britain-women-2026-wwt",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-19"
+   },
+   {
+    "race": "tour-of-denmark-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2027-02-04"
+   },
+   {
+    "race": "tour-of-norway-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2027-02-04"
+   },
+   {
+    "race": "tour-of-slovenia-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2027-02-04"
+   },
+   {
+    "race": "tre-valli-varesine-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-elite-mens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-elite-mens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-elite-womens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-elite-womens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-junior-mens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-junior-mens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-junior-womens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-junior-womens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-mixed-team-relay-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-under-23-mens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-under-23-mens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-under-23-womens-individual-time-trial-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "uci-road-world-championships-under-23-womens-road-race-2026-wc",
+    "open_gaps": 1,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "veneto-classic-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-29"
+   },
+   {
+    "race": "vuelta-a-burgos-2026-pro",
+    "open_gaps": 2,
+    "next_recheck": "2026-08-09"
+   }
+  ],
+  "state_legend": {
+   "NOT_YET_RACED": "The race has not happened.",
+   "RACING_NOW": "The race is under way at the as-of date.",
+   "HELD": "Finished, and a result is held for every stage.",
+   "HELD_IN_PART": "Finished, and a result is held for some of it.",
+   "ABSENT_AND_CHECKED": "Finished with no result held — and something was fetched for this race after it finished, so the absence is a gap being worked rather than a pipeline that stopped.",
+   "ABSENT_AND_UNCHECKED": "Finished with no result held, and nothing has been fetched for this race since it finished. Nobody has looked.",
+   "CANCELLED": "The race was cancelled; no result will exist.",
+   "DATES_UNKNOWN": "No start date is held, so nothing can be judged.",
+   "NO_EVIDENCE_AT_ALL": "The database holds no observation at all."
+  }
+ }
+}

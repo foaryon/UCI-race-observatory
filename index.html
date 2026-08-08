@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UCI Race Observatory</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233987e5'/%3E%3Cpath d='M4 22 L11 12 L17 18 L22 8 L28 22' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand__mark" aria-hidden="true"></span>
+    <div>
+      <h1>UCI Race <span class="brand__sub">Observatory</span></h1>
+      <p class="brand__race" id="race-name">Tour de France 2026</p>
+      <p class="brand__promise">If it shows a number, it can show why it exists.</p>
+    </div>
+  </div>
+  <div class="topbar__controls">
+    <!-- A native <select>, deliberately. Every race in the register is in
+         here, and the platform's own picker is the one control that already
+         works with a keyboard, a screen reader and a thumb on a phone. The
+         test suite reads it with .inputValue() and counts its options, which
+         only a real <select> can answer. -->
+    <label class="racepick" title="Choose a race">
+      <span class="racepick__label">Race</span>
+      <select id="race-picker" class="input input--select"></select>
+    </label>
+    <div class="seg" role="tablist" aria-label="View">
+      <button id="btn-view-stage" class="seg__btn is-on" role="tab">
+        <svg class="seg__icon" width="14" height="14" viewBox="0 0 16 16"
+             fill="none" stroke="currentColor" stroke-width="1.6"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M2.2 13.2c2.6 0 1.8-3.6 4.4-3.6s1.8-3.6 4.4-3.6h2.8"/>
+          <circle cx="2.2" cy="13.2" r="1.3" fill="currentColor" stroke="none"/>
+          <path d="M12.4 3.4v5.2"/>
+          <path d="M12.4 3.6h3l-.9 1.5.9 1.5h-3z" fill="currentColor"/>
+        </svg>
+        <span>This race</span>
+      </button>
+      <button id="btn-view-races" class="seg__btn" role="tab">
+        <svg class="seg__icon" width="14" height="14" viewBox="0 0 16 16"
+             fill="currentColor" aria-hidden="true" focusable="false">
+          <rect x="1.8" y="1.8" width="5.2" height="5.2" rx="1.3"/>
+          <rect x="9" y="1.8" width="5.2" height="5.2" rx="1.3"/>
+          <rect x="1.8" y="9" width="5.2" height="5.2" rx="1.3"/>
+          <rect x="9" y="9" width="5.2" height="5.2" rx="1.3"/>
+        </svg>
+        <span>All races</span>
+      </button>
+    </div>
+    <button id="btn-palette" class="btn" title="Command palette">
+      <kbd>⌘K</kbd> Search
+    </button>
+    <label class="switch" title="Show uncertainty bands everywhere">
+      <input type="checkbox" id="tgl-uncertainty" checked>
+      <span>Uncertainty</span>
+    </label>
+    <label class="switch" title="Render only officially observed facts">
+      <input type="checkbox" id="tgl-strict">
+      <span>Strict evidence</span>
+    </label>
+    <button id="btn-theme" class="btn btn--icon" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<nav class="stagebar" id="stagebar" aria-label="Stage selector"></nav>
+
+<!-- The stage view reads top to bottom as an argument: what this stage is,
+     what it looks like, what happened on it, what the ground under it does,
+     the whole record, and finally where all of it came from. The zones below
+     are that order made structural, so a reader who stops after two of them
+     has still been told the honest short version. -->
+<main id="main">
+
+  <!-- Zone 1 — the stage, stated once, in about a screen. -->
+  <section class="zone" id="zone-1-hero" aria-label="Stage summary">
+    <section class="panel panel--hero" id="stage-hero"></section>
+  </section>
+
+  <!-- Zone 2 — profile and map are one instrument, not two panels: the same
+       cursor drives both, so they sit side by side and share a single readout
+       underneath. The readout used to live inside the profile panel, where it
+       read as a caption on the profile alone; it reports the map's position
+       just as much, which is why it is now a full-width bar below both. -->
+  <section class="zone" id="zone-2-twin" aria-labelledby="zone-2-title">
+    <h2 class="zone__title" id="zone-2-title">Digital twin</h2>
+    <div class="twin">
+      <section class="panel" id="panel-profile">
+        <div class="panel__head">
+          <h2>Elevation profile <span class="axis-note" id="profile-axis-note"></span></h2>
+        </div>
+        <div id="profile-host" class="profile-host"></div>
+        <!-- Road surface, on the same distance axis and directly beneath the
+             line it belongs to. A separate chart would have needed its own
+             axis and would have made the reader match two scales by eye; a
+             strip sharing the profile's x-axis reads as what it is, a
+             property of the road under the rider at that kilometre. Absent
+             for a race with no rough surface recorded, rather than rendered
+             empty — the strip appearing at all is information. -->
+        <div id="surface-strip" class="surface-strip" hidden></div>
+        <!-- Under the chart, not in the header. The header could not hold it
+             on one line, so it wrapped and made this panel 63 px taller than
+             the map beside it — enough to push the profile itself below the
+             fold. It also reads better here: the scale it explains is the
+             thing directly above it, and the map now uses the same scale. -->
+        <div class="legend" id="profile-legend"></div>
+      </section>
+
+      <section class="panel" id="panel-map">
+        <div class="panel__head"><h2>Route geometry</h2></div>
+        <div id="map-host" class="map-host"></div>
+        <p class="caption" id="map-caption"></p>
+      </section>
+
+      <div class="scrub-readout" id="scrub-readout"></div>
+    </div>
+
+    <!-- The same route, the same distance axis, seen from an angle. A stage
+         profile flattens the course into a wall and a map flattens it into a
+         plan; neither shows that the Galibier is a wall at the end of a long
+         valley rather than a bump in the middle of one. This is built from
+         the coordinates and elevations already in the stage chunk, so it adds
+         nothing to the bundle and makes no request.
+
+         Vertical exaggeration is stated on the control, not buried, because
+         §20 forbids unlabeled vertical exaggeration and a relief view is
+         where the temptation to flatter the terrain is strongest. True scale
+         is one click away and the readout always says which scale is on. -->
+    <section class="panel" id="panel-relief" data-collapsible data-default="open">
+      <div class="panel__head">
+        <h2>Route in relief <span class="tag tag--derived">derived</span></h2>
+        <div class="relief__ctl" id="relief-ctl"></div>
+      </div>
+      <div id="relief-host" class="relief-host"></div>
+      <p class="caption" id="relief-caption"></p>
+    </section>
+  </section>
+
+  <!-- Zone 3 — what actually happened, across three cards a reader compares
+       left to right rather than scrolling between. -->
+  <section class="zone" id="zone-3-story" aria-labelledby="zone-3-title">
+    <h2 class="zone__title" id="zone-3-title">The race</h2>
+    <div class="storyrow">
+      <section class="panel" id="panel-jerseys">
+        <div class="panel__head">
+          <h2>Jerseys after this stage</h2>
+        </div>
+        <div id="jersey-host"></div>
+        <p class="caption" id="jersey-caption"></p>
+      </section>
+
+      <section class="panel" id="panel-results">
+        <div class="panel__head">
+          <h2>Stage result <span class="tag tag--observed">observed</span></h2>
+          <input type="search" id="res-filter" class="input" placeholder="Filter rider or team…">
+        </div>
+        <div class="table-scroll"><table id="res-table"></table></div>
+      </section>
+
+      <section class="panel" id="panel-gc">
+        <div class="panel__head">
+          <h2>General classification <span class="tag tag--derived">derived · full field</span></h2>
+          <span class="axis-note" id="gc-note"></span>
+          <input type="search" id="gc-filter" class="input" placeholder="Filter rider or team…">
+        </div>
+        <div class="table-scroll"><table id="gc-table"></table></div>
+        <p class="caption">Computed from official per-stage times: Σ(stage time +
+          penalty − bonus). Every one of the independently published top-ten
+          positions reproduces exactly, which is why this is shown for the whole
+          field rather than the ten the fallback carries.</p>
+      </section>
+    </div>
+  </section>
+
+  <!-- Zone 4 — the ground itself. Closed by default: these three answer
+       questions a reader arrives with already formed, and none of them is
+       what the page is for on a first visit. -->
+  <section class="zone" id="zone-4-terrain" aria-labelledby="zone-4-title">
+    <h2 class="zone__title" id="zone-4-title">Terrain detail</h2>
+
+    <!-- §15 climb intelligence. A climb here is an object, not a row: it
+         carries its own geometry, its own relief picture, the road either
+         side of it, the organiser's description of it where one exists, and
+         a difficulty index whose two terms are both shown. Clicking one
+         frames it on the profile, the map, the surface strip and the stage
+         relief view, because they all read the same distance window. -->
+    <section class="panel" id="panel-climb-studio" data-collapsible data-default="open">
+      <div class="panel__head">
+        <h2>Climb studio <span class="tag tag--derived">detected · measured here</span></h2>
+        <button type="button" class="btn" id="climb-compare-open"
+                aria-expanded="false" aria-controls="climb-compare">Compare climbs</button>
+      </div>
+      <div class="panel__body">
+        <div id="climb-cards" class="climb-cards"></div>
+        <p class="caption" id="climb-studio-caption"></p>
+        <div id="climb-compare" class="climb-compare" hidden></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-official-climbs" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Official climbs <span class="tag tag--observed">ASO categorised</span></h2>
+      </div>
+      <div class="table-scroll"><table id="oc-table"></table></div>
+      <p class="caption">The organiser's own classification. Residual compares
+        the derived profile's elevation at the summit with the officially
+        published altitude — an independent accuracy check on the profile.</p>
+    </section>
+
+    <!-- §7.F. Paris–Roubaix is a race about its pavé and the Ronde is a race
+         about its cobbled bergs, and until now the Observatory published
+         their elevation profiles and said nothing about the surface. The
+         panel is absent, not empty, for a race with none recorded — a smooth
+         race and an unresearched one must not look the same. -->
+    <section class="panel" id="panel-surface" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Road surface <span class="tag tag--derived">derived</span></h2>
+      </div>
+      <div class="table-scroll"><table id="surface-table"></table></div>
+      <p class="caption" id="surface-caption"></p>
+    </section>
+
+    <section class="panel" id="panel-fingerprints" data-collapsible data-default="closed">
+      <div class="panel__head"><h2>Climb fingerprints — all detected climbs, one scale</h2></div>
+      <p class="caption">Algorithmic detections, fixed scale across every stage.
+        These are <strong>not</strong> official ASO categorisations.</p>
+      <div id="fingerprints" class="fingerprints"></div>
+    </section>
+
+    <section class="panel" id="panel-sky" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Road &amp; sky <span class="tag tag--derived">derived</span></h2>
+      </div>
+      <div id="sky-host"></div>
+      <p class="caption">Properties of the road during its official passage
+        window — never a claim about any rider's position.</p>
+    </section>
+  </section>
+
+  <!-- Zone 5 — the complete record, every row of it. Closed by default
+       because completeness is the point of having it, not the point of
+       opening the page; a reader who wants it knows they want it. -->
+  <section class="zone" id="zone-5-data" aria-labelledby="zone-5-title">
+    <h2 class="zone__title" id="zone-5-title">Full data</h2>
+
+    <section class="panel" id="panel-waypoints" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Roadbook itinerary <span class="tag tag--observed">observed</span></h2>
+        <input type="search" id="wp-filter" class="input" placeholder="Filter waypoints…">
+      </div>
+      <div class="table-scroll"><table id="wp-table"></table></div>
+    </section>
+
+    <!-- Real layout, no visible content: an element carrying `hidden` never
+         intersects, so a sentinel with actual box geometry is what triggers the
+         lazy fetch below it. The panel itself stays hidden until data is known,
+         same as every other absent panel on this page — nothing here renders
+         ahead of the fetch that would tell it whether to. It sits outside the
+         panel, and must keep sitting outside it, for the same reason: a
+         collapsed panel has no geometry either, and a sentinel inside one
+         would never fire. -->
+    <div id="startlist-sentinel" aria-hidden="true" style="height:1px"></div>
+    <!-- Collapsible, but open once it exists. Every other panel in this zone
+         starts closed; this one is already behind a disclosure — it does not
+         render at all until the sentinel above it comes into view and the
+         chunk is fetched. Closing it as well would gate the same content
+         twice: a reader who scrolled here to reach the startlist would arrive
+         at a shut box they had just opened by arriving. -->
+    <section class="panel" id="panel-startlist" hidden data-collapsible>
+      <div class="panel__head">
+        <h2>Startlist <span class="axis-note" id="startlist-note"></span></h2>
+        <input type="search" id="startlist-filter" class="input"
+               placeholder="Filter rider, team or nationality…">
+      </div>
+      <div class="table-scroll"><table id="startlist-table"></table></div>
+      <p class="caption" id="startlist-caption"></p>
+    </section>
+
+    <section class="panel" id="panel-classif" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Classification standings</h2>
+        <span class="axis-note" id="classif-note"></span>
+      </div>
+      <div id="classif-host"></div>
+      <p class="caption" id="classif-caption"></p>
+    </section>
+
+    <section class="panel" id="panel-scales" data-collapsible data-default="closed">
+      <div class="panel__head">
+        <h2>Sprints, climbs &amp; bonuses <span class="tag tag--observed">official scales</span></h2>
+      </div>
+      <div id="scales-host"></div>
+      <p class="caption">The organiser publishes four different scales per stage:
+        climb points at each classified summit, the intermediate sprint, the
+        finish-line scales for the green and polka-dot jerseys, and time bonuses
+        in seconds. They are kept apart because they feed different
+        classifications.</p>
+    </section>
+  </section>
+
+  <!-- Zone 6 — never collapsed. Where the numbers came from is not an
+       appendix to them, and a page that hides its provenance by default is
+       making a different promise than the one at the top of this one. The
+       badges are the short answer; the button opens the long one. -->
+  <section class="zone" id="zone-6-evidence" aria-label="Evidence">
+    <section class="panel" id="panel-coverage">
+      <div class="panel__head"><h2>Evidence coverage</h2></div>
+      <div id="coverage-badges" class="coverage-badges"></div>
+      <div id="coverage" class="coverage"></div>
+      <button id="btn-all-evidence" class="btn" aria-expanded="false"
+              aria-controls="coverage">Show all evidence</button>
+    </section>
+  </section>
+</main>
+
+<main id="main-race" hidden>
+  <section class="panel panel--hero" id="race-hero"></section>
+
+  <section class="panel" id="panel-race-absence" hidden>
+    <div id="race-absence"></div>
+  </section>
+
+  <section class="panel" id="panel-race-schedule" hidden>
+    <div class="panel__head">
+      <h2>Schedule <span class="tag tag--observed">as published</span></h2>
+      <span class="axis-note" id="race-schedule-note"></span>
+    </div>
+    <!-- Cards, not rows: an eight-column table made finding the mountain
+         days a scanning exercise. A card whose placings are held is a real
+         button — clickable and reachable by keyboard — and one whose are not
+         is inert, so a pointer never promises a panel that opens empty. -->
+    <div id="race-stage-grid" class="stagegrid"></div>
+  </section>
+
+  <section class="panel" id="panel-race-standings" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>Final classifications</h2>
+      <span class="axis-note" id="race-standings-note"></span>
+    </div>
+    <div id="race-standings-host"></div>
+  </section>
+
+  <section class="panel" id="panel-race-teams" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>Teams that started <span class="axis-note" id="race-teams-note"></span></h2>
+    </div>
+    <div id="race-teams-host" class="teamgrid"></div>
+  </section>
+
+  <!-- The riders inside those squads. This panel exists because the stage
+       page's startlist is on the stage page: a race with entries but no
+       stage product — La Vuelta Femenina holds 126 riders and no route —
+       rendered the squad names and could not reach the people in them. -->
+  <section class="panel" id="panel-race-startlist" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>Riders <span class="axis-note" id="race-startlist-note"></span></h2>
+      <input id="race-startlist-filter" type="search" placeholder="Filter riders…"
+             aria-label="Filter the startlist">
+    </div>
+    <div class="table-scroll"><table id="race-startlist-table"></table></div>
+  </section>
+
+  <section class="panel" id="panel-race-quality" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>Disagreements found and not resolved</h2>
+    </div>
+    <div id="race-quality-host"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel__head"><h2>Where this race's evidence came from</h2></div>
+    <div id="race-provenance-host"></div>
+    <p class="caption" id="race-article-note"></p>
+  </section>
+</main>
+
+<main id="main-races" hidden>
+  <section class="panel panel--hero" id="races-hero"></section>
+
+  <section class="panel" id="panel-scores" hidden>
+    <div class="panel__head">
+      <h2>How much is held, and how well <span class="tag tag--derived">measured</span></h2>
+    </div>
+    <div id="scores-host" class="scoregrid"></div>
+    <p class="caption" id="scores-caption"></p>
+  </section>
+
+  <section class="panel">
+    <div class="panel__head">
+      <h2>What "depth" means here</h2>
+    </div>
+    <div id="depth-legend" class="depth-legend"></div>
+    <p class="caption" id="depth-caption"></p>
+  </section>
+
+  <section class="panel" id="panel-season">
+    <div class="panel__head">
+      <h2>Most victories <span class="tag tag--derived">derived</span></h2>
+      <span class="axis-note" id="season-note"></span>
+    </div>
+    <div id="season-host" class="seasongrid"></div>
+    <p class="caption" id="season-caption"></p>
+  </section>
+
+  <section class="panel">
+    <div class="panel__head">
+      <h2>Every registered race <span id="races-count" class="axis-note"></span></h2>
+      <input type="search" id="races-filter" class="input"
+             placeholder="Filter by race name…">
+    </div>
+    <div id="races-facets" class="facets"></div>
+    <!-- Cards, not rows. Sixty-seven races in a six-column table gave every
+         one of them the same weight and made the reader parse a grid to find
+         out which held anything. A card can lead with the race and put its
+         depth and coverage where they are seen without being read. -->
+    <div id="races-grid" class="racegrid"></div>
+    <p class="caption" id="races-attrib"></p>
+  </section>
+
+  <section class="panel" id="panel-downloads">
+    <div class="panel__head">
+      <h2>Open data <span class="tag tag--observed">CSV &amp; GeoJSON</span></h2>
+    </div>
+    <div id="downloads-host"></div>
+    <p class="caption">Every dataset behind this site, per race, with a
+      manifest naming each one's sources and licence. Route traces are not
+      here: they carry no redistribution licence, so what is published is the
+      derived product and the manifest says so.</p>
+  </section>
+
+  <!-- Both of these are the project auditing itself. They are marked
+       collapsible because a reader arriving at the race index is looking for
+       races, not for the build's own conformance report — but nothing here is
+       hidden, only folded, and the counts stay in the headings. -->
+  <section class="panel" id="panel-conformance" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>The work order, checked against this build
+        <span class="axis-note" id="conformance-note"></span></h2>
+    </div>
+    <div id="conformance-host"></div>
+    <p class="caption">Generated at build time by reading the database and
+      this bundle, not written by hand. <b>PARTIAL</b> is not a softer
+      <b>MET</b>: where it appears the fraction is stated, and the shortfall
+      is in the queue below with a next action against it. Four clauses are
+      design judgement and are marked as not mechanically checkable rather
+      than quietly counted as passing.</p>
+  </section>
+
+  <section class="panel" id="panel-queue" hidden
+           data-collapsible data-default="closed">
+    <div class="panel__head">
+      <h2>What is missing, and what is being done about it
+        <span class="axis-note" id="queue-note"></span></h2>
+    </div>
+    <div class="table-scroll"><table id="queue-table"></table></div>
+    <p class="caption" id="queue-caption"></p>
+  </section>
+
+  <section class="panel" id="panel-registers">
+    <div class="panel__head">
+      <h2>What disagrees, and what is missing
+        <span class="axis-note" id="registers-note"></span></h2>
+      <input type="search" id="registers-filter" class="input"
+             placeholder="Filter findings and gaps…">
+    </div>
+    <div id="registers-host"></div>
+    <p class="caption">Every automated check that found something, and every
+      gap the project keeps open. These were reachable only by typing into the
+      command palette, which is a good way to hide the part of a data product
+      that admits what it does not know.</p>
+  </section>
+</main>
+
+<aside id="inspector" class="inspector" aria-label="Evidence inspector">
+  <div class="inspector__head">
+    <h2>Evidence Inspector</h2>
+    <button id="btn-close-inspector" class="btn btn--icon">✕</button>
+  </div>
+  <div id="inspector-body" class="inspector__body"></div>
+</aside>
+
+<div id="palette" class="palette" hidden>
+  <div class="palette__box" role="dialog" aria-label="Command palette">
+    <input id="palette-input" class="palette__input" placeholder="Jump to a stage, climb, rider, source, gap…" autocomplete="off">
+    <ul id="palette-list" class="palette__list"></ul>
+  </div>
+</div>
+
+<footer class="footer" id="footer"></footer>
+<script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+rule_id,severity,subject_kind,subject_label,detail
+route_length_mismatch,BLOCKER,route_version,stage 9,route line is 185.609 km against an official 154.600 km (delta 31.009 km); geometry quarantined as CONFLICTING
+route_length_mismatch,BLOCKER,route_version,stage 21,route line is 132.528 km against an official 88.700 km (delta 43.828 km); geometry quarantined as CONFLICTING
+profile_elevation_residual,WARNING,official_climb,stage 10 Col de la Griffoul,derived summit 1368.33 m against an official 1336 m (residual 32.33 m)
+profile_elevation_residual,WARNING,official_climb,stage 3 Col de Toses,derived summit 1841.69 m against an official 1778 m (residual 63.69 m)
+profile_elevation_residual,WARNING,official_climb,stage 14 Col du Page,derived summit 895.00 m against an official 959 m (residual -64.00 m)
+profile_elevation_residual,WARNING,official_climb,stage 3 Côte de Saint Feliu de Codines,derived summit 663.00 m against an official 622 m (residual 41.00 m)
+profile_elevation_residual,WARNING,official_climb,stage 15 Côte du Mont,derived summit 850.87 m against an official 823 m (residual 27.87 m)
+waypoint_position_disagreement,WARNING,waypoint,Saint-Disdier (D117-D937) (DÉVOLUY),geocoded position is 1679 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D937 Tunnel de la Beaume (DÉVOLUY),geocoded position is 7323 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D537 Pont de la Beaume (PELLAFOL),geocoded position is 4296 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,La Posterle (PELLAFOL),geocoded position is 2040 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Les Payas (PELLAFOL),geocoded position is 1605 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,VC GAP (VC-N85-VC-N85-VC-N85),geocoded position is 1777 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,N85 GAP,geocoded position is 1777 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Brutinel (LAYE),geocoded position is 861 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,LA FARE-EN-CHAMPSAUR-Les Barraques,geocoded position is 1224 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Le Sautet (PELLAFOL),geocoded position is 2725 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Barrage du Sautet (PELLAFOL),geocoded position is 2851 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D1085 LES CÔTES-DE-CORPS (près),geocoded position is 1124 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,LA SALLE-EN-BEAUMONT,geocoded position is 1032 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Les Égats (SAINT-LAURENT-EN-BEAUMONT),geocoded position is 1344 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D526 VALBONNAIS,geocoded position is 1594 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Les Doras (CHANTEPÉRIER),geocoded position is 4290 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Les Rambeaux (CHANTEPÉRIER),geocoded position is 2392 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,La Chalp (CHANTEPÉRIER),geocoded position is 1311 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Chantelouve (CHANTEPÉRIER),geocoded position is 2976 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Les Siauds (CHANTEPÉRIER),geocoded position is 4401 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Col d'Ornon,geocoded position is 4315 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,La Pallud (ORNON),geocoded position is 2144 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D1091 LE BOURG D'OISANS (D1091-D1091 B-D211),geocoded position is 1210 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D211 La Ferrière (LE BOURG-D'OISANS),geocoded position is 1949 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,LA GARDE-EN-OISANS,geocoded position is 1423 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,ALPE D'HUEZ (D211-VC) (entrée),geocoded position is 3461 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,VC ALPE D'HUEZ (1 850 m),geocoded position is 4331 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Col du Noyer,geocoded position is 2494 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Truziaud (DÉVOLUY),geocoded position is 4740 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Le Fourniel (DÉVOLUY),geocoded position is 4209 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,Saint-Étienne-en-Dévoluy (DÉVOLUY),geocoded position is 3498 m from the distance-derived position
+waypoint_position_disagreement,WARNING,waypoint,D117 Giers Le Courtil (DÉVOLUY),geocoded position is 2743 m from the distance-derived position
